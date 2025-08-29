@@ -2,6 +2,9 @@
 Módulo de transcrição usando modelo freds0/distil-whisper-large-v3-ptbr
 Baseado na documentação oficial do Hugging Face Transformers
 """
+import json
+import os
+from datetime import datetime
 import time
 import torch
 from transformers import pipeline
@@ -54,20 +57,11 @@ class Freds0Transcriber:
         except Exception as e:
             print(f"Erro ao carregar modelo: {e}")
             return False
-            
+                
     def transcribe(self, audio_path):
         """
-        Transcreve um arquivo de áudio para texto
-        
-        Args:
-            audio_path (str): Caminho para o arquivo de áudio
-            
-        Returns:
-            dict: Dicionário com resultado da transcrição
-                - text (str): Texto transcrito
-                - model (str): Nome do modelo usado
-                - transcription_time (float): Tempo gasto na transcrição
-                - audio_file (str): Caminho do arquivo processado
+        Transcreve um arquivo de áudio para texto e salva resultados automaticamente
+        Cria 3 formatos: JSON (completo), CSV (dataset), TXT (texto puro)
         """
         # Verifica se modelo está carregado
         if not self.pipe:
@@ -79,19 +73,57 @@ class Freds0Transcriber:
             print(f"Transcrevendo arquivo: {audio_path}")
             start_time = time.time()
             
-            # Executa transcrição usando pipeline
-            result = self.pipe(audio_path)
+            # Executa transcrição com suporte a áudios longos
+            result = self.pipe(
+                audio_path,
+                return_timestamps=True,
+                chunk_length_s=30,
+                stride_length_s=5
+            )
             
-            # Calcula tempo de transcrição
             transcription_time = time.time() - start_time
             
-            # Retorna resultado estruturado
-            return {
-                "text": result["text"],                    # Texto transcrito
-                "model": self.model_name,                  # Modelo usado
-                "transcription_time": transcription_time,  # Tempo gasto
-                "audio_file": audio_path                   # Arquivo processado
+            # Prepara dados estruturados
+            transcription_data = {
+                "text": result["text"],
+                "model": self.model_name,
+                "transcription_time": transcription_time,
+                "audio_file": audio_path,
+                "timestamp": datetime.now().isoformat(),
+                "chunks": result.get("chunks", [])
             }
+            
+            # Salva resultados em múltiplos formatos
+            self._save_results(transcription_data, audio_path)
+            
+            return transcription_data
             
         except Exception as e:
             return {"error": f"Erro na transcrição: {e}"}
+
+    def _save_results(self, data, audio_path):
+        """Salva resultados em 3 formatos diferentes"""
+        
+        # Cria pasta results se não existir
+        os.makedirs("results", exist_ok=True)
+        
+        # Extrai nome base do arquivo
+        base_name = os.path.splitext(os.path.basename(audio_path))[0]
+        
+        # 1. Salva JSON completo (dados estruturados)
+        json_file = f"results/{base_name}.json"
+        with open(json_file, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"Dados completos salvos: {json_file}")
+        
+        # 2. Salva TXT (texto puro)
+        txt_file = f"results/{base_name}.txt"
+        with open(txt_file, "w", encoding="utf-8") as f:
+            f.write(data["text"])
+        print(f"Texto salvo: {txt_file}")
+        
+        # 3. Adiciona ao CSV do dataset (formato Katube)
+        csv_file = "results/transcriptions.csv"
+        with open(csv_file, "a", encoding="utf-8") as f:
+            f.write(f"{data['audio_file']}|{data['text']}\n")
+        print(f"Adicionado ao dataset: {csv_file}")
