@@ -18,14 +18,22 @@ class Freds0Transcriber:
         pipe (Pipeline): Pipeline de transcrição do transformers
         device (str): Dispositivo usado (CPU ou GPU)
     """
-    
+        
     def __init__(self):
         """Inicializa o transcriber com configurações padrão"""
         self.model_name = "freds0/distil-whisper-large-v3-ptbr"
         self.pipe = None
-        self.device = 0 if torch.cuda.is_available() else -1  # 0=GPU, -1=CPU
-        self.load_time = 0  # Tempo gasto para carregar modelo
-        
+        self.device = self._detect_device()  # Linha alterada
+        self.load_time = 0
+
+    def _detect_device(self):
+        """Detecta automaticamente o melhor dispositivo disponível"""
+        if torch.cuda.is_available():
+            print(f"GPU detectada: {torch.cuda.get_device_name(0)}")
+            return 0
+        else:
+            print("Usando CPU")
+            return -1
     def load_model(self):
         """
         Carrega o modelo de transcrição na memória
