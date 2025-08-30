@@ -16,7 +16,7 @@ def test_audio_transcription():
     """Testa transcrição de arquivo de áudio real"""
     
     # Caminho para o arquivo de áudio
-    audio_file = "test_data/teste_01.mp3"
+    audio_file = "test_data/teste_02.mp3"
     
     # Verifica se arquivo existe
     if not os.path.exists(audio_file):
