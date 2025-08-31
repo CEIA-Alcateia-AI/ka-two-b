@@ -1,0 +1,79 @@
+{
+  "status": "Pipeline concluído",
+  "config": {
+    "url_original": "https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB0gcJCXwEOCosWNin",
+    "tipo_detectado": "playlist",
+    "content_id": "PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng",
+    "qualidade_audio": "256 kbps",
+    "pasta_saida": "downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng",
+    "arquivos_controle": {
+      "lista_videos": "downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/youtube_videos.txt",
+      "log_erros": "downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/error_youtube_videos.json",
+      "log_baixados": "downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/downloaded_youtube_videos.txt"
+    }
+  },
+  "stats": {
+    "started_at": "2025-08-31 07:43:53.187156",
+    "finished_at": "2025-08-31 07:48:53.405697",
+    "total_execution_time": 300.218541,
+    "videos_found": 5,
+    "videos_processed": 5,
+    "audio_successful": 5,
+    "audio_failed": 0,
+    "subtitle_successful": 1,
+    "subtitle_failed": 4,
+    "complete_pairs": 1
+  },
+  "details": {
+    "audio_successful": [
+      "rI8m_dbr1gA",
+      "VmEu1gB3lXc",
+      "tnE2pr7ewhI",
+      "13V0RcKImLU",
+      "8ZrN3JMbizI"
+    ],
+    "audio_failed": [],
+    "subtitle_successful": [
+      "13V0RcKImLU"
+    ],
+    "subtitle_failed": [
+      "rI8m_dbr1gA",
+      "VmEu1gB3lXc",
+      "tnE2pr7ewhI",
+      "8ZrN3JMbizI"
+    ]
+  },
+  "error_log": [],
+  "success_log": [
+    {
+      "video_id": "13V0RcKImLU",
+      "has_audio": true,
+      "has_subtitle": true,
+      "timestamp": "2025-08-31T07:48:53.405669"
+    },
+    {
+      "video_id": "rI8m_dbr1gA",
+      "has_audio": true,
+      "has_subtitle": false,
+      "timestamp": "2025-08-31T07:48:53.405681"
+    },
+    {
+      "video_id": "VmEu1gB3lXc",
+      "has_audio": true,
+      "has_subtitle": false,
+      "timestamp": "2025-08-31T07:48:53.405684"
+    },
+    {
+      "video_id": "tnE2pr7ewhI",
+      "has_audio": true,
+      "has_subtitle": false,
+      "timestamp": "2025-08-31T07:48:53.405686"
+    },
+    {
+      "video_id": "8ZrN3JMbizI",
+      "has_audio": true,
+      "has_subtitle": false,
+      "timestamp": "2025-08-31T07:48:53.405688"
+    }
+  ]
+}
