@@ -1,71 +1,90 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Configuração central do sistema de download YouTube
-Detecção automática de tipo de URL e centralização de configurações
+Configurações centralizadas para download de áudio e legendas do YouTube
+Compatível com pipeline de dataset para TTS/STT via Streamlit
 """
+
 import os
-from urllib.parse import parse_qs, urlparse
 from pathlib import Path
-from typing import Tuple, Dict, List, Optional
+from urllib.parse import parse_qs, urlparse
+from typing import Dict, List, Optional
 
 
 class DownloadConfig:
     """
-    Configuração centralizada para sistema de download YouTube
-    Detecta automaticamente tipo de URL e fornece configurações para todos os módulos
+    Configuração centralizada para download YouTube usando yt-dlp
+    Otimizada para simplicidade e compatibilidade com Streamlit
     """
     
-    # Configurações fixas do desenvolvedor
-    AUDIO_QUALITIES = [192, 256, 320]  # kbps disponíveis para usuário
-    SUBTITLE_PRIORITY = ['manual-pt-br', 'manual-pt', 'auto-pt-br', 'auto-pt']
-    DELAYS = {
-        'audio': (15, 40),      # segundos entre downloads de áudio  
-        'subtitle': (5, 20)     # segundos entre downloads de legenda
-    }
+    # ========================================
+    # CONFIGURAÇÕES PRINCIPAIS DO USUÁRIO
+    # ========================================
     
-    # Chave API YouTube (será configurável via Streamlit)
-    DEFAULT_API_KEY = "AIzaSyBJ2b2eT8onlm5dt7WHaHZyHEsmnIkpfbk"
+    # URL alvo para download (vídeo, playlist ou canal)
+    TARGET_URL = "https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB"
     
-    # Estrutura de pastas
-    BASE_OUTPUT_DIR = "downloads"
+    # Limite de downloads (0 = todos os vídeos)
+    DOWNLOAD_LIMIT = 0 # Máximo de vídeos para baixar
     
-    def __init__(self, url: str, audio_quality: int = 256, api_key: Optional[str] = None):
+    # Configurações de áudio
+    AUDIO_FORMAT = "mp3"     # Opções: mp3, wav, m4a, flac
+    AUDIO_QUALITY = 0      # kbps: 128, 192, 256, 320 (0 = melhor disponível)
+    
+    # Delays anti-bloqueio (segundos)
+    DELAY_MIN_SECONDS = 15   # Mínimo entre downloads
+    DELAY_MAX_SECONDS = 30   # Máximo entre downloads
+    
+    # Configuração de legendas (ordem de prioridade)
+    SUBTITLE_LANGUAGES = ["pt-BR", "pt"]  # Manual pt-BR > Manual pt > Auto pt-BR > Auto pt
+    DOWNLOAD_AUTO_SUBS = True             # Baixa legendas automáticas se manual não existir
+    
+    # Estrutura de output
+    BASE_OUTPUT_DIR = "./downloads"       # Pasta base dos downloads
+    
+    # ========================================
+    # CONFIGURAÇÕES AVANÇADAS (OPCIONAL)
+    # ========================================
+    
+    # Filtros de duração de vídeo
+    MIN_DURATION_SECONDS = 30      # Mínimo: 30 segundos
+    MAX_DURATION_SECONDS = 3600    # Máximo: 1 hora
+    
+    # Comportamento de sobrescrita
+    OVERWRITE_EXISTING = False     # True = redownload, False = pula existentes
+    
+    # Manter arquivo de vídeo também
+    KEEP_VIDEO_FILE = False        # True = mantém .mp4, False = só áudio
+    
+    # ========================================
+    # CONFIGURAÇÕES INTERNAS (NÃO ALTERAR)
+    # ========================================
+    
+    def __init__(self, target_url: Optional[str] = None):
         """
-        Inicializa configuração com URL fornecida
+        Inicializa configuração com URL opcional
         
         Args:
-            url: URL do YouTube (canal, playlist ou vídeo)
-            audio_quality: Qualidade em kbps (192, 256, 320)
-            api_key: Chave da API YouTube (usa padrão se None)
+            target_url: URL para override da configuração padrão
         """
-        self.original_url = url
-        self.audio_quality = self._validate_audio_quality(audio_quality)
-        self.api_key = api_key or self.DEFAULT_API_KEY
-        
-        # Detecção automática de tipo e ID
-        self.url_type, self.content_id = self._detect_url_type(url)
-        
-        # Configurações derivadas
+        self.target_url = target_url or self.TARGET_URL
+        self.url_type, self.content_id = self._detect_url_type(self.target_url)
         self.output_dir = self._create_output_path()
-        self.youtube_videos_file = self.output_dir / "youtube_videos.txt"
-        self.error_log_file = self.output_dir / "error_youtube_videos.json"
-        self.downloaded_log_file = self.output_dir / "downloaded_youtube_videos.txt"
+        
+        # Arquivos de controle
+        self.videos_list_file = self.output_dir / "youtube_videos.txt"
+        self.error_log_file = self.output_dir / "download_errors.json"
+        self.success_log_file = self.output_dir / "download_success.json"
         
         # Garante que diretório existe
         self.output_dir.mkdir(parents=True, exist_ok=True)
     
-    def _validate_audio_quality(self, quality: int) -> int:
-        """Valida qualidade de áudio escolhida"""
-        if quality not in self.AUDIO_QUALITIES:
-            print(f"Qualidade {quality} inválida. Usando 256 kbps por padrão.")
-            return 256
-        return quality
-    
-    def _detect_url_type(self, url: str) -> Tuple[str, str]:
+    def _detect_url_type(self, url: str) -> tuple:
         """
-        Detecta automaticamente tipo de URL e extrai ID único
+        Detecta tipo de URL YouTube e extrai ID único
         
         Returns:
-            tuple: (tipo, id) onde tipo é 'channel', 'playlist' ou 'video'
+            tuple: (tipo, id) - 'channel', 'playlist' ou 'video'
         """
         # Playlist
         if 'playlist?list=' in url or '&list=' in url:
@@ -76,22 +95,12 @@ class DownloadConfig:
         # Canal por handle (@usuario)
         if '/@' in url:
             handle = url.split('/@')[1].split('/')[0].split('?')[0]
-            return 'channel', f"@{handle}"
+            return 'channel', handle
         
-        # Canal por ID (UCxxxxx)
+        # Canal por ID (UC...)
         if '/channel/' in url:
             channel_id = url.split('/channel/')[1].split('/')[0].split('?')[0]
             return 'channel', channel_id
-        
-        # Canal por user
-        if '/user/' in url:
-            user_id = url.split('/user/')[1].split('/')[0].split('?')[0]
-            return 'channel', f"user_{user_id}"
-        
-        # Canal por nome customizado (youtube.com/c/nome)
-        if '/c/' in url:
-            custom_name = url.split('/c/')[1].split('/')[0].split('?')[0]
-            return 'channel', f"c_{custom_name}"
         
         # Vídeo individual
         if 'watch?v=' in url:
@@ -99,7 +108,7 @@ class DownloadConfig:
             if video_id:
                 return 'video', video_id
         
-        # URL encurtada do YouTube
+        # URL encurtada
         if 'youtu.be/' in url:
             video_id = url.split('youtu.be/')[1].split('?')[0]
             return 'video', video_id
@@ -107,140 +116,233 @@ class DownloadConfig:
         raise ValueError(f"Tipo de URL não reconhecido: {url}")
     
     def _create_output_path(self) -> Path:
-        """Cria caminho de saída baseado no tipo e ID detectados"""
+        """
+        Cria caminho de saída baseado no tipo e ID detectados
+        Estrutura: downloads/tipo_id/
+        """
         base_dir = Path(self.BASE_OUTPUT_DIR)
         
         if self.url_type == 'video':
-            # Vídeos individuais vão em pasta separada
             return base_dir / f"video_{self.content_id}"
         else:
-            # Canais e playlists usam prefixo + ID
             return base_dir / f"{self.url_type}_{self.content_id}"
     
     def get_video_output_path(self, video_id: str) -> Path:
         """
-        Retorna caminho completo para arquivos de um vídeo específico
-        
-        Args:
-            video_id: ID único do vídeo
-            
-        Returns:
-            Path: Caminho para pasta do vídeo
+        Retorna caminho completo para arquivos de um vídeo
+        Estrutura: downloads/tipo_id/video_id/
         """
         return self.output_dir / video_id
     
     def get_audio_file_path(self, video_id: str) -> Path:
-        """Retorna caminho completo para arquivo de áudio"""
-        return self.get_video_output_path(video_id) / f"{video_id}.mp3"
+        """Retorna caminho para arquivo de áudio"""
+        extension = self.AUDIO_FORMAT
+        return self.get_video_output_path(video_id) / f"{video_id}.{extension}"
     
     def get_subtitle_file_path(self, video_id: str) -> Path:
-        """Retorna caminho completo para arquivo de legenda"""
+        """Retorna caminho para arquivo de legenda"""
         return self.get_video_output_path(video_id) / f"{video_id}.srt"
     
     def is_video_downloaded(self, video_id: str) -> bool:
         """
         Verifica se vídeo já foi baixado (evita duplicatas)
+        Lógica preservada do sistema original
         
-        Args:
-            video_id: ID do vídeo a verificar
-            
         Returns:
             bool: True se áudio já existe
         """
         audio_file = self.get_audio_file_path(video_id)
-        return audio_file.exists()
+        return audio_file.exists() and audio_file.stat().st_size > 1024  # Mínimo 1KB
     
-    def get_ytdl_audio_options(self) -> Dict:
+    def get_ytdlp_command_args(self) -> List[str]:
         """
-        Retorna configurações do yt-dlp para download de áudio
+        Constrói argumentos para comando yt-dlp
+        Unifica download de áudio e legendas em um comando
         
         Returns:
-            dict: Configurações otimizadas para yt-dlp
+            List[str]: Lista de argumentos para subprocess
         """
-        return {
-            'format': 'bestaudio/best',
-            'postprocessors': [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': str(self.audio_quality),
-            }],
-            'outtmpl': str(self.get_video_output_path('%(id)s') / '%(id)s'),
-            'quiet': True,
-            'no_warnings': True,
-            'extractaudio': True,
-            'audioformat': 'mp3',
+        args = [
+            "yt-dlp",
+            
+            # Extração de áudio
+            "-x",  # Extrair áudio apenas
+            "--audio-format", self.AUDIO_FORMAT,
+            "--audio-quality", str(self.AUDIO_QUALITY),
+            
+            # Download de legendas
+            "--write-subs",      # Legendas manuais
+            "--write-auto-subs", # Legendas automáticas
+            "--sub-lang", ",".join(self.SUBTITLE_LANGUAGES),
+            
+            # Template de output (estrutura de pastas)
+            "--output", str(self.output_dir / "%(id)s" / "%(id)s.%(ext)s"),
+            
+            # Controle de download
+            "--ignore-errors",   # Continua mesmo com erros
+            "--no-warnings",     # Reduz logs desnecessários
+        ]
+        
+        # Adiciona limite se configurado
+        if self.DOWNLOAD_LIMIT > 0:
+            args.extend(["--playlist-end", str(self.DOWNLOAD_LIMIT)])
+        
+        # Adiciona filtros de duração
+        if self.MIN_DURATION_SECONDS > 0:
+            args.extend(["--match-filter", f"duration >= {self.MIN_DURATION_SECONDS}"])
+        
+        if self.MAX_DURATION_SECONDS > 0:
+            args.extend(["--match-filter", f"duration <= {self.MAX_DURATION_SECONDS}"])
+        
+        # Adiciona URL alvo
+        args.append(self.target_url)
+        
+        return args
+    
+    def validate_config(self) -> Dict[str, any]:
+        """
+        Valida configurações e retorna relatório
+        
+        Returns:
+            Dict: Relatório de validação com erros/avisos
+        """
+        validation = {
+            'valid': True,
+            'errors': [],
+            'warnings': []
         }
+        
+        # Valida qualidade de áudio
+        valid_qualities = [0, 128, 192, 256, 320]
+        if self.AUDIO_QUALITY not in valid_qualities:
+            validation['errors'].append(f"Qualidade inválida: {self.AUDIO_QUALITY}. Use: {valid_qualities}")
+            validation['valid'] = False
+        
+        # Valida formato de áudio
+        valid_formats = ["mp3", "wav", "m4a", "flac"]
+        if self.AUDIO_FORMAT not in valid_formats:
+            validation['errors'].append(f"Formato inválido: {self.AUDIO_FORMAT}. Use: {valid_formats}")
+            validation['valid'] = False
+        
+        # Valida delays
+        if self.DELAY_MIN_SECONDS > self.DELAY_MAX_SECONDS:
+            validation['errors'].append("DELAY_MIN deve ser menor que DELAY_MAX")
+            validation['valid'] = False
+        
+        # Avisos úteis
+        if self.DOWNLOAD_LIMIT == 0:
+            validation['warnings'].append("DOWNLOAD_LIMIT = 0: Baixará TODOS os vídeos")
+        
+        if self.AUDIO_QUALITY == 0:
+            validation['warnings'].append("AUDIO_QUALITY = 0: Usará melhor qualidade disponível")
+        
+        return validation
     
-    def get_subtitle_languages(self) -> List[str]:
+    def create_summary(self) -> Dict:
         """
-        Retorna lista de idiomas para busca de legendas
-        Prioridade: português brasileiro > português genérico
+        Cria resumo das configurações para exibição
+        Preparado para interface Streamlit
         
         Returns:
-            list: Lista de códigos de idioma em ordem de prioridade
-        """
-        return ['pt', 'pt-br', 'pt-BR']
-    
-    def create_streamlit_summary(self) -> Dict:
-        """
-        Cria resumo das configurações para exibição no Streamlit
-        
-        Returns:
-            dict: Dados formatados para interface
+            Dict: Resumo formatado das configurações
         """
         return {
-            'url_original': self.original_url,
+            'url_original': self.target_url,
             'tipo_detectado': self.url_type,
             'content_id': self.content_id,
-            'qualidade_audio': f"{self.audio_quality} kbps",
+            'limite_downloads': self.DOWNLOAD_LIMIT if self.DOWNLOAD_LIMIT > 0 else "Todos",
+            'qualidade_audio': f"{self.AUDIO_QUALITY} kbps" if self.AUDIO_QUALITY > 0 else "Melhor disponível",
+            'formato_audio': self.AUDIO_FORMAT.upper(),
+            'delay_range': f"{self.DELAY_MIN_SECONDS}-{self.DELAY_MAX_SECONDS}s",
+            'linguagens_legenda': " > ".join(self.SUBTITLE_LANGUAGES),
             'pasta_saida': str(self.output_dir),
             'arquivos_controle': {
-                'lista_videos': str(self.youtube_videos_file),
+                'lista_videos': str(self.videos_list_file),
                 'log_erros': str(self.error_log_file),
-                'log_baixados': str(self.downloaded_log_file)
+                'log_sucessos': str(self.success_log_file)
             }
         }
-    
-    def __str__(self) -> str:
-        """Representação string para debug"""
-        return f"DownloadConfig(tipo={self.url_type}, id={self.content_id}, qualidade={self.audio_quality}kbps)"
 
 
-def create_config_from_streamlit(**kwargs) -> DownloadConfig:
+# ========================================
+# CONFIGURAÇÕES ADICIONAIS PARA USUÁRIO
+# ========================================
+
+# Configurações de filtro de conteúdo
+CONTENT_FILTERS = {
+    'skip_live_streams': True,      # Pula transmissões ao vivo
+    'skip_premieres': False,        # Pula premieres
+    'skip_shorts': False,           # Pula YouTube Shorts
+}
+
+# Configurações de retry
+RETRY_CONFIG = {
+    'max_retries': 3,               # Tentativas por vídeo
+    'retry_delay': 60,              # Segundos entre tentativas
+}
+
+# Configurações de limpeza automática
+CLEANUP_CONFIG = {
+    'remove_temp_files': True,      # Remove arquivos temporários
+    'remove_failed_downloads': True, # Remove downloads incompletos
+}
+
+
+def create_config_instance(url: Optional[str] = None) -> DownloadConfig:
     """
-    Factory function para criar configuração a partir de parâmetros do Streamlit
+    Factory function para criar instância de configuração
     
     Args:
-        **kwargs: Parâmetros vindos da interface Streamlit
-                 - url (str): URL do YouTube
-                 - audio_quality (int): Qualidade do áudio
-                 - api_key (str, opcional): Chave da API
-    
+        url: URL opcional para override
+        
     Returns:
         DownloadConfig: Instância configurada
     """
-    required_params = ['url']
-    for param in required_params:
-        if param not in kwargs:
-            raise ValueError(f"Parâmetro obrigatório '{param}' não fornecido")
-    
-    return DownloadConfig(
-        url=kwargs['url'],
-        audio_quality=kwargs.get('audio_quality', 256),
-        api_key=kwargs.get('api_key', None)
-    )
+    return DownloadConfig(target_url=url)
 
 
-# Função de conveniência para teste rápido
-def quick_config(url: str, quality: int = 256) -> DownloadConfig:
+def print_example_usage():
     """
-    Cria configuração rapidamente para testes
-    
-    Args:
-        url: URL do YouTube
-        quality: Qualidade do áudio (padrão 256)
-    
-    Returns:
-        DownloadConfig: Configuração pronta para uso
+    Imprime exemplos de uso das configurações
+    Útil para documentação e debug
     """
-    return DownloadConfig(url=url, audio_quality=quality)
+    print("="*60)
+    print("EXEMPLOS DE CONFIGURAÇÃO")
+    print("="*60)
+    print("# Para playlist pequena (teste):")
+    print('TARGET_URL = "https://youtube.com/playlist?list=PLxxx"')
+    print("DOWNLOAD_LIMIT = 5")
+    print("AUDIO_QUALITY = 192")
+    print()
+    print("# Para canal completo (produção):")
+    print('TARGET_URL = "https://youtube.com/@canal"')
+    print("DOWNLOAD_LIMIT = 0  # Todos os vídeos")
+    print("AUDIO_QUALITY = 320  # Máxima qualidade")
+    print()
+    print("# Para vídeo individual:")
+    print('TARGET_URL = "https://youtube.com/watch?v=VIDEO_ID"')
+    print("DOWNLOAD_LIMIT = 1")
+    print("="*60)
+
+
+if __name__ == "__main__":
+    # Teste básico das configurações
+    config = create_config_instance()
+    
+    print("Testando configurações...")
+    validation = config.validate_config()
+    
+    if validation['valid']:
+        print("✅ Configurações válidas!")
+        summary = config.create_summary()
+        
+        print("\nResumo das configurações:")
+        for key, value in summary.items():
+            print(f"  {key}: {value}")
+    else:
+        print("❌ Erros encontrados:")
+        for error in validation['errors']:
+            print(f"  - {error}")
+    
+    print("\n")
+    print_example_usage()

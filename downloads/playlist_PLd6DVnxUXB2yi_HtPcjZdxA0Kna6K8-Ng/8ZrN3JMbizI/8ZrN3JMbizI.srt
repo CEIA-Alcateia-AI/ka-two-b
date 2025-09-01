@@ -1,0 +1,1152 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:01.670 align:start position:0%
+ 
+Professor,<00:00:00.240><c> eu</c><00:00:00.320><c> vou</c><00:00:00.399><c> pegar</c><00:00:00.799><c> carona</c><00:00:01.199><c> na</c><00:00:01.439><c> tanto</c>
+
+00:00:01.670 --> 00:00:01.680 align:start position:0%
+Professor, eu vou pegar carona na tanto
+ 
+
+00:00:01.680 --> 00:00:03.669 align:start position:0%
+Professor, eu vou pegar carona na tanto
+na<00:00:01.880><c> pergunta</c><00:00:02.240><c> do</c><00:00:02.520><c> do</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+na pergunta do do
+ 
+
+00:00:03.679 --> 00:00:06.550 align:start position:0%
+na pergunta do do
+Mitre<00:00:04.040><c> e</c><00:00:04.240><c> do</c><00:00:04.520><c> Rodolfo,</c><00:00:04.920><c> quanto</c><00:00:05.120><c> na</c><00:00:05.279><c> da</c><00:00:05.440><c> Thaí.</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+Mitre e do Rodolfo, quanto na da Thaí.
+ 
+
+00:00:06.560 --> 00:00:08.830 align:start position:0%
+Mitre e do Rodolfo, quanto na da Thaí.
+Assim<00:00:06.799><c> como</c><00:00:06.960><c> o</c><00:00:07.080><c> senhor,</c><00:00:07.359><c> muitas</c><00:00:07.839><c> pessoas</c>
+
+00:00:08.830 --> 00:00:08.840 align:start position:0%
+Assim como o senhor, muitas pessoas
+ 
+
+00:00:08.840 --> 00:00:10.629 align:start position:0%
+Assim como o senhor, muitas pessoas
+depois<00:00:09.160><c> de</c><00:00:09.320><c> um</c><00:00:09.440><c> diagnóstico</c><00:00:10.200><c> resolvem</c>
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+depois de um diagnóstico resolvem
+ 
+
+00:00:10.639 --> 00:00:12.070 align:start position:0%
+depois de um diagnóstico resolvem
+aproveitar<00:00:11.200><c> melhor</c><00:00:11.480><c> a</c><00:00:11.679><c> vida.</c>
+
+00:00:12.070 --> 00:00:12.080 align:start position:0%
+aproveitar melhor a vida.
+ 
+
+00:00:12.080 --> 00:00:13.030 align:start position:0%
+aproveitar melhor a vida.
+Hum.
+
+00:00:13.030 --> 00:00:13.040 align:start position:0%
+Hum.
+ 
+
+00:00:13.040 --> 00:00:14.789 align:start position:0%
+Hum.
+E<00:00:13.200><c> assim</c><00:00:13.440><c> como</c><00:00:13.559><c> a</c><00:00:13.719><c> Thaí</c><00:00:13.960><c> citou,</c><00:00:14.320><c> nós</c><00:00:14.519><c> temos,</c>
+
+00:00:14.789 --> 00:00:14.799 align:start position:0%
+E assim como a Thaí citou, nós temos,
+ 
+
+00:00:14.799 --> 00:00:16.430 align:start position:0%
+E assim como a Thaí citou, nós temos,
+segundo<00:00:15.080><c> o</c><00:00:15.200><c> Ministério</c><00:00:15.519><c> da</c><00:00:15.639><c> Previdência</c><00:00:16.199><c> e</c><00:00:16.320><c> do</c>
+
+00:00:16.430 --> 00:00:16.440 align:start position:0%
+segundo o Ministério da Previdência e do
+ 
+
+00:00:16.440 --> 00:00:18.189 align:start position:0%
+segundo o Ministério da Previdência e do
+Trabalho,<00:00:16.960><c> meio</c><00:00:17.240><c> milhão</c><00:00:17.520><c> de</c><00:00:17.640><c> brasileiros</c>
+
+00:00:18.189 --> 00:00:18.199 align:start position:0%
+Trabalho, meio milhão de brasileiros
+ 
+
+00:00:18.199 --> 00:00:20.590 align:start position:0%
+Trabalho, meio milhão de brasileiros
+afastados<00:00:18.760><c> em</c><00:00:19.199><c> 2024</c><00:00:19.640><c> por</c><00:00:19.800><c> causa</c><00:00:19.960><c> de</c><00:00:20.119><c> doença</c><00:00:20.480><c> de</c>
+
+00:00:20.590 --> 00:00:20.600 align:start position:0%
+afastados em 2024 por causa de doença de
+ 
+
+00:00:20.600 --> 00:00:21.470 align:start position:0%
+afastados em 2024 por causa de doença de
+saúde<00:00:20.920><c> mental.</c>
+
+00:00:21.470 --> 00:00:21.480 align:start position:0%
+saúde mental.
+ 
+
+00:00:21.480 --> 00:00:22.509 align:start position:0%
+saúde mental.
+Uhum.
+
+00:00:22.509 --> 00:00:22.519 align:start position:0%
+Uhum.
+ 
+
+00:00:22.519 --> 00:00:25.390 align:start position:0%
+Uhum.
+É,<00:00:22.640><c> a</c><00:00:22.800><c> gente</c><00:00:22.960><c> é</c><00:00:23.119><c> muito</c><00:00:23.359><c> educado</c><00:00:23.800><c> a</c><00:00:24.039><c> trabalhar,</c>
+
+00:00:25.390 --> 00:00:25.400 align:start position:0%
+É, a gente é muito educado a trabalhar,
+ 
+
+00:00:25.400 --> 00:00:28.550 align:start position:0%
+É, a gente é muito educado a trabalhar,
+mas<00:00:25.599><c> não</c><00:00:25.760><c> é</c><00:00:25.880><c> educado</c><00:00:26.519><c> a</c><00:00:26.720><c> aproveitar</c><00:00:27.199><c> a</c><00:00:27.359><c> vida,</c><00:00:28.279><c> a</c>
+
+00:00:28.550 --> 00:00:28.560 align:start position:0%
+mas não é educado a aproveitar a vida, a
+ 
+
+00:00:28.560 --> 00:00:30.630 align:start position:0%
+mas não é educado a aproveitar a vida, a
+a<00:00:28.720><c> ter</c><00:00:28.920><c> prazer,</c><00:00:29.640><c> né?</c>
+
+00:00:30.630 --> 00:00:30.640 align:start position:0%
+a ter prazer, né?
+ 
+
+00:00:30.640 --> 00:00:33.270 align:start position:0%
+a ter prazer, né?
+E<00:00:31.000><c> não</c><00:00:31.240><c> precisamos</c><00:00:31.679><c> de</c><00:00:31.800><c> um</c><00:00:32.320><c> de</c><00:00:32.480><c> um</c><00:00:32.599><c> diagnóstico</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+E não precisamos de um de um diagnóstico
+ 
+
+00:00:33.280 --> 00:00:35.150 align:start position:0%
+E não precisamos de um de um diagnóstico
+para<00:00:33.480><c> aprender</c><00:00:33.840><c> a</c><00:00:34.000><c> ter</c><00:00:34.160><c> prazer.</c>
+
+00:00:35.150 --> 00:00:35.160 align:start position:0%
+para aprender a ter prazer.
+ 
+
+00:00:35.160 --> 00:00:38.110 align:start position:0%
+para aprender a ter prazer.
+E<00:00:35.360><c> falta</c><00:00:35.760><c> ensinar.</c><00:00:36.680><c> A</c><00:00:36.800><c> gente</c><00:00:36.960><c> não</c><00:00:37.200><c> aprendeu</c><00:00:37.719><c> a</c>
+
+00:00:38.110 --> 00:00:38.120 align:start position:0%
+E falta ensinar. A gente não aprendeu a
+ 
+
+00:00:38.120 --> 00:00:40.430 align:start position:0%
+E falta ensinar. A gente não aprendeu a
+valorizar,<00:00:38.800><c> a</c><00:00:39.000><c> ter</c><00:00:39.160><c> prazer.</c><00:00:39.680><c> Isso</c><00:00:40.239><c> isso</c>
+
+00:00:40.430 --> 00:00:40.440 align:start position:0%
+valorizar, a ter prazer. Isso isso
+ 
+
+00:00:40.440 --> 00:00:42.549 align:start position:0%
+valorizar, a ter prazer. Isso isso
+talvez<00:00:40.760><c> tivesse</c><00:00:41.079><c> que</c><00:00:41.239><c> ser</c><00:00:41.480><c> ensinado</c><00:00:42.160><c> desde</c>
+
+00:00:42.549 --> 00:00:42.559 align:start position:0%
+talvez tivesse que ser ensinado desde
+ 
+
+00:00:42.559 --> 00:00:44.229 align:start position:0%
+talvez tivesse que ser ensinado desde
+cedo<00:00:42.840><c> pra</c><00:00:43.039><c> gente</c><00:00:43.200><c> não</c><00:00:43.360><c> necessitar</c><00:00:43.840><c> tanto</c><00:00:44.079><c> de</c>
+
+00:00:44.229 --> 00:00:44.239 align:start position:0%
+cedo pra gente não necessitar tanto de
+ 
+
+00:00:44.239 --> 00:00:46.430 align:start position:0%
+cedo pra gente não necessitar tanto de
+um<00:00:44.440><c> like</c><00:00:44.760><c> para</c><00:00:44.960><c> ser</c><00:00:45.200><c> feliz</c><00:00:45.800><c> e</c><00:00:46.000><c> pudesse</c>
+
+00:00:46.430 --> 00:00:46.440 align:start position:0%
+um like para ser feliz e pudesse
+ 
+
+00:00:46.440 --> 00:00:48.670 align:start position:0%
+um like para ser feliz e pudesse
+produzir<00:00:46.879><c> a</c><00:00:47.079><c> nossa</c><00:00:47.360><c> própria</c><00:00:47.680><c> felicidade.</c>
+
+00:00:48.670 --> 00:00:48.680 align:start position:0%
+produzir a nossa própria felicidade.
+ 
+
+00:00:48.680 --> 00:00:50.430 align:start position:0%
+produzir a nossa própria felicidade.
+Penso<00:00:48.920><c> na</c><00:00:49.120><c> consciência,</c><00:00:49.840><c> né?</c><00:00:50.079><c> Eu</c><00:00:50.199><c> vou</c><00:00:50.320><c> até</c>
+
+00:00:50.430 --> 00:00:50.440 align:start position:0%
+Penso na consciência, né? Eu vou até
+ 
+
+00:00:50.440 --> 00:00:51.350 align:start position:0%
+Penso na consciência, né? Eu vou até
+ampliar<00:00:50.719><c> porque</c><00:00:50.840><c> eu</c><00:00:50.920><c> acho</c><00:00:51.039><c> que</c><00:00:51.120><c> a</c><00:00:51.239><c> gente</c>
+
+00:00:51.350 --> 00:00:51.360 align:start position:0%
+ampliar porque eu acho que a gente
+ 
+
+00:00:51.360 --> 00:00:53.029 align:start position:0%
+ampliar porque eu acho que a gente
+desaprende,<00:00:51.960><c> né?</c><00:00:52.239><c> Porque</c><00:00:52.359><c> a</c><00:00:52.480><c> criança</c><00:00:52.840><c> às</c>
+
+00:00:53.029 --> 00:00:53.039 align:start position:0%
+desaprende, né? Porque a criança às
+ 
+
+00:00:53.039 --> 00:00:55.310 align:start position:0%
+desaprende, né? Porque a criança às
+vezes<00:00:53.239><c> ela</c><00:00:53.480><c> brinca</c><00:00:53.879><c> ali</c><00:00:54.280><c> e</c><00:00:54.480><c> tem</c><00:00:54.719><c> a</c><00:00:54.879><c> felicidade</c>
+
+00:00:55.310 --> 00:00:55.320 align:start position:0%
+vezes ela brinca ali e tem a felicidade
+ 
+
+00:00:55.320 --> 00:00:57.389 align:start position:0%
+vezes ela brinca ali e tem a felicidade
+e<00:00:55.440><c> o</c><00:00:55.480><c> prazer</c><00:00:55.719><c> em</c><00:00:55.879><c> pequenas</c><00:00:56.440><c> coisas</c><00:00:57.120><c> que</c><00:00:57.280><c> a</c>
+
+00:00:57.389 --> 00:00:57.399 align:start position:0%
+e o prazer em pequenas coisas que a
+ 
+
+00:00:57.399 --> 00:00:58.990 align:start position:0%
+e o prazer em pequenas coisas que a
+gente<00:00:57.520><c> vai</c><00:00:57.800><c> parece</c><00:00:58.039><c> que</c><00:00:58.120><c> vai</c><00:00:58.239><c> perdendo,</c><00:00:58.640><c> né,</c>
+
+00:00:58.990 --> 00:00:59.000 align:start position:0%
+gente vai parece que vai perdendo, né,
+ 
+
+00:00:59.000 --> 00:00:59.509 align:start position:0%
+gente vai parece que vai perdendo, né,
+ao<00:00:59.120><c> longo</c><00:00:59.239><c> da</c><00:00:59.359><c> vida.</c>
+
+00:00:59.509 --> 00:00:59.519 align:start position:0%
+ao longo da vida.
+ 
+
+00:00:59.519 --> 00:01:01.270 align:start position:0%
+ao longo da vida.
+É<00:00:59.680><c> para</c><00:00:59.800><c> não</c><00:00:59.960><c> precisar</c><00:01:00.320><c> de</c><00:01:00.480><c> um</c><00:01:00.640><c> diagnóstico</c>
+
+00:01:01.270 --> 00:01:01.280 align:start position:0%
+É para não precisar de um diagnóstico
+ 
+
+00:01:01.280 --> 00:01:02.349 align:start position:0%
+É para não precisar de um diagnóstico
+para<00:01:01.440><c> aprender</c><00:01:01.719><c> que</c><00:01:01.840><c> a</c><00:01:01.960><c> gente</c><00:01:02.079><c> pode</c>
+
+00:01:02.349 --> 00:01:02.359 align:start position:0%
+para aprender que a gente pode
+ 
+
+00:01:02.359 --> 00:01:05.070 align:start position:0%
+para aprender que a gente pode
+aproveitar<00:01:03.160><c> a</c><00:01:03.680><c> vida</c><00:01:04.199><c> e</c><00:01:04.400><c> dosar</c><00:01:04.720><c> a</c><00:01:04.799><c> hora</c>
+
+00:01:05.070 --> 00:01:05.080 align:start position:0%
+aproveitar a vida e dosar a hora
+ 
+
+00:01:05.080 --> 00:01:06.910 align:start position:0%
+aproveitar a vida e dosar a hora
+trabalhada<00:01:05.640><c> com</c><00:01:05.840><c> hora</c><00:01:06.040><c> de</c><00:01:06.200><c> lazer</c><00:01:06.560><c> e</c><00:01:06.720><c> até</c>
+
+00:01:06.910 --> 00:01:06.920 align:start position:0%
+trabalhada com hora de lazer e até
+ 
+
+00:01:06.920 --> 00:01:09.109 align:start position:0%
+trabalhada com hora de lazer e até
+aproveitar<00:01:07.360><c> o</c><00:01:07.520><c> trabalho</c><00:01:07.960><c> também.</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+aproveitar o trabalho também.
+ 
+
+00:01:09.119 --> 00:01:14.030 align:start position:0%
+aproveitar o trabalho também.
+Bom,<00:01:10.280><c> eh</c><00:01:11.200><c> eu</c><00:01:11.400><c> vou</c><00:01:12.200><c> destacar</c><00:01:12.920><c> dois</c><00:01:13.280><c> aspectos</c><00:01:13.840><c> na</c>
+
+00:01:14.030 --> 00:01:14.040 align:start position:0%
+Bom, eh eu vou destacar dois aspectos na
+ 
+
+00:01:14.040 --> 00:01:18.030 align:start position:0%
+Bom, eh eu vou destacar dois aspectos na
+sua<00:01:14.360><c> na</c><00:01:14.560><c> sua</c><00:01:14.840><c> pergunta.</c>
+
+00:01:18.030 --> 00:01:18.040 align:start position:0%
+ 
+ 
+
+00:01:18.040 --> 00:01:20.149 align:start position:0%
+ 
+Um<00:01:18.320><c> vai</c><00:01:18.600><c> dentro</c><00:01:18.920><c> do</c><00:01:19.080><c> que</c><00:01:19.240><c> você</c><00:01:19.520><c> espera</c><00:01:19.840><c> que</c><00:01:20.000><c> eu</c>
+
+00:01:20.149 --> 00:01:20.159 align:start position:0%
+Um vai dentro do que você espera que eu
+ 
+
+00:01:20.159 --> 00:01:24.030 align:start position:0%
+Um vai dentro do que você espera que eu
+diga<00:01:20.400><c> e</c><00:01:20.560><c> o</c><00:01:20.680><c> outro</c><00:01:20.840><c> eu</c><00:01:21.040><c> não</c><00:01:21.200><c> sei.</c><00:01:22.320><c> Então,</c>
+
+00:01:24.030 --> 00:01:24.040 align:start position:0%
+diga e o outro eu não sei. Então,
+ 
+
+00:01:24.040 --> 00:01:29.149 align:start position:0%
+diga e o outro eu não sei. Então,
+eh,<00:01:24.479><c> em</c><00:01:24.640><c> primeiro</c><00:01:24.960><c> lugar,</c><00:01:26.439><c> é</c><00:01:27.079><c> absolutamente</c>
+
+00:01:29.149 --> 00:01:29.159 align:start position:0%
+eh, em primeiro lugar, é absolutamente
+ 
+
+00:01:29.159 --> 00:01:30.950 align:start position:0%
+eh, em primeiro lugar, é absolutamente
+importante
+
+00:01:30.950 --> 00:01:30.960 align:start position:0%
+importante
+ 
+
+00:01:30.960 --> 00:01:34.149 align:start position:0%
+importante
+que<00:01:32.399><c> tenhamos</c>
+
+00:01:34.149 --> 00:01:34.159 align:start position:0%
+que tenhamos
+ 
+
+00:01:34.159 --> 00:01:35.710 align:start position:0%
+que tenhamos
+preparo
+
+00:01:35.710 --> 00:01:35.720 align:start position:0%
+preparo
+ 
+
+00:01:35.720 --> 00:01:38.630 align:start position:0%
+preparo
+para<00:01:36.079><c> o</c><00:01:36.320><c> prazer,</c><00:01:36.840><c> que</c><00:01:37.079><c> é</c>
+
+00:01:38.630 --> 00:01:38.640 align:start position:0%
+para o prazer, que é
+ 
+
+00:01:38.640 --> 00:01:40.429 align:start position:0%
+para o prazer, que é
+um
+
+00:01:40.429 --> 00:01:40.439 align:start position:0%
+um
+ 
+
+00:01:40.439 --> 00:01:42.469 align:start position:0%
+um
+um<00:01:40.479><c> tipo</c><00:01:40.720><c> de</c><00:01:40.960><c> experiência</c>
+
+00:01:42.469 --> 00:01:42.479 align:start position:0%
+um tipo de experiência
+ 
+
+00:01:42.479 --> 00:01:44.870 align:start position:0%
+um tipo de experiência
+que<00:01:43.000><c> desperta</c><00:01:43.520><c> desconfiança.</c><00:01:44.520><c> Sempre</c>
+
+00:01:44.870 --> 00:01:44.880 align:start position:0%
+que desperta desconfiança. Sempre
+ 
+
+00:01:44.880 --> 00:01:50.590 align:start position:0%
+que desperta desconfiança. Sempre
+despertou.<00:01:46.360><c> né,</c><00:01:47.600><c> na</c><00:01:47.880><c> família</c>
+
+00:01:50.590 --> 00:01:50.600 align:start position:0%
+despertou. né, na família
+ 
+
+00:01:50.600 --> 00:01:53.990 align:start position:0%
+despertou. né, na família
+por<00:01:50.799><c> razões</c><00:01:51.360><c> antigas</c><00:01:51.960><c> e</c><00:01:52.240><c> e</c><00:01:52.479><c> conhecidas,</c><00:01:53.759><c> mas</c>
+
+00:01:53.990 --> 00:01:54.000 align:start position:0%
+por razões antigas e e conhecidas, mas
+ 
+
+00:01:54.000 --> 00:01:56.670 align:start position:0%
+por razões antigas e e conhecidas, mas
+também<00:01:54.280><c> na</c><00:01:54.520><c> escola,</c>
+
+00:01:56.670 --> 00:01:56.680 align:start position:0%
+também na escola,
+ 
+
+00:01:56.680 --> 00:01:59.510 align:start position:0%
+também na escola,
+eu<00:01:56.920><c> costumo</c><00:01:57.280><c> dizer</c><00:01:58.520><c> que</c><00:01:58.759><c> tive</c><00:01:59.079><c> aula</c><00:01:59.360><c> de</c>
+
+00:01:59.510 --> 00:01:59.520 align:start position:0%
+eu costumo dizer que tive aula de
+ 
+
+00:01:59.520 --> 00:02:03.270 align:start position:0%
+eu costumo dizer que tive aula de
+matemática<00:02:00.960><c> ao</c><00:02:01.200><c> longo</c><00:02:01.399><c> da</c><00:02:01.680><c> vida,</c>
+
+00:02:03.270 --> 00:02:03.280 align:start position:0%
+matemática ao longo da vida,
+ 
+
+00:02:03.280 --> 00:02:06.630 align:start position:0%
+matemática ao longo da vida,
+então,<00:02:03.719><c> tipo</c><00:02:04.039><c> matemática</c><00:02:04.719><c> 1,</c><00:02:04.960><c> 2,</c><00:02:05.399><c> 4,</c><00:02:05.759><c> 8,</c><00:02:06.119><c> 16,</c>
+
+00:02:06.630 --> 00:02:06.640 align:start position:0%
+então, tipo matemática 1, 2, 4, 8, 16,
+ 
+
+00:02:06.640 --> 00:02:09.309 align:start position:0%
+então, tipo matemática 1, 2, 4, 8, 16,
+32,<00:02:07.360><c> etc.</c><00:02:07.920><c> Mas</c><00:02:08.080><c> sobre</c><00:02:08.319><c> o</c><00:02:08.479><c> prazer,</c><00:02:08.879><c> não</c><00:02:09.039><c> lembro</c>
+
+00:02:09.309 --> 00:02:09.319 align:start position:0%
+32, etc. Mas sobre o prazer, não lembro
+ 
+
+00:02:09.319 --> 00:02:12.830 align:start position:0%
+32, etc. Mas sobre o prazer, não lembro
+de<00:02:09.479><c> ter</c><00:02:09.599><c> tido</c><00:02:10.080><c> nenhuma</c><00:02:10.840><c> aula.</c>
+
+00:02:12.830 --> 00:02:12.840 align:start position:0%
+de ter tido nenhuma aula.
+ 
+
+00:02:12.840 --> 00:02:14.750 align:start position:0%
+de ter tido nenhuma aula.
+Estudei<00:02:13.200><c> com</c><00:02:13.360><c> os</c><00:02:13.440><c> jesuítas</c><00:02:14.000><c> e</c><00:02:14.160><c> tive</c><00:02:14.400><c> aula</c><00:02:14.599><c> de</c>
+
+00:02:14.750 --> 00:02:14.760 align:start position:0%
+Estudei com os jesuítas e tive aula de
+ 
+
+00:02:14.760 --> 00:02:17.030 align:start position:0%
+Estudei com os jesuítas e tive aula de
+educação<00:02:15.360><c> sexual,</c>
+
+00:02:17.030 --> 00:02:17.040 align:start position:0%
+educação sexual,
+ 
+
+00:02:17.040 --> 00:02:19.990 align:start position:0%
+educação sexual,
+mas<00:02:17.319><c> dada</c><00:02:17.599><c> por</c><00:02:17.760><c> um</c><00:02:18.040><c> padre,</c><00:02:18.840><c> padre</c><00:02:19.400><c> dutra,</c>
+
+00:02:19.990 --> 00:02:20.000 align:start position:0%
+mas dada por um padre, padre dutra,
+ 
+
+00:02:20.000 --> 00:02:23.630 align:start position:0%
+mas dada por um padre, padre dutra,
+extraordinário,<00:02:21.120><c> padre</c><00:02:21.519><c> de</c><00:02:21.800><c> 94</c><00:02:22.760><c> anos.</c><00:02:23.239><c> Você</c>
+
+00:02:23.630 --> 00:02:23.640 align:start position:0%
+extraordinário, padre de 94 anos. Você
+ 
+
+00:02:23.640 --> 00:02:25.670 align:start position:0%
+extraordinário, padre de 94 anos. Você
+pode<00:02:23.879><c> imaginar</c><00:02:24.200><c> que</c><00:02:24.319><c> eu</c><00:02:24.480><c> aprendi</c><00:02:25.239><c> muita</c>
+
+00:02:25.670 --> 00:02:25.680 align:start position:0%
+pode imaginar que eu aprendi muita
+ 
+
+00:02:25.680 --> 00:02:29.190 align:start position:0%
+pode imaginar que eu aprendi muita
+coisa,<00:02:26.319><c> mas</c><00:02:26.519><c> o</c><00:02:26.680><c> prazer</c><00:02:27.599><c> não</c><00:02:27.879><c> foi</c><00:02:28.239><c> o</c><00:02:28.519><c> foco</c><00:02:28.959><c> da</c>
+
+00:02:29.190 --> 00:02:29.200 align:start position:0%
+coisa, mas o prazer não foi o foco da
+ 
+
+00:02:29.200 --> 00:02:33.150 align:start position:0%
+coisa, mas o prazer não foi o foco da
+questão.<00:02:30.000><c> Então,</c><00:02:30.800><c> eh,</c><00:02:31.280><c> não</c><00:02:31.519><c> há</c><00:02:32.000><c> propriamente</c>
+
+00:02:33.150 --> 00:02:33.160 align:start position:0%
+questão. Então, eh, não há propriamente
+ 
+
+00:02:33.160 --> 00:02:37.470 align:start position:0%
+questão. Então, eh, não há propriamente
+um<00:02:33.879><c> preparo</c><00:02:34.920><c> para</c><00:02:35.200><c> o</c><00:02:35.400><c> prazer.</c>
+
+00:02:37.470 --> 00:02:37.480 align:start position:0%
+um preparo para o prazer.
+ 
+
+00:02:37.480 --> 00:02:39.630 align:start position:0%
+um preparo para o prazer.
+Um,<00:02:37.680><c> um</c><00:02:37.959><c> primeiro</c><00:02:38.360><c> problema</c><00:02:38.920><c> é</c><00:02:39.080><c> que</c><00:02:39.280><c> quando</c><00:02:39.440><c> a</c>
+
+00:02:39.630 --> 00:02:39.640 align:start position:0%
+Um, um primeiro problema é que quando a
+ 
+
+00:02:39.640 --> 00:02:42.350 align:start position:0%
+Um, um primeiro problema é que quando a
+palavra<00:02:40.040><c> prazer</c><00:02:40.400><c> é</c><00:02:40.640><c> mencionada,</c><00:02:41.920><c> ela</c><00:02:42.120><c> é</c>
+
+00:02:42.350 --> 00:02:42.360 align:start position:0%
+palavra prazer é mencionada, ela é
+ 
+
+00:02:42.360 --> 00:02:43.910 align:start position:0%
+palavra prazer é mencionada, ela é
+imediatamente
+
+00:02:43.910 --> 00:02:43.920 align:start position:0%
+imediatamente
+ 
+
+00:02:43.920 --> 00:02:46.470 align:start position:0%
+imediatamente
+vinculada,<00:02:44.760><c> associada</c><00:02:45.560><c> aos</c><00:02:45.840><c> prazeres</c><00:02:46.280><c> do</c>
+
+00:02:46.470 --> 00:02:46.480 align:start position:0%
+vinculada, associada aos prazeres do
+ 
+
+00:02:46.480 --> 00:02:49.309 align:start position:0%
+vinculada, associada aos prazeres do
+corpo,<00:02:47.080><c> como</c><00:02:47.720><c> diziam</c><00:02:48.159><c> antigamente,</c><00:02:48.959><c> né?</c>
+
+00:02:49.309 --> 00:02:49.319 align:start position:0%
+corpo, como diziam antigamente, né?
+ 
+
+00:02:49.319 --> 00:02:52.390 align:start position:0%
+corpo, como diziam antigamente, né?
+saciedade<00:02:50.000><c> e</c><00:02:50.239><c> atrito,</c><00:02:51.319><c> eh,</c><00:02:51.560><c> matar</c><00:02:51.879><c> a</c><00:02:52.040><c> fome,</c>
+
+00:02:52.390 --> 00:02:52.400 align:start position:0%
+saciedade e atrito, eh, matar a fome,
+ 
+
+00:02:52.400 --> 00:02:57.270 align:start position:0%
+saciedade e atrito, eh, matar a fome,
+matar<00:02:52.680><c> a</c><00:02:52.840><c> sede</c><00:02:53.640><c> e</c><00:02:54.519><c> e</c><00:02:55.040><c> as</c><00:02:55.280><c> intimidades.</c><00:02:56.480><c> Então,</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+matar a sede e e as intimidades. Então,
+ 
+
+00:02:57.280 --> 00:03:02.430 align:start position:0%
+matar a sede e e as intimidades. Então,
+esses<00:02:57.599><c> prazeres</c><00:02:58.280><c> que</c><00:02:59.120><c> desde</c><00:02:59.800><c> do</c><00:03:00.000><c> banquete</c><00:03:01.200><c> até</c>
+
+00:03:02.430 --> 00:03:02.440 align:start position:0%
+esses prazeres que desde do banquete até
+ 
+
+00:03:02.440 --> 00:03:05.270 align:start position:0%
+esses prazeres que desde do banquete até
+a<00:03:02.640><c> filosofia</c><00:03:03.280><c> contemporânea</c><00:03:04.560><c> são</c><00:03:04.799><c> chamados</c>
+
+00:03:05.270 --> 00:03:05.280 align:start position:0%
+a filosofia contemporânea são chamados
+ 
+
+00:03:05.280 --> 00:03:08.430 align:start position:0%
+a filosofia contemporânea são chamados
+de<00:03:05.680><c> inferiores,</c><00:03:07.080><c> não</c><00:03:07.319><c> por</c><00:03:07.480><c> serem</c><00:03:07.760><c> ruins,</c><00:03:08.239><c> mas</c>
+
+00:03:08.430 --> 00:03:08.440 align:start position:0%
+de inferiores, não por serem ruins, mas
+ 
+
+00:03:08.440 --> 00:03:11.149 align:start position:0%
+de inferiores, não por serem ruins, mas
+por<00:03:08.680><c> contribuírem</c><00:03:09.480><c> pouco</c><00:03:09.920><c> para</c><00:03:10.120><c> a</c><00:03:10.280><c> vida</c><00:03:10.560><c> boa,</c>
+
+00:03:11.149 --> 00:03:11.159 align:start position:0%
+por contribuírem pouco para a vida boa,
+ 
+
+00:03:11.159 --> 00:03:14.309 align:start position:0%
+por contribuírem pouco para a vida boa,
+dado<00:03:11.440><c> o</c><00:03:11.599><c> fato</c><00:03:11.840><c> de</c><00:03:12.000><c> serem</c><00:03:13.120><c> efêmeros,</c><00:03:14.040><c> pouco</c>
+
+00:03:14.309 --> 00:03:14.319 align:start position:0%
+dado o fato de serem efêmeros, pouco
+ 
+
+00:03:14.319 --> 00:03:15.869 align:start position:0%
+dado o fato de serem efêmeros, pouco
+sustentáveis
+
+00:03:15.869 --> 00:03:15.879 align:start position:0%
+sustentáveis
+ 
+
+00:03:15.879 --> 00:03:17.949 align:start position:0%
+sustentáveis
+e<00:03:16.080><c> assim</c><00:03:16.319><c> por</c><00:03:16.440><c> diante,</c><00:03:16.760><c> né?</c>
+
+00:03:17.949 --> 00:03:17.959 align:start position:0%
+e assim por diante, né?
+ 
+
+00:03:17.959 --> 00:03:21.470 align:start position:0%
+e assim por diante, né?
+prazer<00:03:18.760><c> de</c><00:03:18.959><c> um</c><00:03:19.120><c> orgasmo</c><00:03:20.040><c> durará</c><00:03:20.920><c> segundos,</c>
+
+00:03:21.470 --> 00:03:21.480 align:start position:0%
+prazer de um orgasmo durará segundos,
+ 
+
+00:03:21.480 --> 00:03:26.110 align:start position:0%
+prazer de um orgasmo durará segundos,
+né?<00:03:22.040><c> Então,</c><00:03:22.879><c> eh</c><00:03:23.799><c> lançamos</c><00:03:24.760><c> a</c><00:03:24.920><c> luz</c><00:03:25.799><c> para</c><00:03:26.000><c> os</c>
+
+00:03:26.110 --> 00:03:26.120 align:start position:0%
+né? Então, eh lançamos a luz para os
+ 
+
+00:03:26.120 --> 00:03:28.509 align:start position:0%
+né? Então, eh lançamos a luz para os
+prazeres<00:03:26.599><c> do</c><00:03:26.879><c> espírito,</c><00:03:27.720><c> que</c><00:03:27.920><c> são</c><00:03:28.120><c> aqueles</c>
+
+00:03:28.509 --> 00:03:28.519 align:start position:0%
+prazeres do espírito, que são aqueles
+ 
+
+00:03:28.519 --> 00:03:32.830 align:start position:0%
+prazeres do espírito, que são aqueles
+que<00:03:28.920><c> exigem</c><00:03:29.920><c> eh</c><00:03:30.959><c> a</c><00:03:31.159><c> participação</c><00:03:32.159><c> da</c><00:03:32.400><c> vida</c><00:03:32.560><c> do</c>
+
+00:03:32.830 --> 00:03:32.840 align:start position:0%
+que exigem eh a participação da vida do
+ 
+
+00:03:32.840 --> 00:03:36.830 align:start position:0%
+que exigem eh a participação da vida do
+espírito<00:03:33.920><c> eh</c><00:03:35.000><c> da</c><00:03:35.200><c> articulação</c><00:03:35.720><c> de</c><00:03:35.920><c> ideias,</c><00:03:36.599><c> da</c>
+
+00:03:36.830 --> 00:03:36.840 align:start position:0%
+espírito eh da articulação de ideias, da
+ 
+
+00:03:36.840 --> 00:03:39.990 align:start position:0%
+espírito eh da articulação de ideias, da
+inteligência,<00:03:37.680><c> da</c><00:03:37.879><c> razão,</c><00:03:38.519><c> da</c><00:03:38.720><c> sensibilidade</c>
+
+00:03:39.990 --> 00:03:40.000 align:start position:0%
+inteligência, da razão, da sensibilidade
+ 
+
+00:03:40.000 --> 00:03:43.110 align:start position:0%
+inteligência, da razão, da sensibilidade
+e<00:03:40.280><c> e</c><00:03:40.680><c> artística,</c><00:03:41.480><c> por</c><00:03:41.640><c> exemplo,</c><00:03:42.319><c> literária,</c>
+
+00:03:43.110 --> 00:03:43.120 align:start position:0%
+e e artística, por exemplo, literária,
+ 
+
+00:03:43.120 --> 00:03:45.350 align:start position:0%
+e e artística, por exemplo, literária,
+etc.<00:03:44.000><c> o</c><00:03:44.159><c> prazer</c><00:03:44.480><c> de</c><00:03:44.680><c> acompanhar</c><00:03:45.120><c> uma</c>
+
+00:03:45.350 --> 00:03:45.360 align:start position:0%
+etc. o prazer de acompanhar uma
+ 
+
+00:03:45.360 --> 00:03:49.350 align:start position:0%
+etc. o prazer de acompanhar uma
+entrevista,<00:03:46.080><c> de</c><00:03:46.280><c> assistir</c><00:03:46.799><c> uma</c><00:03:47.239><c> aula,</c><00:03:47.879><c> de</c><00:03:48.200><c> ler</c>
+
+00:03:49.350 --> 00:03:49.360 align:start position:0%
+entrevista, de assistir uma aula, de ler
+ 
+
+00:03:49.360 --> 00:03:53.270 align:start position:0%
+entrevista, de assistir uma aula, de ler
+uma<00:03:49.680><c> obra</c><00:03:50.000><c> literária,</c><00:03:50.879><c> etc.</c><00:03:51.400><c> Bem,</c><00:03:52.239><c> como</c><00:03:52.799><c> você</c>
+
+00:03:53.270 --> 00:03:53.280 align:start position:0%
+uma obra literária, etc. Bem, como você
+ 
+
+00:03:53.280 --> 00:03:56.429 align:start position:0%
+uma obra literária, etc. Bem, como você
+haverá<00:03:53.680><c> de</c><00:03:53.959><c> entender,</c><00:03:55.079><c> para</c><00:03:55.519><c> esse</c><00:03:55.920><c> segundo</c>
+
+00:03:56.429 --> 00:03:56.439 align:start position:0%
+haverá de entender, para esse segundo
+ 
+
+00:03:56.439 --> 00:03:58.670 align:start position:0%
+haverá de entender, para esse segundo
+tipo<00:03:56.680><c> de</c><00:03:56.920><c> prazer,</c>
+
+00:03:58.670 --> 00:03:58.680 align:start position:0%
+tipo de prazer,
+ 
+
+00:03:58.680 --> 00:04:01.429 align:start position:0%
+tipo de prazer,
+menos<00:03:59.079><c> efêmero</c><00:03:59.560><c> e</c><00:03:59.720><c> mais</c><00:03:59.959><c> sustentável,</c><00:04:01.200><c> é</c>
+
+00:04:01.429 --> 00:04:01.439 align:start position:0%
+menos efêmero e mais sustentável, é
+ 
+
+00:04:01.439 --> 00:04:04.229 align:start position:0%
+menos efêmero e mais sustentável, é
+preciso<00:04:01.760><c> um</c><00:04:01.920><c> pouco</c><00:04:02.120><c> de</c><00:04:02.319><c> formação</c>
+
+00:04:04.229 --> 00:04:04.239 align:start position:0%
+preciso um pouco de formação
+ 
+
+00:04:04.239 --> 00:04:08.470 align:start position:0%
+preciso um pouco de formação
+para<00:04:04.480><c> você</c><00:04:05.239><c> ter,</c><00:04:06.480><c> eh,</c><00:04:06.959><c> digamos,</c><00:04:07.760><c> o</c><00:04:07.959><c> tanto</c><00:04:08.239><c> de</c>
+
+00:04:08.470 --> 00:04:08.480 align:start position:0%
+para você ter, eh, digamos, o tanto de
+ 
+
+00:04:08.480 --> 00:04:10.750 align:start position:0%
+para você ter, eh, digamos, o tanto de
+prazer<00:04:08.920><c> que</c><00:04:09.120><c> um</c><00:04:09.360><c> Rambran</c><00:04:10.079><c> pode</c><00:04:10.480><c> te</c>
+
+00:04:10.750 --> 00:04:10.760 align:start position:0%
+prazer que um Rambran pode te
+ 
+
+00:04:10.760 --> 00:04:14.949 align:start position:0%
+prazer que um Rambran pode te
+proporcionar,<00:04:12.239><c> seria</c><00:04:12.720><c> legal</c><00:04:13.720><c> se</c><00:04:14.680><c> você</c>
+
+00:04:14.949 --> 00:04:14.959 align:start position:0%
+proporcionar, seria legal se você
+ 
+
+00:04:14.959 --> 00:04:17.870 align:start position:0%
+proporcionar, seria legal se você
+tivesse<00:04:15.560><c> tido</c><00:04:15.920><c> algum</c><00:04:16.519><c> preparo</c><00:04:17.400><c> para</c>
+
+00:04:17.870 --> 00:04:17.880 align:start position:0%
+tivesse tido algum preparo para
+ 
+
+00:04:17.880 --> 00:04:20.150 align:start position:0%
+tivesse tido algum preparo para
+acompanhar<00:04:18.600><c> as</c><00:04:18.880><c> nuances</c><00:04:19.479><c> da</c><00:04:19.720><c> pintura</c>
+
+00:04:20.150 --> 00:04:20.160 align:start position:0%
+acompanhar as nuances da pintura
+ 
+
+00:04:20.160 --> 00:04:21.509 align:start position:0%
+acompanhar as nuances da pintura
+holandesa.
+
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+holandesa.
+ 
+
+00:04:21.519 --> 00:04:25.670 align:start position:0%
+holandesa.
+da<00:04:21.759><c> época</c><00:04:22.079><c> em</c><00:04:22.320><c> questão.</c><00:04:23.520><c> Então,</c><00:04:24.400><c> eh</c><00:04:25.120><c> seria</c>
+
+00:04:25.670 --> 00:04:25.680 align:start position:0%
+da época em questão. Então, eh seria
+ 
+
+00:04:25.680 --> 00:04:30.670 align:start position:0%
+da época em questão. Então, eh seria
+fundamental<00:04:26.960><c> que,</c><00:04:28.040><c> eh,</c><00:04:28.440><c> o</c><00:04:28.840><c> aprendizado,</c><00:04:30.280><c> o</c>
+
+00:04:30.670 --> 00:04:30.680 align:start position:0%
+fundamental que, eh, o aprendizado, o
+ 
+
+00:04:30.680 --> 00:04:34.230 align:start position:0%
+fundamental que, eh, o aprendizado, o
+estudo<00:04:31.600><c> e</c><00:04:31.800><c> o</c><00:04:31.960><c> conhecimento</c><00:04:33.120><c> fossem</c>
+
+00:04:34.230 --> 00:04:34.240 align:start position:0%
+estudo e o conhecimento fossem
+ 
+
+00:04:34.240 --> 00:04:35.870 align:start position:0%
+estudo e o conhecimento fossem
+permanentemente
+
+00:04:35.870 --> 00:04:35.880 align:start position:0%
+permanentemente
+ 
+
+00:04:35.880 --> 00:04:37.390 align:start position:0%
+permanentemente
+vinculados
+
+00:04:37.390 --> 00:04:37.400 align:start position:0%
+vinculados
+ 
+
+00:04:37.400 --> 00:04:39.749 align:start position:0%
+vinculados
+ao<00:04:37.720><c> prazer</c><00:04:38.120><c> do</c><00:04:38.400><c> espírito.</c><00:04:39.199><c> O</c><00:04:39.320><c> que</c><00:04:39.479><c> não</c>
+
+00:04:39.749 --> 00:04:39.759 align:start position:0%
+ao prazer do espírito. O que não
+ 
+
+00:04:39.759 --> 00:04:43.310 align:start position:0%
+ao prazer do espírito. O que não
+acontece<00:04:41.240><c> quando</c><00:04:41.639><c> eu</c><00:04:42.120><c> pedi</c><00:04:42.520><c> ao</c><00:04:42.759><c> professor</c><00:04:43.120><c> de</c>
+
+00:04:43.310 --> 00:04:43.320 align:start position:0%
+acontece quando eu pedi ao professor de
+ 
+
+00:04:43.320 --> 00:04:46.029 align:start position:0%
+acontece quando eu pedi ao professor de
+literatura<00:04:44.199><c> que</c><00:04:44.360><c> me</c><00:04:44.520><c> indicasse</c><00:04:45.199><c> a</c><00:04:45.400><c> leitura</c><00:04:45.840><c> de</c>
+
+00:04:46.029 --> 00:04:46.039 align:start position:0%
+literatura que me indicasse a leitura de
+ 
+
+00:04:46.039 --> 00:04:49.710 align:start position:0%
+literatura que me indicasse a leitura de
+um<00:04:46.240><c> livro,</c><00:04:47.240><c> eh,</c><00:04:47.720><c> porque</c><00:04:48.440><c> eu</c><00:04:48.639><c> já</c><00:04:48.840><c> tinha</c><00:04:49.120><c> lido</c><00:04:49.520><c> os</c>
+
+00:04:49.710 --> 00:04:49.720 align:start position:0%
+um livro, eh, porque eu já tinha lido os
+ 
+
+00:04:49.720 --> 00:04:51.870 align:start position:0%
+um livro, eh, porque eu já tinha lido os
+do<00:04:49.919><c> ano,</c><00:04:50.759><c> porque</c><00:04:51.039><c> também</c><00:04:51.280><c> não</c><00:04:51.440><c> tinha</c><00:04:51.680><c> mais</c>
+
+00:04:51.870 --> 00:04:51.880 align:start position:0%
+do ano, porque também não tinha mais
+ 
+
+00:04:51.880 --> 00:04:54.990 align:start position:0%
+do ano, porque também não tinha mais
+nada<00:04:52.039><c> o</c><00:04:52.120><c> que</c><00:04:52.240><c> fazer</c><00:04:52.479><c> da</c><00:04:52.680><c> vida,</c><00:04:53.440><c> ele</c><00:04:53.720><c> me</c><00:04:53.919><c> indicou</c>
+
+00:04:54.990 --> 00:04:55.000 align:start position:0%
+nada o que fazer da vida, ele me indicou
+ 
+
+00:04:55.000 --> 00:04:57.469 align:start position:0%
+nada o que fazer da vida, ele me indicou
+Dom<00:04:55.280><c> Casmurro.</c><00:04:55.880><c> Veja</c><00:04:56.160><c> só.</c><00:04:56.639><c> E</c><00:04:56.759><c> eu</c><00:04:56.960><c> perguntei:</c>
+
+00:04:57.469 --> 00:04:57.479 align:start position:0%
+Dom Casmurro. Veja só. E eu perguntei:
+ 
+
+00:04:57.479 --> 00:05:00.870 align:start position:0%
+Dom Casmurro. Veja só. E eu perguntei:
+"Por<00:04:57.680><c> que</c><00:04:58.080><c> este</c><00:04:58.759><c> livro</c><00:04:59.199><c> e</c><00:04:59.360><c> não</c><00:04:59.600><c> outro?"</c>
+
+00:05:00.870 --> 00:05:00.880 align:start position:0%
+"Por que este livro e não outro?"
+ 
+
+00:05:00.880 --> 00:05:03.629 align:start position:0%
+"Por que este livro e não outro?"
+Ele<00:05:01.160><c> poderia</c><00:05:01.560><c> ter</c><00:05:01.759><c> me</c><00:05:01.880><c> dito,</c><00:05:02.919><c> porque</c><00:05:03.320><c> Dom</c>
+
+00:05:03.629 --> 00:05:03.639 align:start position:0%
+Ele poderia ter me dito, porque Dom
+ 
+
+00:05:03.639 --> 00:05:05.990 align:start position:0%
+Ele poderia ter me dito, porque Dom
+Casmurro<00:05:04.479><c> é</c>
+
+00:05:05.990 --> 00:05:06.000 align:start position:0%
+Casmurro é
+ 
+
+00:05:06.000 --> 00:05:09.430 align:start position:0%
+Casmurro é
+do<00:05:07.160><c> é</c><00:05:07.600><c> incrível,</c><00:05:08.199><c> é</c><00:05:08.400><c> maravilhoso,</c><00:05:09.199><c> é</c>
+
+00:05:09.430 --> 00:05:09.440 align:start position:0%
+do é incrível, é maravilhoso, é
+ 
+
+00:05:09.440 --> 00:05:13.629 align:start position:0%
+do é incrível, é maravilhoso, é
+alucinante,<00:05:10.199><c> é</c><00:05:10.919><c> a</c><00:05:11.120><c> leitura</c><00:05:11.600><c> é</c><00:05:11.800><c> prazerosa,</c><00:05:12.639><c> é</c>
+
+00:05:13.629 --> 00:05:13.639 align:start position:0%
+alucinante, é a leitura é prazerosa, é
+ 
+
+00:05:13.639 --> 00:05:16.629 align:start position:0%
+alucinante, é a leitura é prazerosa, é
+nada<00:05:14.000><c> disso</c><00:05:14.360><c> foi</c><00:05:14.560><c> dito.</c><00:05:15.120><c> O</c><00:05:15.199><c> que</c><00:05:15.360><c> foi</c><00:05:15.560><c> dito</c><00:05:15.880><c> foi</c>
+
+00:05:16.629 --> 00:05:16.639 align:start position:0%
+nada disso foi dito. O que foi dito foi
+ 
+
+00:05:16.639 --> 00:05:19.710 align:start position:0%
+nada disso foi dito. O que foi dito foi
+vai<00:05:16.880><c> cair</c><00:05:17.320><c> certamente</c><00:05:17.960><c> em</c><00:05:18.160><c> alguma</c><00:05:18.600><c> prova,</c><00:05:19.440><c> vai</c>
+
+00:05:19.710 --> 00:05:19.720 align:start position:0%
+vai cair certamente em alguma prova, vai
+ 
+
+00:05:19.720 --> 00:05:21.629 align:start position:0%
+vai cair certamente em alguma prova, vai
+cair<00:05:19.960><c> no</c><00:05:20.120><c> vestibular,</c><00:05:20.680><c> vai</c><00:05:20.800><c> cair.</c><00:05:21.120><c> Ou</c><00:05:21.280><c> seja,</c>
+
+00:05:21.629 --> 00:05:21.639 align:start position:0%
+cair no vestibular, vai cair. Ou seja,
+ 
+
+00:05:21.639 --> 00:05:24.990 align:start position:0%
+cair no vestibular, vai cair. Ou seja,
+Machado<00:05:22.039><c> de</c><00:05:22.199><c> Assis</c><00:05:22.560><c> foi</c><00:05:23.160><c> eh</c><00:05:23.840><c> foi</c><00:05:24.120><c> rebaixado</c><00:05:24.800><c> a</c>
+
+00:05:24.990 --> 00:05:25.000 align:start position:0%
+Machado de Assis foi eh foi rebaixado a
+ 
+
+00:05:25.000 --> 00:05:27.790 align:start position:0%
+Machado de Assis foi eh foi rebaixado a
+uma<00:05:25.240><c> espécie</c><00:05:25.639><c> de</c><00:05:26.479><c> obstáculo</c><00:05:27.120><c> institucional,</c>
+
+00:05:27.790 --> 00:05:27.800 align:start position:0%
+uma espécie de obstáculo institucional,
+ 
+
+00:05:27.800 --> 00:05:30.430 align:start position:0%
+uma espécie de obstáculo institucional,
+uma<00:05:27.919><c> espécie</c><00:05:28.160><c> de</c><00:05:28.400><c> protocolo,</c><00:05:29.440><c> uma</c><00:05:29.680><c> espécie</c><00:05:30.000><c> de</c>
+
+00:05:30.430 --> 00:05:30.440 align:start position:0%
+uma espécie de protocolo, uma espécie de
+ 
+
+00:05:30.440 --> 00:05:34.189 align:start position:0%
+uma espécie de protocolo, uma espécie de
+Então,<00:05:30.800><c> e</c><00:05:31.120><c> eu</c><00:05:31.440><c> desvinculei</c><00:05:32.479><c> a</c><00:05:32.720><c> leitura</c><00:05:33.759><c> de</c><00:05:33.960><c> uma</c>
+
+00:05:34.189 --> 00:05:34.199 align:start position:0%
+Então, e eu desvinculei a leitura de uma
+ 
+
+00:05:34.199 --> 00:05:36.830 align:start position:0%
+Então, e eu desvinculei a leitura de uma
+dimensão<00:05:34.720><c> prazerosa,</c><00:05:35.800><c> instantânea,</c>
+
+00:05:36.830 --> 00:05:36.840 align:start position:0%
+dimensão prazerosa, instantânea,
+ 
+
+00:05:36.840 --> 00:05:40.790 align:start position:0%
+dimensão prazerosa, instantânea,
+imediata,<00:05:37.639><c> que</c><00:05:37.880><c> poderia</c><00:05:38.280><c> ter</c><00:05:38.479><c> sido</c><00:05:39.039><c> eh</c><00:05:39.720><c> ali</c><00:05:40.520><c> e</c>
+
+00:05:40.790 --> 00:05:40.800 align:start position:0%
+imediata, que poderia ter sido eh ali e
+ 
+
+00:05:40.800 --> 00:05:44.670 align:start position:0%
+imediata, que poderia ter sido eh ali e
+costurada<00:05:42.039><c> com</c><00:05:42.759><c> força.</c><00:05:43.720><c> E</c><00:05:44.000><c> se</c><00:05:44.319><c> o</c><00:05:44.520><c> de</c>
+
+00:05:44.670 --> 00:05:44.680 align:start position:0%
+costurada com força. E se o de
+ 
+
+00:05:44.680 --> 00:05:48.150 align:start position:0%
+costurada com força. E se o de
+literatura<00:05:45.360><c> fez</c><00:05:45.720><c> isso,</c><00:05:46.560><c> você</c><00:05:46.919><c> imagina</c><00:05:47.759><c> o</c><00:05:47.960><c> de</c>
+
+00:05:48.150 --> 00:05:48.160 align:start position:0%
+literatura fez isso, você imagina o de
+ 
+
+00:05:48.160 --> 00:05:52.110 align:start position:0%
+literatura fez isso, você imagina o de
+logaritmo,<00:05:49.240><c> o</c><00:05:49.400><c> que</c><00:05:49.560><c> não</c><00:05:49.919><c> respondeu,</c><00:05:51.039><c> é,</c><00:05:51.600><c> né?</c>
+
+00:05:52.110 --> 00:05:52.120 align:start position:0%
+logaritmo, o que não respondeu, é, né?
+ 
+
+00:05:52.120 --> 00:05:55.670 align:start position:0%
+logaritmo, o que não respondeu, é, né?
+É,<00:05:52.520><c> qual</c><00:05:52.800><c> a</c><00:05:53.240><c> importância</c><00:05:54.240><c> de</c><00:05:54.520><c> saber</c><00:05:55.080><c> somar</c>
+
+00:05:55.670 --> 00:05:55.680 align:start position:0%
+É, qual a importância de saber somar
+ 
+
+00:05:55.680 --> 00:05:58.230 align:start position:0%
+É, qual a importância de saber somar
+logaritmo?<00:05:57.039><c> Ele</c><00:05:57.240><c> poderia</c><00:05:57.600><c> ter</c><00:05:57.759><c> dito:</c><00:05:58.080><c> Porque</c>
+
+00:05:58.230 --> 00:05:58.240 align:start position:0%
+logaritmo? Ele poderia ter dito: Porque
+ 
+
+00:05:58.240 --> 00:06:02.110 align:start position:0%
+logaritmo? Ele poderia ter dito: Porque
+a<00:05:58.440><c> matemática</c><00:05:59.840><c> é,</c><00:06:00.960><c> né?</c><00:06:01.280><c> Vem</c><00:06:01.440><c> cá</c><00:06:01.600><c> que</c><00:06:01.720><c> eu</c><00:06:01.840><c> vou</c><00:06:01.960><c> te</c>
+
+00:06:02.110 --> 00:06:02.120 align:start position:0%
+a matemática é, né? Vem cá que eu vou te
+ 
+
+00:06:02.120 --> 00:06:04.990 align:start position:0%
+a matemática é, né? Vem cá que eu vou te
+explicar,<00:06:02.680><c> cara,</c><00:06:03.479><c> o</c><00:06:03.720><c> a</c><00:06:04.000><c> importância</c><00:06:04.759><c> da</c>
+
+00:06:04.990 --> 00:06:05.000 align:start position:0%
+explicar, cara, o a importância da
+ 
+
+00:06:05.000 --> 00:06:08.510 align:start position:0%
+explicar, cara, o a importância da
+matemática<00:06:05.639><c> na</c><00:06:05.919><c> vida.</c><00:06:06.599><c> A</c><00:06:06.800><c> a</c><00:06:07.720><c> eu</c><00:06:07.840><c> vou</c><00:06:08.160><c> eu</c><00:06:08.319><c> vou</c>
+
+00:06:08.510 --> 00:06:08.520 align:start position:0%
+matemática na vida. A a eu vou eu vou
+ 
+
+00:06:08.520 --> 00:06:11.270 align:start position:0%
+matemática na vida. A a eu vou eu vou
+começar<00:06:09.080><c> lá</c><00:06:09.360><c> de</c><00:06:09.560><c> trás,</c><00:06:10.440><c> eu</c><00:06:10.639><c> vou</c><00:06:10.800><c> falar</c><00:06:11.039><c> do</c>
+
+00:06:11.270 --> 00:06:11.280 align:start position:0%
+começar lá de trás, eu vou falar do
+ 
+
+00:06:11.280 --> 00:06:13.629 align:start position:0%
+começar lá de trás, eu vou falar do
+Pitágoras.<00:06:12.160><c> Você</c><00:06:12.560><c> sabia</c><00:06:12.960><c> que</c><00:06:13.199><c> quando</c><00:06:13.440><c> o</c>
+
+00:06:13.629 --> 00:06:13.639 align:start position:0%
+Pitágoras. Você sabia que quando o
+ 
+
+00:06:13.639 --> 00:06:17.110 align:start position:0%
+Pitágoras. Você sabia que quando o
+Pitágoras<00:06:14.880><c> montou</c><00:06:15.319><c> o</c><00:06:15.479><c> teorema</c><00:06:16.080><c> dele</c><00:06:16.800><c> não</c>
+
+00:06:17.110 --> 00:06:17.120 align:start position:0%
+Pitágoras montou o teorema dele não
+ 
+
+00:06:17.120 --> 00:06:20.670 align:start position:0%
+Pitágoras montou o teorema dele não
+havia<00:06:17.759><c> algarismo?</c>
+
+00:06:20.670 --> 00:06:20.680 align:start position:0%
+havia algarismo?
+ 
+
+00:06:20.680 --> 00:06:23.629 align:start position:0%
+havia algarismo?
+Isso<00:06:20.919><c> é</c><00:06:21.039><c> uma</c><00:06:21.199><c> coisa</c><00:06:21.440><c> de</c><00:06:21.680><c> louco.</c><00:06:22.479><c> Ele</c><00:06:22.919><c> ele</c>
+
+00:06:23.629 --> 00:06:23.639 align:start position:0%
+Isso é uma coisa de louco. Ele ele
+ 
+
+00:06:23.639 --> 00:06:26.270 align:start position:0%
+Isso é uma coisa de louco. Ele ele
+propôs<00:06:24.240><c> que</c><00:06:24.400><c> o</c><00:06:24.599><c> quadrado</c><00:06:25.160><c> da</c><00:06:25.360><c> hipotenusa</c><00:06:26.120><c> é</c>
+
+00:06:26.270 --> 00:06:26.280 align:start position:0%
+propôs que o quadrado da hipotenusa é
+ 
+
+00:06:26.280 --> 00:06:28.189 align:start position:0%
+propôs que o quadrado da hipotenusa é
+igual<00:06:26.520><c> a</c><00:06:26.680><c> soma</c><00:06:26.960><c> dos</c><00:06:27.160><c> quadrados</c><00:06:27.560><c> dos</c><00:06:27.680><c> catus,</c>
+
+00:06:28.189 --> 00:06:28.199 align:start position:0%
+igual a soma dos quadrados dos catus,
+ 
+
+00:06:28.199 --> 00:06:33.510 align:start position:0%
+igual a soma dos quadrados dos catus,
+mas<00:06:28.400><c> não</c><00:06:28.680><c> tinha</c><00:06:29.639><c> 2</c><00:06:30.280><c> 3</c><00:06:31.000><c> 4</c><00:06:31.680><c> 5</c><00:06:32.160><c> é</c><00:06:32.400><c> geometria</c><00:06:33.240><c> por</c>
+
+00:06:33.510 --> 00:06:33.520 align:start position:0%
+mas não tinha 2 3 4 5 é geometria por
+ 
+
+00:06:33.520 --> 00:06:37.510 align:start position:0%
+mas não tinha 2 3 4 5 é geometria por
+geometria,<00:06:34.840><c> né?</c><00:06:35.599><c> Pô,</c><00:06:35.919><c> isso</c><00:06:36.160><c> é</c><00:06:36.599><c> incrível</c><00:06:37.319><c> e</c>
+
+00:06:37.510 --> 00:06:37.520 align:start position:0%
+geometria, né? Pô, isso é incrível e
+ 
+
+00:06:37.520 --> 00:06:40.950 align:start position:0%
+geometria, né? Pô, isso é incrível e
+tal.<00:06:37.800><c> poderia,</c><00:06:38.520><c> ele</c><00:06:38.639><c> falou,</c><00:06:39.120><c> malandro,</c><00:06:39.840><c> eh</c>
+
+00:06:40.950 --> 00:06:40.960 align:start position:0%
+tal. poderia, ele falou, malandro, eh
+ 
+
+00:06:40.960 --> 00:06:42.629 align:start position:0%
+tal. poderia, ele falou, malandro, eh
+uma<00:06:41.199><c> questão</c><00:06:41.479><c> de</c><00:06:41.639><c> logaritmo</c><00:06:42.240><c> cai</c><00:06:42.479><c> na</c>
+
+00:06:42.629 --> 00:06:42.639 align:start position:0%
+uma questão de logaritmo cai na
+ 
+
+00:06:42.639 --> 00:06:46.080 align:start position:0%
+uma questão de logaritmo cai na
+fullveste,<00:06:43.560><c> né,</c><00:06:43.840><c> professor</c>
+

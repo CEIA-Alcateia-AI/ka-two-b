@@ -1,0 +1,864 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:01.199 --> 00:00:03.909 align:start position:0%
+ 
+O<00:00:01.480><c> ministro</c><00:00:01.959><c> do</c><00:00:02.200><c> Supremo</c><00:00:02.720><c> Tribunal</c><00:00:03.320><c> Federal,</c>
+
+00:00:03.909 --> 00:00:03.919 align:start position:0%
+O ministro do Supremo Tribunal Federal,
+ 
+
+00:00:03.919 --> 00:00:06.670 align:start position:0%
+O ministro do Supremo Tribunal Federal,
+Alexandre<00:00:04.480><c> de</c><00:00:04.680><c> Moraes,</c><00:00:05.480><c> disse</c><00:00:05.799><c> que</c><00:00:06.160><c> bancos</c>
+
+00:00:06.670 --> 00:00:06.680 align:start position:0%
+Alexandre de Moraes, disse que bancos
+ 
+
+00:00:06.680 --> 00:00:09.669 align:start position:0%
+Alexandre de Moraes, disse que bancos
+brasileiros<00:00:07.680><c> podem</c><00:00:08.080><c> ser</c><00:00:08.440><c> punidos</c><00:00:09.440><c> se</c>
+
+00:00:09.669 --> 00:00:09.679 align:start position:0%
+brasileiros podem ser punidos se
+ 
+
+00:00:09.679 --> 00:00:12.990 align:start position:0%
+brasileiros podem ser punidos se
+aplicarem<00:00:10.360><c> as</c><00:00:10.480><c> sanções</c><00:00:11.240><c> impostas</c><00:00:11.960><c> contra</c><00:00:12.360><c> ele</c>
+
+00:00:12.990 --> 00:00:13.000 align:start position:0%
+aplicarem as sanções impostas contra ele
+ 
+
+00:00:13.000 --> 00:00:15.150 align:start position:0%
+aplicarem as sanções impostas contra ele
+pelos<00:00:13.480><c> Estados</c><00:00:13.880><c> Unidos.</c>
+
+00:00:15.150 --> 00:00:15.160 align:start position:0%
+pelos Estados Unidos.
+ 
+
+00:00:15.160 --> 00:00:17.630 align:start position:0%
+pelos Estados Unidos.
+&gt;&gt; A<00:00:15.280><c> declaração</c><00:00:15.960><c> foi</c><00:00:16.199><c> feita</c><00:00:16.440><c> em</c><00:00:16.640><c> uma</c><00:00:16.880><c> entrevista</c>
+
+00:00:17.630 --> 00:00:17.640 align:start position:0%
+&gt;&gt; A declaração foi feita em uma entrevista
+ 
+
+00:00:17.640 --> 00:00:20.189 align:start position:0%
+&gt;&gt; A declaração foi feita em uma entrevista
+exclusiva<00:00:18.240><c> à</c><00:00:18.400><c> agência</c><00:00:18.880><c> Reuters</c><00:00:19.400><c> concedida</c><00:00:19.960><c> no</c>
+
+00:00:20.189 --> 00:00:20.199 align:start position:0%
+exclusiva à agência Reuters concedida no
+ 
+
+00:00:20.199 --> 00:00:21.870 align:start position:0%
+exclusiva à agência Reuters concedida no
+Gabinete<00:00:20.720><c> de</c><00:00:20.880><c> Morais</c><00:00:21.279><c> na</c><00:00:21.519><c> última</c>
+
+00:00:21.870 --> 00:00:21.880 align:start position:0%
+Gabinete de Morais na última
+ 
+
+00:00:21.880 --> 00:00:24.429 align:start position:0%
+Gabinete de Morais na última
+terça-feira.<00:00:22.960><c> Vídeos</c><00:00:23.279><c> e</c><00:00:23.439><c> fotos</c><00:00:23.880><c> não</c><00:00:24.080><c> foram</c>
+
+00:00:24.429 --> 00:00:24.439 align:start position:0%
+terça-feira. Vídeos e fotos não foram
+ 
+
+00:00:24.439 --> 00:00:27.310 align:start position:0%
+terça-feira. Vídeos e fotos não foram
+permitidos.<00:00:25.560><c> O</c><00:00:25.720><c> ministro</c><00:00:26.199><c> disse:</c><00:00:26.920><c> "Se</c><00:00:27.119><c> os</c>
+
+00:00:27.310 --> 00:00:27.320 align:start position:0%
+permitidos. O ministro disse: "Se os
+ 
+
+00:00:27.320 --> 00:00:29.390 align:start position:0%
+permitidos. O ministro disse: "Se os
+bancos<00:00:27.800><c> resolverem</c><00:00:28.439><c> aplicar</c><00:00:28.800><c> a</c><00:00:28.960><c> lei</c>
+
+00:00:29.390 --> 00:00:29.400 align:start position:0%
+bancos resolverem aplicar a lei
+ 
+
+00:00:29.400 --> 00:00:32.589 align:start position:0%
+bancos resolverem aplicar a lei
+internamente,<00:00:30.359><c> eles</c><00:00:30.599><c> não</c><00:00:30.840><c> podem.</c><00:00:31.599><c> E</c><00:00:31.720><c> aí</c><00:00:32.279><c> eles</c>
+
+00:00:32.589 --> 00:00:32.599 align:start position:0%
+internamente, eles não podem. E aí eles
+ 
+
+00:00:32.599 --> 00:00:35.709 align:start position:0%
+internamente, eles não podem. E aí eles
+podem<00:00:32.920><c> ser</c><00:00:33.280><c> penalizados</c><00:00:34.440><c> internamente."</c>
+
+00:00:35.709 --> 00:00:35.719 align:start position:0%
+podem ser penalizados internamente."
+ 
+
+00:00:35.719 --> 00:00:38.030 align:start position:0%
+podem ser penalizados internamente."
+Morais<00:00:36.160><c> se</c><00:00:36.360><c> refere</c><00:00:36.680><c> à</c><00:00:36.840><c> lei</c><00:00:37.079><c> Magnitsk,</c>
+
+00:00:38.030 --> 00:00:38.040 align:start position:0%
+Morais se refere à lei Magnitsk,
+ 
+
+00:00:38.040 --> 00:00:40.590 align:start position:0%
+Morais se refere à lei Magnitsk,
+considerada<00:00:38.719><c> uma</c><00:00:39.000><c> morte</c><00:00:39.480><c> financeira</c><00:00:40.120><c> do</c><00:00:40.360><c> alvo</c>
+
+00:00:40.590 --> 00:00:40.600 align:start position:0%
+considerada uma morte financeira do alvo
+ 
+
+00:00:40.600 --> 00:00:43.029 align:start position:0%
+considerada uma morte financeira do alvo
+da<00:00:40.800><c> sanção</c><00:00:41.480><c> com</c><00:00:41.680><c> bloqueio</c><00:00:42.039><c> de</c><00:00:42.280><c> contas</c><00:00:42.680><c> em</c>
+
+00:00:43.029 --> 00:00:43.039 align:start position:0%
+da sanção com bloqueio de contas em
+ 
+
+00:00:43.039 --> 00:00:45.270 align:start position:0%
+da sanção com bloqueio de contas em
+instituições<00:00:43.840><c> que</c><00:00:44.039><c> operam</c><00:00:44.480><c> nos</c><00:00:44.800><c> Estados</c>
+
+00:00:45.270 --> 00:00:45.280 align:start position:0%
+instituições que operam nos Estados
+ 
+
+00:00:45.280 --> 00:00:47.869 align:start position:0%
+instituições que operam nos Estados
+Unidos.<00:00:46.160><c> O</c><00:00:46.320><c> ministro</c><00:00:46.800><c> foi</c><00:00:47.039><c> incluído</c><00:00:47.440><c> no</c><00:00:47.680><c> hold</c>
+
+00:00:47.869 --> 00:00:47.879 align:start position:0%
+Unidos. O ministro foi incluído no hold
+ 
+
+00:00:47.879 --> 00:00:49.990 align:start position:0%
+Unidos. O ministro foi incluído no hold
+de<00:00:48.000><c> sancionados</c><00:00:48.680><c> pelo</c><00:00:48.960><c> governo</c><00:00:49.399><c> de</c><00:00:49.600><c> Donald</c>
+
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+de sancionados pelo governo de Donald
+ 
+
+00:00:50.000 --> 00:00:53.270 align:start position:0%
+de sancionados pelo governo de Donald
+Trump<00:00:50.360><c> no</c><00:00:50.559><c> final</c><00:00:50.840><c> de</c><00:00:51.039><c> julho.</c><00:00:51.840><c> 20</c><00:00:52.199><c> dias</c><00:00:52.520><c> depois,</c>
+
+00:00:53.270 --> 00:00:53.280 align:start position:0%
+Trump no final de julho. 20 dias depois,
+ 
+
+00:00:53.280 --> 00:00:55.910 align:start position:0%
+Trump no final de julho. 20 dias depois,
+o<00:00:53.440><c> colega</c><00:00:53.800><c> de</c><00:00:54.039><c> corte,</c><00:00:54.480><c> ministro</c><00:00:54.920><c> Flávio</c><00:00:55.280><c> Dino,</c>
+
+00:00:55.910 --> 00:00:55.920 align:start position:0%
+o colega de corte, ministro Flávio Dino,
+ 
+
+00:00:55.920 --> 00:00:58.310 align:start position:0%
+o colega de corte, ministro Flávio Dino,
+determinou<00:00:56.559><c> que</c><00:00:56.800><c> leis</c><00:00:57.199><c> estrangeiras</c><00:00:58.079><c> não</c>
+
+00:00:58.310 --> 00:00:58.320 align:start position:0%
+determinou que leis estrangeiras não
+ 
+
+00:00:58.320 --> 00:01:01.349 align:start position:0%
+determinou que leis estrangeiras não
+podem<00:00:58.680><c> ser</c><00:00:58.920><c> aplicadas</c><00:00:59.559><c> no</c><00:00:59.800><c> Brasil</c><00:01:00.559><c> sem</c><00:01:00.800><c> o</c><00:01:01.000><c> aval</c>
+
+00:01:01.349 --> 00:01:01.359 align:start position:0%
+podem ser aplicadas no Brasil sem o aval
+ 
+
+00:01:01.359 --> 00:01:04.549 align:start position:0%
+podem ser aplicadas no Brasil sem o aval
+do<00:01:01.680><c> STF.</c><00:01:02.760><c> Morais</c><00:01:03.280><c> reconheceu</c><00:01:03.840><c> que</c><00:01:03.960><c> a</c><00:01:04.119><c> medida</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+do STF. Morais reconheceu que a medida
+ 
+
+00:01:04.559 --> 00:01:07.350 align:start position:0%
+do STF. Morais reconheceu que a medida
+cria<00:01:04.879><c> um</c><00:01:05.119><c> dilema</c><00:01:05.560><c> aos</c><00:01:05.799><c> bancos</c><00:01:06.479><c> com</c><00:01:06.760><c> atuação</c>
+
+00:01:07.350 --> 00:01:07.360 align:start position:0%
+cria um dilema aos bancos com atuação
+ 
+
+00:01:07.360 --> 00:01:10.270 align:start position:0%
+cria um dilema aos bancos com atuação
+nos<00:01:07.640><c> territórios</c><00:01:08.280><c> brasileiro</c><00:01:08.960><c> e</c><00:01:09.200><c> americano.</c>
+
+00:01:10.270 --> 00:01:10.280 align:start position:0%
+nos territórios brasileiro e americano.
+ 
+
+00:01:10.280 --> 00:01:12.390 align:start position:0%
+nos territórios brasileiro e americano.
+Esse<00:01:10.560><c> desvio</c><00:01:10.960><c> de</c><00:01:11.159><c> finalidade</c><00:01:11.720><c> na</c><00:01:11.920><c> aplicação</c>
+
+00:01:12.390 --> 00:01:12.400 align:start position:0%
+Esse desvio de finalidade na aplicação
+ 
+
+00:01:12.400 --> 00:01:14.950 align:start position:0%
+Esse desvio de finalidade na aplicação
+da<00:01:12.600><c> lei</c><00:01:13.200><c> coloca</c><00:01:13.680><c> até</c><00:01:14.200><c> instituições</c>
+
+00:01:14.950 --> 00:01:14.960 align:start position:0%
+da lei coloca até instituições
+ 
+
+00:01:14.960 --> 00:01:17.469 align:start position:0%
+da lei coloca até instituições
+financeiras<00:01:15.520><c> em</c><00:01:15.680><c> uma</c><00:01:15.880><c> situação</c><00:01:16.439><c> difícil.</c><00:01:17.360><c> E</c>
+
+00:01:17.469 --> 00:01:17.479 align:start position:0%
+financeiras em uma situação difícil. E
+ 
+
+00:01:17.479 --> 00:01:19.469 align:start position:0%
+financeiras em uma situação difícil. E
+não<00:01:17.640><c> são</c><00:01:17.840><c> só</c><00:01:18.240><c> instituições</c><00:01:18.920><c> financeiras</c>
+
+00:01:19.469 --> 00:01:19.479 align:start position:0%
+não são só instituições financeiras
+ 
+
+00:01:19.479 --> 00:01:21.950 align:start position:0%
+não são só instituições financeiras
+brasileiras,<00:01:20.520><c> mas</c><00:01:20.799><c> são</c><00:01:21.079><c> seus</c><00:01:21.360><c> parceiros</c>
+
+00:01:21.950 --> 00:01:21.960 align:start position:0%
+brasileiras, mas são seus parceiros
+ 
+
+00:01:21.960 --> 00:01:24.149 align:start position:0%
+brasileiras, mas são seus parceiros
+norte-americanos.<00:01:23.360><c> São</c><00:01:23.600><c> empresas</c>
+
+00:01:24.149 --> 00:01:24.159 align:start position:0%
+norte-americanos. São empresas
+ 
+
+00:01:24.159 --> 00:01:26.550 align:start position:0%
+norte-americanos. São empresas
+norte-americanas<00:01:25.040><c> que</c><00:01:25.240><c> atuam</c><00:01:25.600><c> no</c><00:01:25.840><c> Brasil</c><00:01:26.320><c> e</c>
+
+00:01:26.550 --> 00:01:26.560 align:start position:0%
+norte-americanas que atuam no Brasil e
+ 
+
+00:01:26.560 --> 00:01:28.630 align:start position:0%
+norte-americanas que atuam no Brasil e
+também<00:01:27.000><c> tem</c><00:01:27.280><c> contas,</c><00:01:27.840><c> investimentos,</c>
+
+00:01:28.630 --> 00:01:28.640 align:start position:0%
+também tem contas, investimentos,
+ 
+
+00:01:28.640 --> 00:01:31.310 align:start position:0%
+também tem contas, investimentos,
+financiamentos<00:01:29.479><c> de</c><00:01:29.680><c> bancos</c><00:01:30.040><c> brasileiros.</c>
+
+00:01:31.310 --> 00:01:31.320 align:start position:0%
+financiamentos de bancos brasileiros.
+ 
+
+00:01:31.320 --> 00:01:33.230 align:start position:0%
+financiamentos de bancos brasileiros.
+Ele<00:01:31.560><c> afirmou</c><00:01:32.040><c> que</c><00:01:32.280><c> acredita</c><00:01:32.759><c> na</c><00:01:33.000><c> via</c>
+
+00:01:33.230 --> 00:01:33.240 align:start position:0%
+Ele afirmou que acredita na via
+ 
+
+00:01:33.240 --> 00:01:36.190 align:start position:0%
+Ele afirmou que acredita na via
+diplomática<00:01:34.119><c> para</c><00:01:34.520><c> reverter</c><00:01:35.040><c> a</c><00:01:35.200><c> sanção.</c>
+
+00:01:36.190 --> 00:01:36.200 align:start position:0%
+diplomática para reverter a sanção.
+ 
+
+00:01:36.200 --> 00:01:38.350 align:start position:0%
+diplomática para reverter a sanção.
+Exatamente<00:01:36.759><c> por</c><00:01:36.960><c> isso</c><00:01:37.240><c> que</c><00:01:37.399><c> é</c><00:01:37.600><c> importante,</c><00:01:38.119><c> eu</c>
+
+00:01:38.350 --> 00:01:38.360 align:start position:0%
+Exatamente por isso que é importante, eu
+ 
+
+00:01:38.360 --> 00:01:40.789 align:start position:0%
+Exatamente por isso que é importante, eu
+repito,<00:01:39.119><c> o</c><00:01:39.280><c> canal</c><00:01:39.680><c> diplomático</c><00:01:40.479><c> para</c><00:01:40.640><c> que</c>
+
+00:01:40.789 --> 00:01:40.799 align:start position:0%
+repito, o canal diplomático para que
+ 
+
+00:01:40.799 --> 00:01:43.310 align:start position:0%
+repito, o canal diplomático para que
+isso<00:01:41.079><c> seja</c><00:01:41.439><c> logo</c><00:01:41.799><c> solucionado</c><00:01:42.799><c> para</c><00:01:43.040><c> não</c>
+
+00:01:43.310 --> 00:01:43.320 align:start position:0%
+isso seja logo solucionado para não
+ 
+
+00:01:43.320 --> 00:01:45.510 align:start position:0%
+isso seja logo solucionado para não
+desvirtuar<00:01:43.960><c> a</c><00:01:44.119><c> aplicação</c><00:01:44.680><c> de</c><00:01:44.840><c> uma</c><00:01:45.000><c> lei</c><00:01:45.159><c> que</c><00:01:45.280><c> é</c>
+
+00:01:45.510 --> 00:01:45.520 align:start position:0%
+desvirtuar a aplicação de uma lei que é
+ 
+
+00:01:45.520 --> 00:01:48.109 align:start position:0%
+desvirtuar a aplicação de uma lei que é
+importante<00:01:46.159><c> contra</c><00:01:46.439><c> o</c><00:01:46.600><c> terrorismo,</c><00:01:47.680><c> contra</c>
+
+00:01:48.109 --> 00:01:48.119 align:start position:0%
+importante contra o terrorismo, contra
+ 
+
+00:01:48.119 --> 00:01:50.310 align:start position:0%
+importante contra o terrorismo, contra
+organizações<00:01:48.799><c> criminosas,</c><00:01:49.880><c> contra</c><00:01:50.159><c> o</c>
+
+00:01:50.310 --> 00:01:50.320 align:start position:0%
+organizações criminosas, contra o
+ 
+
+00:01:50.320 --> 00:01:52.510 align:start position:0%
+organizações criminosas, contra o
+tráfico<00:01:50.880><c> internacional</c><00:01:51.439><c> de</c><00:01:51.640><c> drogas,</c><00:01:52.240><c> contra</c>
+
+00:01:52.510 --> 00:01:52.520 align:start position:0%
+tráfico internacional de drogas, contra
+ 
+
+00:01:52.520 --> 00:01:54.469 align:start position:0%
+tráfico internacional de drogas, contra
+o<00:01:52.719><c> tráfico</c><00:01:53.240><c> internacional</c><00:01:53.880><c> de</c><00:01:54.119><c> seres</c>
+
+00:01:54.469 --> 00:01:54.479 align:start position:0%
+o tráfico internacional de seres
+ 
+
+00:01:54.479 --> 00:01:57.109 align:start position:0%
+o tráfico internacional de seres
+humanos.<00:01:55.200><c> Outra</c><00:01:55.880><c> forma</c><00:01:56.240><c> de</c><00:01:56.399><c> se</c><00:01:56.560><c> livrar</c><00:01:56.920><c> do</c>
+
+00:01:57.109 --> 00:01:57.119 align:start position:0%
+humanos. Outra forma de se livrar do
+ 
+
+00:01:57.119 --> 00:01:59.429 align:start position:0%
+humanos. Outra forma de se livrar do
+bloqueio,<00:01:57.680><c> segundo</c><00:01:58.079><c> o</c><00:01:58.200><c> ministro,</c><00:01:59.000><c> seria</c>
+
+00:01:59.429 --> 00:01:59.439 align:start position:0%
+bloqueio, segundo o ministro, seria
+ 
+
+00:01:59.439 --> 00:02:02.670 align:start position:0%
+bloqueio, segundo o ministro, seria
+entrar<00:01:59.799><c> na</c><00:02:00.039><c> justiça</c><00:02:00.560><c> dos</c><00:02:00.880><c> Estados</c><00:02:01.320><c> Unidos.</c><00:02:02.479><c> É</c>
+
+00:02:02.670 --> 00:02:02.680 align:start position:0%
+entrar na justiça dos Estados Unidos. É
+ 
+
+00:02:02.680 --> 00:02:05.069 align:start position:0%
+entrar na justiça dos Estados Unidos. É
+plenamente<00:02:03.439><c> possível</c><00:02:04.000><c> uma</c><00:02:04.360><c> impugnação</c>
+
+00:02:05.069 --> 00:02:05.079 align:start position:0%
+plenamente possível uma impugnação
+ 
+
+00:02:05.079 --> 00:02:07.749 align:start position:0%
+plenamente possível uma impugnação
+judicial.<00:02:05.920><c> E</c><00:02:06.039><c> até</c><00:02:06.320><c> agora</c><00:02:07.039><c> não</c><00:02:07.280><c> encontrei</c>
+
+00:02:07.749 --> 00:02:07.759 align:start position:0%
+judicial. E até agora não encontrei
+ 
+
+00:02:07.759 --> 00:02:10.270 align:start position:0%
+judicial. E até agora não encontrei
+nenhum<00:02:08.280><c> professor</c><00:02:08.800><c> ou</c><00:02:09.080><c> advogado</c><00:02:09.679><c> brasileiro</c>
+
+00:02:10.270 --> 00:02:10.280 align:start position:0%
+nenhum professor ou advogado brasileiro
+ 
+
+00:02:10.280 --> 00:02:12.430 align:start position:0%
+nenhum professor ou advogado brasileiro
+ou<00:02:10.520><c> norte-americano</c><00:02:11.640><c> que</c><00:02:11.879><c> acha</c><00:02:12.160><c> que</c><00:02:12.280><c> a</c>
+
+00:02:12.430 --> 00:02:12.440 align:start position:0%
+ou norte-americano que acha que a
+ 
+
+00:02:12.440 --> 00:02:15.509 align:start position:0%
+ou norte-americano que acha que a
+justiça<00:02:13.120><c> não</c><00:02:13.360><c> iria</c><00:02:13.720><c> reverter,</c><00:02:14.680><c> mas</c><00:02:15.080><c> nesse</c>
+
+00:02:15.509 --> 00:02:15.519 align:start position:0%
+justiça não iria reverter, mas nesse
+ 
+
+00:02:15.519 --> 00:02:17.990 align:start position:0%
+justiça não iria reverter, mas nesse
+momento<00:02:16.200><c> eu</c><00:02:16.440><c> aguardo,</c><00:02:16.879><c> e</c><00:02:17.080><c> foi</c><00:02:17.319><c> uma</c><00:02:17.599><c> opção</c>
+
+00:02:17.990 --> 00:02:18.000 align:start position:0%
+momento eu aguardo, e foi uma opção
+ 
+
+00:02:18.000 --> 00:02:20.670 align:start position:0%
+momento eu aguardo, e foi uma opção
+minha,<00:02:18.720><c> aguardar</c><00:02:19.160><c> a</c><00:02:19.319><c> questão</c><00:02:19.720><c> diplomática</c><00:02:20.440><c> do</c>
+
+00:02:20.670 --> 00:02:20.680 align:start position:0%
+minha, aguardar a questão diplomática do
+ 
+
+00:02:20.680 --> 00:02:23.949 align:start position:0%
+minha, aguardar a questão diplomática do
+país,<00:02:21.319><c> Brasil</c><00:02:21.840><c> e</c><00:02:22.120><c> Estados</c><00:02:22.560><c> Unidos.</c><00:02:23.480><c> Morais</c>
+
+00:02:23.949 --> 00:02:23.959 align:start position:0%
+país, Brasil e Estados Unidos. Morais
+ 
+
+00:02:23.959 --> 00:02:26.670 align:start position:0%
+país, Brasil e Estados Unidos. Morais
+ainda<00:02:24.360><c> atribui</c><00:02:24.840><c> o</c><00:02:25.000><c> desgaste</c><00:02:25.480><c> da</c><00:02:25.680><c> imagem</c><00:02:26.200><c> dele</c>
+
+00:02:26.670 --> 00:02:26.680 align:start position:0%
+ainda atribui o desgaste da imagem dele
+ 
+
+00:02:26.680 --> 00:02:28.990 align:start position:0%
+ainda atribui o desgaste da imagem dele
+entre<00:02:26.879><c> uma</c><00:02:27.120><c> parcela</c><00:02:27.560><c> de</c><00:02:27.720><c> americanos</c><00:02:28.680><c> a</c><00:02:28.840><c> uma</c>
+
+00:02:28.990 --> 00:02:29.000 align:start position:0%
+entre uma parcela de americanos a uma
+ 
+
+00:02:29.000 --> 00:02:31.710 align:start position:0%
+entre uma parcela de americanos a uma
+campanha<00:02:29.440><c> de</c><00:02:29.680><c> aliados</c><00:02:30.200><c> de</c><00:02:30.400><c> Jair</c><00:02:30.760><c> Bolsonaro,</c>
+
+00:02:31.710 --> 00:02:31.720 align:start position:0%
+campanha de aliados de Jair Bolsonaro,
+ 
+
+00:02:31.720 --> 00:02:34.030 align:start position:0%
+campanha de aliados de Jair Bolsonaro,
+incluindo<00:02:32.360><c> o</c><00:02:32.599><c> filho</c><00:02:32.879><c> do</c><00:02:33.120><c> ex-presidente,</c><00:02:33.879><c> o</c>
+
+00:02:34.030 --> 00:02:34.040 align:start position:0%
+incluindo o filho do ex-presidente, o
+ 
+
+00:02:34.040 --> 00:02:36.750 align:start position:0%
+incluindo o filho do ex-presidente, o
+deputado<00:02:34.640><c> Eduardo</c><00:02:35.160><c> Bolsonaro.</c><00:02:36.200><c> A</c><00:02:36.280><c> hora</c><00:02:36.519><c> que</c>
+
+00:02:36.750 --> 00:02:36.760 align:start position:0%
+deputado Eduardo Bolsonaro. A hora que
+ 
+
+00:02:36.760 --> 00:02:38.990 align:start position:0%
+deputado Eduardo Bolsonaro. A hora que
+essas<00:02:37.200><c> informações</c><00:02:37.800><c> forem</c><00:02:38.160><c> corretamente</c>
+
+00:02:38.990 --> 00:02:39.000 align:start position:0%
+essas informações forem corretamente
+ 
+
+00:02:39.000 --> 00:02:41.350 align:start position:0%
+essas informações forem corretamente
+passadas,<00:02:39.920><c> eu</c><00:02:40.120><c> acredito</c><00:02:40.560><c> que</c><00:02:40.760><c> o</c><00:02:40.959><c> próprio</c>
+
+00:02:41.350 --> 00:02:41.360 align:start position:0%
+passadas, eu acredito que o próprio
+ 
+
+00:02:41.360 --> 00:02:43.670 align:start position:0%
+passadas, eu acredito que o próprio
+poder<00:02:41.680><c> executivo</c><00:02:42.280><c> dos</c><00:02:42.519><c> Estados</c><00:02:42.920><c> Unidos,</c><00:02:43.440><c> o</c>
+
+00:02:43.670 --> 00:02:43.680 align:start position:0%
+poder executivo dos Estados Unidos, o
+ 
+
+00:02:43.680 --> 00:02:45.949 align:start position:0%
+poder executivo dos Estados Unidos, o
+presidente<00:02:44.319><c> vai</c><00:02:44.560><c> reverter.</c><00:02:45.599><c> Ao</c><00:02:45.760><c> ser</c>
+
+00:02:45.949 --> 00:02:45.959 align:start position:0%
+presidente vai reverter. Ao ser
+ 
+
+00:02:45.959 --> 00:02:47.910 align:start position:0%
+presidente vai reverter. Ao ser
+questionado<00:02:46.640><c> sobre</c><00:02:46.920><c> o</c><00:02:47.080><c> motivo</c><00:02:47.440><c> desse</c>
+
+00:02:47.910 --> 00:02:47.920 align:start position:0%
+questionado sobre o motivo desse
+ 
+
+00:02:47.920 --> 00:02:50.750 align:start position:0%
+questionado sobre o motivo desse
+otimismo,<00:02:49.080><c> sem</c><00:02:49.360><c> dar</c><00:02:49.599><c> detalhes</c><00:02:50.120><c> de</c><00:02:50.440><c> como</c>
+
+00:02:50.750 --> 00:02:50.760 align:start position:0%
+otimismo, sem dar detalhes de como
+ 
+
+00:02:50.760 --> 00:02:53.390 align:start position:0%
+otimismo, sem dar detalhes de como
+obteve<00:02:51.159><c> a</c><00:02:51.360><c> informação,</c><00:02:52.319><c> o</c><00:02:52.519><c> ministro</c><00:02:53.000><c> disse</c>
+
+00:02:53.390 --> 00:02:53.400 align:start position:0%
+obteve a informação, o ministro disse
+ 
+
+00:02:53.400 --> 00:02:56.030 align:start position:0%
+obteve a informação, o ministro disse
+estar<00:02:53.680><c> ciente</c><00:02:54.120><c> de</c><00:02:54.400><c> divisões</c><00:02:55.319><c> internas</c><00:02:55.840><c> no</c>
+
+00:02:56.030 --> 00:02:56.040 align:start position:0%
+estar ciente de divisões internas no
+ 
+
+00:02:56.040 --> 00:02:59.070 align:start position:0%
+estar ciente de divisões internas no
+governo<00:02:56.480><c> Trump</c><00:02:57.159><c> que</c><00:02:57.480><c> retardaram</c><00:02:58.200><c> as</c><00:02:58.360><c> sanções</c>
+
+00:02:59.070 --> 00:02:59.080 align:start position:0%
+governo Trump que retardaram as sanções
+ 
+
+00:02:59.080 --> 00:03:02.229 align:start position:0%
+governo Trump que retardaram as sanções
+e<00:02:59.280><c> que</c><00:02:59.440><c> ainda</c><00:02:59.840><c> podem</c><00:03:00.360><c> enfraquecê-las.</c><00:03:01.840><c> Nesta</c>
+
+00:03:02.229 --> 00:03:02.239 align:start position:0%
+e que ainda podem enfraquecê-las. Nesta
+ 
+
+00:03:02.239 --> 00:03:04.190 align:start position:0%
+e que ainda podem enfraquecê-las. Nesta
+quarta-feira,<00:03:02.879><c> o</c><00:03:03.040><c> ministro</c><00:03:03.400><c> Flávio</c><00:03:03.760><c> Dino</c>
+
+00:03:04.190 --> 00:03:04.200 align:start position:0%
+quarta-feira, o ministro Flávio Dino
+ 
+
+00:03:04.200 --> 00:03:06.390 align:start position:0%
+quarta-feira, o ministro Flávio Dino
+ironizou<00:03:04.840><c> as</c><00:03:05.040><c> críticas</c><00:03:05.519><c> à</c><00:03:05.720><c> decisão</c><00:03:06.200><c> que</c>
+
+00:03:06.390 --> 00:03:06.400 align:start position:0%
+ironizou as críticas à decisão que
+ 
+
+00:03:06.400 --> 00:03:09.309 align:start position:0%
+ironizou as críticas à decisão que
+tentou<00:03:06.799><c> blindar</c><00:03:07.200><c> Morais</c><00:03:08.080><c> e</c><00:03:08.400><c> negou</c><00:03:08.879><c> relação</c>
+
+00:03:09.309 --> 00:03:09.319 align:start position:0%
+tentou blindar Morais e negou relação
+ 
+
+00:03:09.319 --> 00:03:11.789 align:start position:0%
+tentou blindar Morais e negou relação
+com<00:03:09.519><c> a</c><00:03:09.680><c> queda</c><00:03:09.959><c> da</c><00:03:10.159><c> bolsa</c><00:03:10.519><c> brasileira</c><00:03:11.360><c> no</c><00:03:11.560><c> dia</c>
+
+00:03:11.789 --> 00:03:11.799 align:start position:0%
+com a queda da bolsa brasileira no dia
+ 
+
+00:03:11.799 --> 00:03:14.630 align:start position:0%
+com a queda da bolsa brasileira no dia
+anterior,<00:03:12.640><c> puxada</c><00:03:13.200><c> pela</c><00:03:13.480><c> desvalorização</c><00:03:14.400><c> das</c>
+
+00:03:14.630 --> 00:03:14.640 align:start position:0%
+anterior, puxada pela desvalorização das
+ 
+
+00:03:14.640 --> 00:03:17.470 align:start position:0%
+anterior, puxada pela desvalorização das
+ações<00:03:15.080><c> de</c><00:03:15.319><c> bancos.</c><00:03:15.799><c> Eu</c><00:03:16.360><c> mesmo</c><00:03:16.840><c> proferi</c><00:03:17.280><c> uma</c>
+
+00:03:17.470 --> 00:03:17.480 align:start position:0%
+ações de bancos. Eu mesmo proferi uma
+ 
+
+00:03:17.480 --> 00:03:19.750 align:start position:0%
+ações de bancos. Eu mesmo proferi uma
+decisão
+
+00:03:19.750 --> 00:03:19.760 align:start position:0%
+decisão
+ 
+
+00:03:19.760 --> 00:03:23.509 align:start position:0%
+decisão
+ontem,<00:03:20.239><c> anteontem,</c>
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+ 
+ 
+
+00:03:23.519 --> 00:03:27.229 align:start position:0%
+ 
+eh,<00:03:23.840><c> essas</c><00:03:24.280><c> que</c><00:03:24.879><c> essa</c><00:03:25.200><c> que</c><00:03:25.480><c> dizem</c><00:03:25.879><c> que</c><00:03:27.000><c> eh</c>
+
+00:03:27.229 --> 00:03:27.239 align:start position:0%
+eh, essas que essa que dizem que eh
+ 
+
+00:03:27.239 --> 00:03:29.910 align:start position:0%
+eh, essas que essa que dizem que eh
+derrubou<00:03:27.720><c> os</c><00:03:27.920><c> mercados,</c><00:03:29.159><c> eu</c><00:03:29.360><c> não</c><00:03:29.519><c> sabia</c><00:03:29.799><c> que</c>
+
+00:03:29.910 --> 00:03:29.920 align:start position:0%
+derrubou os mercados, eu não sabia que
+ 
+
+00:03:29.920 --> 00:03:33.670 align:start position:0%
+derrubou os mercados, eu não sabia que
+eu<00:03:30.040><c> era</c><00:03:30.200><c> tão</c><00:03:30.439><c> poderoso,</c><00:03:31.000><c> 42</c><00:03:31.840><c> bilhões</c><00:03:32.480><c> de</c><00:03:33.400><c> de</c>
+
+00:03:33.670 --> 00:03:33.680 align:start position:0%
+eu era tão poderoso, 42 bilhões de de
+ 
+
+00:03:33.680 --> 00:03:36.630 align:start position:0%
+eu era tão poderoso, 42 bilhões de de
+especulação<00:03:34.439><c> financeira.</c><00:03:35.280><c> É</c><00:03:35.439><c> claro</c><00:03:35.799><c> que</c><00:03:36.360><c> uma</c>
+
+00:03:36.630 --> 00:03:36.640 align:start position:0%
+especulação financeira. É claro que uma
+ 
+
+00:03:36.640 --> 00:03:38.509 align:start position:0%
+especulação financeira. É claro que uma
+coisa<00:03:36.920><c> não</c><00:03:37.120><c> tem</c><00:03:37.280><c> nada</c><00:03:37.439><c> a</c><00:03:37.560><c> ver</c><00:03:37.680><c> com</c><00:03:37.799><c> a</c><00:03:37.920><c> outra.</c>
+
+00:03:38.509 --> 00:03:38.519 align:start position:0%
+coisa não tem nada a ver com a outra.
+ 
+
+00:03:38.519 --> 00:03:41.270 align:start position:0%
+coisa não tem nada a ver com a outra.
+Além<00:03:38.840><c> da</c><00:03:39.000><c> lei</c><00:03:39.280><c> magnitisk</c><00:03:40.080><c> contra</c><00:03:40.439><c> Morais,</c><00:03:41.120><c> o</c>
+
+00:03:41.270 --> 00:03:41.280 align:start position:0%
+Além da lei magnitisk contra Morais, o
+ 
+
+00:03:41.280 --> 00:03:43.509 align:start position:0%
+Além da lei magnitisk contra Morais, o
+governo<00:03:41.760><c> dos</c><00:03:42.080><c> Estados</c><00:03:42.480><c> Unidos</c><00:03:43.000><c> também</c>
+
+00:03:43.509 --> 00:03:43.519 align:start position:0%
+governo dos Estados Unidos também
+ 
+
+00:03:43.519 --> 00:03:46.429 align:start position:0%
+governo dos Estados Unidos também
+revogou<00:03:44.040><c> o</c><00:03:44.239><c> visto</c><00:03:44.920><c> de</c><00:03:45.159><c> outras</c><00:03:45.519><c> autoridades</c><00:03:46.239><c> do</c>
+
+00:03:46.429 --> 00:03:46.439 align:start position:0%
+revogou o visto de outras autoridades do
+ 
+
+00:03:46.439 --> 00:03:49.070 align:start position:0%
+revogou o visto de outras autoridades do
+judiciário,<00:03:47.200><c> do</c><00:03:47.480><c> executivo</c><00:03:48.319><c> e</c><00:03:48.519><c> de</c><00:03:48.720><c> seus</c>
+
+00:03:49.070 --> 00:03:49.080 align:start position:0%
+judiciário, do executivo e de seus
+ 
+
+00:03:49.080 --> 00:03:51.190 align:start position:0%
+judiciário, do executivo e de seus
+familiares.<00:03:50.080><c> O</c><00:03:50.239><c> ministro</c><00:03:50.599><c> da</c><00:03:50.840><c> saúde,</c>
+
+00:03:51.190 --> 00:03:51.200 align:start position:0%
+familiares. O ministro da saúde,
+ 
+
+00:03:51.200 --> 00:03:53.270 align:start position:0%
+familiares. O ministro da saúde,
+Alexandre<00:03:51.720><c> Padilha,</c><00:03:52.239><c> estava</c><00:03:52.560><c> com</c><00:03:52.720><c> o</c><00:03:52.920><c> visto</c>
+
+00:03:53.270 --> 00:03:53.280 align:start position:0%
+Alexandre Padilha, estava com o visto
+ 
+
+00:03:53.280 --> 00:03:56.309 align:start position:0%
+Alexandre Padilha, estava com o visto
+vencido<00:03:53.959><c> desde</c><00:03:54.280><c> o</c><00:03:54.400><c> ano</c><00:03:54.640><c> passado,</c><00:03:55.519><c> mas</c><00:03:55.760><c> teve</c>
+
+00:03:56.309 --> 00:03:56.319 align:start position:0%
+vencido desde o ano passado, mas teve
+ 
+
+00:03:56.319 --> 00:03:59.550 align:start position:0%
+vencido desde o ano passado, mas teve
+esposa<00:03:56.680><c> e</c><00:03:56.879><c> filha</c><00:03:57.439><c> afetadas.</c><00:03:58.760><c> Na</c><00:03:58.920><c> terça-feira,</c>
+
+00:03:59.550 --> 00:03:59.560 align:start position:0%
+esposa e filha afetadas. Na terça-feira,
+ 
+
+00:03:59.560 --> 00:04:02.149 align:start position:0%
+esposa e filha afetadas. Na terça-feira,
+o<00:03:59.720><c> Itamarati</c><00:04:00.400><c> enviou</c><00:04:00.799><c> à</c><00:04:01.079><c> Embaixada</c><00:04:01.640><c> americana</c>
+
+00:04:02.149 --> 00:04:02.159 align:start position:0%
+o Itamarati enviou à Embaixada americana
+ 
+
+00:04:02.159 --> 00:04:05.069 align:start position:0%
+o Itamarati enviou à Embaixada americana
+um<00:04:02.319><c> pedido</c><00:04:02.760><c> de</c><00:04:02.959><c> um</c><00:04:03.159><c> novo</c><00:04:03.519><c> visto</c><00:04:03.879><c> para</c><00:04:04.120><c> Padilha,</c>
+
+00:04:05.069 --> 00:04:05.079 align:start position:0%
+um pedido de um novo visto para Padilha,
+ 
+
+00:04:05.079 --> 00:04:06.869 align:start position:0%
+um pedido de um novo visto para Padilha,
+uma<00:04:05.319><c> vez</c><00:04:05.560><c> que</c><00:04:05.720><c> o</c><00:04:05.879><c> ministro</c><00:04:06.319><c> pretende</c>
+
+00:04:06.869 --> 00:04:06.879 align:start position:0%
+uma vez que o ministro pretende
+ 
+
+00:04:06.879 --> 00:04:09.270 align:start position:0%
+uma vez que o ministro pretende
+participar<00:04:07.360><c> de</c><00:04:07.680><c> dois</c><00:04:08.079><c> eventos</c><00:04:08.519><c> nos</c><00:04:08.840><c> Estados</c>
+
+00:04:09.270 --> 00:04:09.280 align:start position:0%
+participar de dois eventos nos Estados
+ 
+
+00:04:09.280 --> 00:04:11.830 align:start position:0%
+participar de dois eventos nos Estados
+Unidos,<00:04:10.200><c> uma</c><00:04:10.439><c> reunião</c><00:04:10.879><c> da</c><00:04:11.159><c> Organização</c>
+
+00:04:11.830 --> 00:04:11.840 align:start position:0%
+Unidos, uma reunião da Organização
+ 
+
+00:04:11.840 --> 00:04:14.630 align:start position:0%
+Unidos, uma reunião da Organização
+Pan-Americana<00:04:12.599><c> de</c><00:04:12.799><c> Saúde</c><00:04:13.560><c> e</c><00:04:13.799><c> a</c><00:04:14.000><c> Assembleia</c>
+
+00:04:14.630 --> 00:04:14.640 align:start position:0%
+Pan-Americana de Saúde e a Assembleia
+ 
+
+00:04:14.640 --> 00:04:17.550 align:start position:0%
+Pan-Americana de Saúde e a Assembleia
+Geral<00:04:14.959><c> da</c><00:04:15.159><c> ONU.</c><00:04:15.920><c> A</c><00:04:16.040><c> diplomacia</c><00:04:16.720><c> se</c><00:04:16.919><c> baseou</c><00:04:17.280><c> num</c>
+
+00:04:17.550 --> 00:04:17.560 align:start position:0%
+Geral da ONU. A diplomacia se baseou num
+ 
+
+00:04:17.560 --> 00:04:20.150 align:start position:0%
+Geral da ONU. A diplomacia se baseou num
+acordo<00:04:18.120><c> internacional</c><00:04:19.120><c> que</c><00:04:19.400><c> impede</c><00:04:19.840><c> que</c><00:04:20.000><c> o</c>
+
+00:04:20.150 --> 00:04:20.160 align:start position:0%
+acordo internacional que impede que o
+ 
+
+00:04:20.160 --> 00:04:23.189 align:start position:0%
+acordo internacional que impede que o
+país<00:04:20.600><c> sede</c><00:04:20.919><c> de</c><00:04:21.120><c> organismos</c><00:04:21.720><c> da</c><00:04:21.919><c> ONU</c><00:04:22.560><c> proíba</c><00:04:23.000><c> o</c>
+
+00:04:23.189 --> 00:04:23.199 align:start position:0%
+país sede de organismos da ONU proíba o
+ 
+
+00:04:23.199 --> 00:04:25.270 align:start position:0%
+país sede de organismos da ONU proíba o
+acesso<00:04:23.520><c> de</c><00:04:23.680><c> autoridades</c><00:04:24.400><c> a</c><00:04:24.639><c> encontros</c>
+
+00:04:25.270 --> 00:04:25.280 align:start position:0%
+acesso de autoridades a encontros
+ 
+
+00:04:25.280 --> 00:04:28.189 align:start position:0%
+acesso de autoridades a encontros
+multilaterais.<00:04:26.639><c> Nenhum</c><00:04:27.000><c> país</c><00:04:27.280><c> do</c><00:04:27.479><c> mundo</c><00:04:27.720><c> pode</c>
+
+00:04:28.189 --> 00:04:28.199 align:start position:0%
+multilaterais. Nenhum país do mundo pode
+ 
+
+00:04:28.199 --> 00:04:29.870 align:start position:0%
+multilaterais. Nenhum país do mundo pode
+impedir<00:04:28.560><c> o</c><00:04:28.759><c> acesso</c><00:04:29.120><c> do</c><00:04:29.280><c> autorizário</c><00:04:29.720><c> a</c>
+
+00:04:29.870 --> 00:04:29.880 align:start position:0%
+impedir o acesso do autorizário a
+ 
+
+00:04:29.880 --> 00:04:32.430 align:start position:0%
+impedir o acesso do autorizário a
+participar<00:04:30.199><c> de</c><00:04:30.280><c> um</c><00:04:30.360><c> evento</c><00:04:30.639><c> como</c><00:04:30.840><c> esse.</c><00:04:31.880><c> SBT</c>
+
+00:04:32.430 --> 00:04:32.440 align:start position:0%
+participar de um evento como esse. SBT
+ 
+
+00:04:32.440 --> 00:04:35.670 align:start position:0%
+participar de um evento como esse. SBT
+News,<00:04:33.479><c> o</c><00:04:33.720><c> maior</c><00:04:34.240><c> canal</c><00:04:34.560><c> de</c><00:04:34.759><c> notícias</c><00:04:35.320><c> do</c>
+
+00:04:35.670 --> 00:04:35.680 align:start position:0%
+News, o maior canal de notícias do
+ 
+
+00:04:35.680 --> 00:04:36.030 align:start position:0%
+News, o maior canal de notícias do
+YouTube.
+
+00:04:36.030 --> 00:04:36.040 align:start position:0%
+YouTube.
+ 
+
+00:04:36.040 --> 00:04:39.999 align:start position:0%
+YouTube.
+[Música]
+

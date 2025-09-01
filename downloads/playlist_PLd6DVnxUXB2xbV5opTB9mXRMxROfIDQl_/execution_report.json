@@ -1,0 +1,63 @@
+{
+  "status": "success",
+  "message": "Pipeline executado com sucesso",
+  "config_summary": {
+    "url_original": "https://www.youtube.com/watch?v=TRPBY_lxJfE&list=PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_",
+    "tipo_detectado": "playlist",
+    "content_id": "PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_",
+    "limite_downloads": 10,
+    "qualidade_audio": "256 kbps",
+    "formato_audio": "MP3",
+    "delay_range": "15-45s",
+    "linguagens_legenda": "pt-BR > pt",
+    "pasta_saida": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_",
+    "arquivos_controle": {
+      "lista_videos": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/youtube_videos.txt",
+      "log_erros": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/download_errors.json",
+      "log_sucessos": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/download_success.json"
+    }
+  },
+  "stats": {
+    "started_at": "2025-08-31 21:22:39.510741",
+    "finished_at": null,
+    "total_execution_time": 0,
+    "videos_attempted": 3,
+    "videos_successful": 3,
+    "videos_failed": 0,
+    "videos_skipped": 0,
+    "audio_files_created": 3,
+    "subtitle_files_created": 0
+  },
+  "success_log": [
+    {
+      "video_id": "TRPBY_lxJfE",
+      "timestamp": "2025-08-31T21:23:08.298398",
+      "audio_downloaded": true,
+      "subtitle_downloaded": false,
+      "audio_size_mb": 16.04,
+      "subtitle_size_kb": 0
+    },
+    {
+      "video_id": "SbqKZdL_Mfc",
+      "timestamp": "2025-08-31T21:23:58.194774",
+      "audio_downloaded": true,
+      "subtitle_downloaded": false,
+      "audio_size_mb": 14.44,
+      "subtitle_size_kb": 0
+    },
+    {
+      "video_id": "A8PX38jfPI8",
+      "timestamp": "2025-08-31T21:25:00.349143",
+      "audio_downloaded": true,
+      "subtitle_downloaded": false,
+      "audio_size_mb": 9.39,
+      "subtitle_size_kb": 0
+    }
+  ],
+  "error_log": [],
+  "files_created": {
+    "videos_list": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/youtube_videos.txt",
+    "success_log": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/download_success.json",
+    "error_log": "downloads/playlist_PLd6DVnxUXB2xbV5opTB9mXRMxROfIDQl_/download_errors.json"
+  }
+}
