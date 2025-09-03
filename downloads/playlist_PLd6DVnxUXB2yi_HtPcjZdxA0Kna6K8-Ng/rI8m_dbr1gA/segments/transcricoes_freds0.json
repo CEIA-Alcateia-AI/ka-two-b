@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "model": "freds0/distil-whisper-large-v3-ptbr",
+    "directory": "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/rI8m_dbr1gA/segments",
+    "total_segments": 32,
+    "processing_date": "2025-09-02T09:34:30.207476",
+    "config": {
+      "chunk_length_s": 30,
+      "stride_length_s": 5,
+      "return_timestamps": true
+    }
+  },
+  "transcriptions": {
+    "rI8m_dbr1gA_0": {
+      "text": "O ministro do Supremo Tribunal Federal, Alexandre de Moraes,",
+      "transcription_time": 18.591703176498413,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:34:48.799444",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O ministro do Supremo Tribunal Federal, Alexandre de Moraes,"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_1": {
+      "text": " se aplicarem as sanções impostas contra eles",
+      "transcription_time": 18.2482750415802,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:35:07.048053",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": " se aplicarem as sanções impostas contra eles"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_10": {
+      "text": "contra o tráfico internacional de drogas contra o tráfico internacional de seres humanos.",
+      "transcription_time": 20.182323455810547,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:35:27.230720",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "contra o tráfico internacional de drogas contra o tráfico internacional de seres humanos."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_11": {
+      "text": "é plenamente possível uma impugnação judicial e até agora",
+      "transcription_time": 19.967597723007202,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:35:47.198701",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "é plenamente possível uma impugnação judicial e até agora"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_12": {
+      "text": "Não encontrei nenhum professor ou advogado brasileiro ou norte-americano",
+      "transcription_time": 22.69880199432373,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:36:09.897883",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Não encontrei nenhum professor ou advogado brasileiro ou norte-americano"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_13": {
+      "text": "aguardar a questão diplomática do país, Brasil e Estados Unidos.",
+      "transcription_time": 25.410037517547607,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:36:35.308265",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "aguardar a questão diplomática do país, Brasil e Estados Unidos."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_14": {
+      "text": "Murais ainda atribui o desgaste da imagem dele, entre uma parcela de americanos,",
+      "transcription_time": 20.81620144844055,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:36:56.124578",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Murais ainda atribui o desgaste da imagem dele, entre uma parcela de americanos,"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_15": {
+      "text": "Eu acredito que o próprio Poder Executivo dos Estados Unidos, o presidente vai reverter.",
+      "transcription_time": 19.11676335334778,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:37:15.241436",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Eu acredito que o próprio Poder Executivo dos Estados Unidos, o presidente vai reverter."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_16": {
+      "text": "O ministro disse estar ciente de divisões internas no governo Trump",
+      "transcription_time": 18.911207675933838,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:37:34.152737",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O ministro disse estar ciente de divisões internas no governo Trump"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_17": {
+      "text": "Nesta quarta-feira, o ministro Flávio Tino ironizou as críticas à decisão que tentou blindar morais",
+      "transcription_time": 19.881627559661865,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:37:54.034458",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Nesta quarta-feira, o ministro Flávio Tino ironizou as críticas à decisão que tentou blindar morais"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_18": {
+      "text": "Eu não sabia que eu era tão poderoso, 42 bilhões de...",
+      "transcription_time": 19.044185161590576,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:38:13.078966",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Eu não sabia que eu era tão poderoso, 42 bilhões de..."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_19": {
+      "text": "de especulação financeira. É claro que uma coisa não tem nada",
+      "transcription_time": 18.880990982055664,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:38:31.960056",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "de especulação financeira. É claro que uma coisa não tem nada"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_2": {
+      "text": " A declaração foi feita em uma entrevista exclusiva à agência Reuters concedida no Gabinete de Moraes na última terça-feira.",
+      "transcription_time": 20.623060703277588,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:38:52.583516",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": " A declaração foi feita em uma entrevista exclusiva à agência Reuters concedida no Gabinete de Moraes na última terça-feira."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_20": {
+      "text": "nada a ver com a outra. Além da lei Magnetzki contra Moraes, o governo...",
+      "transcription_time": 21.373274087905884,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:39:13.957108",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "nada a ver com a outra. Além da lei Magnetzki contra Moraes, o governo..."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_21": {
+      "text": "governo dos Estados Unidos também revogou o visto de outras",
+      "transcription_time": 21.400773525238037,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:39:35.358243",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "governo dos Estados Unidos também revogou o visto de outras"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_22": {
+      "text": "autoridades do judiciário, do executivo e de seus familiares.",
+      "transcription_time": 21.894092798233032,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:39:57.252733",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "autoridades do judiciário, do executivo e de seus familiares."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_23": {
+      "text": "O ministro da Saúde, Alexandre Padilha, estava com o visto vencido.",
+      "transcription_time": 25.431226015090942,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:40:22.684301",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O ministro da Saúde, Alexandre Padilha, estava com o visto vencido."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_24": {
+      "text": " Na terça-feira, o Itamarati enviou a Embaixada Americana um pedido de um novo visto para a Padilha.",
+      "transcription_time": 23.27170753479004,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:40:45.956338",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": " Na terça-feira, o Itamarati enviou a Embaixada Americana um pedido de um novo visto para a Padilha."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_25": {
+      "text": "Uma vez que o ministro pretende participar de dois eventos nos Estados Unidos.",
+      "transcription_time": 22.110188722610474,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:41:08.066853",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Uma vez que o ministro pretende participar de dois eventos nos Estados Unidos."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_26": {
+      "text": "Uma reunião da organização pan-americana de saúde.",
+      "transcription_time": 23.884584665298462,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:41:31.951754",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Uma reunião da organização pan-americana de saúde."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_27": {
+      "text": "e a Assembleia Geral da ONU. A diplomacia se baseou...",
+      "transcription_time": 24.23620581626892,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:41:56.188280",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "e a Assembleia Geral da ONU. A diplomacia se baseou..."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_28": {
+      "text": "ou num acordo internacional que impede que o país sede de organização",
+      "transcription_time": 23.304553270339966,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:42:19.493150",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "ou num acordo internacional que impede que o país sede de organização"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_29": {
+      "text": "organismos da ONU proíba o acesso de autoridades a encontros",
+      "transcription_time": 21.030007362365723,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:42:40.523260",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "organismos da ONU proíba o acesso de autoridades a encontros"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_3": {
+      "text": "Se os bancos resolverem aplicar a lei internamente, eles não podem.",
+      "transcription_time": 20.923876762390137,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:43:01.447516",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Se os bancos resolverem aplicar a lei internamente, eles não podem."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_30": {
+      "text": "Nenhum país ou mundo pode impedir o acesso na autoridade a participar de um evento como isso.",
+      "transcription_time": 24.72635293006897,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:43:26.174211",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Nenhum país ou mundo pode impedir o acesso na autoridade a participar de um evento como isso."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_31": {
+      "text": "SBT News, o maior canal de notícias do YouTube.",
+      "transcription_time": 21.76196575164795,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:43:47.936550",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "SBT News, o maior canal de notícias do YouTube."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_4": {
+      "text": "com bloqueio de contas em instituições que operam nos Estados Unidos.",
+      "transcription_time": 27.10119652748108,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:44:15.038080",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "com bloqueio de contas em instituições que operam nos Estados Unidos."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_5": {
+      "text": "O ministro foi incluído no hall de sancionados pelo governo de Donald Trump no final de julho.",
+      "transcription_time": 28.108490228652954,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:44:43.146884",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O ministro foi incluído no hall de sancionados pelo governo de Donald Trump no final de julho."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_6": {
+      "text": "O colega de corte, ministro Flávio Dino, determinou que leis estrangeiras não podem ser aplicadas no Brasil",
+      "transcription_time": 24.125768184661865,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:45:07.272972",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O colega de corte, ministro Flávio Dino, determinou que leis estrangeiras não podem ser aplicadas no Brasil"
+        }
+      ]
+    },
+    "rI8m_dbr1gA_7": {
+      "text": "São empresas norte-americanas que atuam no Brasil e também têm contas, investimentos, financiamentos de bancos brasileiros.",
+      "transcription_time": 25.1680691242218,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:45:32.441424",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "São empresas norte-americanas que atuam no Brasil e também têm contas, investimentos, financiamentos de bancos brasileiros."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_8": {
+      "text": "Ele afirmou que acredita na via diplomática para reverter a sanção.",
+      "transcription_time": 25.227018117904663,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:45:57.668784",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Ele afirmou que acredita na via diplomática para reverter a sanção."
+        }
+      ]
+    },
+    "rI8m_dbr1gA_9": {
+      "text": "para não desvirtuar a aplicação de uma lei que é importante contra o terrorismo.",
+      "transcription_time": 24.927910089492798,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:46:22.597078",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "para não desvirtuar a aplicação de uma lei que é importante contra o terrorismo."
+        }
+      ]
+    }
+  },
+  "stats": {
+    "successful": 32,
+    "failed": 0,
+    "total_duration": 0,
+    "total_processing_time": 712.3800373077393
+  }
+}

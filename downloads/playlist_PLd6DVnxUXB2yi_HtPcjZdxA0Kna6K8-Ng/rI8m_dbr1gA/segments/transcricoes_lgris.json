@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "model": "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese",
+    "directory": "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/rI8m_dbr1gA/segments",
+    "total_segments": 32,
+    "processing_date": "2025-09-02T00:42:25.344278",
+    "config": {
+      "sample_rate": 16000,
+      "chunk_length": 30
+    }
+  },
+  "transcriptions": {
+    "rI8m_dbr1gA_0": {
+      "text": "O MINISTRO DO SUPREMO TRIBUNAL FEDERAL ALEXANDRE DE MORAES",
+      "transcription_time": 0.7829403877258301,
+      "duration": 4.124,
+      "timestamp": "2025-09-02T00:42:26.127281"
+    },
+    "rI8m_dbr1gA_1": {
+      "text": "UNIDOS SE APLICAREM ÀS SANÇÕES IMPOSTAS CONTRA ELES",
+      "transcription_time": 0.7710332870483398,
+      "duration": 4.316,
+      "timestamp": "2025-09-02T00:42:26.898396"
+    },
+    "rI8m_dbr1gA_10": {
+      "text": "CONTRA O TRÁFICO INTERNACIONAL DE DROGAS CONTRA O TRÁFICO INTERNACIONAL DE SERES HUMANOS",
+      "transcription_time": 0.9174048900604248,
+      "duration": 5.276,
+      "timestamp": "2025-09-02T00:42:27.815884"
+    },
+    "rI8m_dbr1gA_11": {
+      "text": "É PLENAMENTE POSSÍVEL UMA IMPUGNAÇÃO JUDICIAL E ATÉ AGORA",
+      "transcription_time": 0.7750000953674316,
+      "duration": 4.38,
+      "timestamp": "2025-09-02T00:42:28.590975"
+    },
+    "rI8m_dbr1gA_12": {
+      "text": "NÃO ENCONTREI NENHUM PROFESSOR OU ADVOGADO BRASILEIRO OU NORTE-AMERICANO",
+      "transcription_time": 0.8076817989349365,
+      "duration": 4.476,
+      "timestamp": "2025-09-02T00:42:29.398771"
+    },
+    "rI8m_dbr1gA_13": {
+      "text": "AGUARDAR A QUESTÃO DIPLOMÁTICA DO PAÍS BRASIL E ESTADOS UNIDOS",
+      "transcription_time": 0.7542176246643066,
+      "duration": 4.476,
+      "timestamp": "2025-09-02T00:42:30.153070"
+    },
+    "rI8m_dbr1gA_14": {
+      "text": "MORAIS AINDA ATRIBUI O DESGASTE DA IMAGEM DELE ENTRE UMA PARCELA DE AMERICANOS",
+      "transcription_time": 0.8603532314300537,
+      "duration": 4.988,
+      "timestamp": "2025-09-02T00:42:31.013501"
+    },
+    "rI8m_dbr1gA_15": {
+      "text": "EU ACREDITO QUE O PRÓPRIO PODER EXECUTIVO DOS ESTADOS UNIDOS O PRESIDENTE VAI REVERTER",
+      "transcription_time": 0.8962645530700684,
+      "duration": 5.244,
+      "timestamp": "2025-09-02T00:42:31.909843"
+    },
+    "rI8m_dbr1gA_16": {
+      "text": "O MINISTRO DISSE ESTAR CIENTE DE DIVISÕES INTERNAS NO GOVERNO TRAMPE",
+      "transcription_time": 0.7826178073883057,
+      "duration": 4.636,
+      "timestamp": "2025-09-02T00:42:32.692542"
+    },
+    "rI8m_dbr1gA_17": {
+      "text": "NESTA QUARTA-FEIRA O MINISTRO FLAVENTINO IRONIZOU AS CRÍTICAS A DECISÃO QUE TENTOU BLINDAR MORAES",
+      "transcription_time": 1.0196025371551514,
+      "duration": 6.076,
+      "timestamp": "2025-09-02T00:42:33.712225"
+    },
+    "rI8m_dbr1gA_18": {
+      "text": "EU NÃO SABIA QUE EU ERA TÃO PODEROSO QUARENTA E DOIS BILHÕES DE",
+      "transcription_time": 0.6859302520751953,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:34.398245"
+    },
+    "rI8m_dbr1gA_19": {
+      "text": "DE ESPECULAÇÃO FINANCEIRA É CLARO QUE UMA COISA NÃO TEM",
+      "transcription_time": 0.6871120929718018,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:35.085443"
+    },
+    "rI8m_dbr1gA_2": {
+      "text": "A DECLARAÇÃO FOI FEITA EM UMA ENTREVISTA EXCLUSIVA AGÊNCIA ROITERS CONCEDIDA NO GABINETE DE MORAIS NA ÚLTIMA TERÇA-FEIRA",
+      "transcription_time": 1.2388479709625244,
+      "duration": 7.484,
+      "timestamp": "2025-09-02T00:42:36.324371"
+    },
+    "rI8m_dbr1gA_20": {
+      "text": "DAVICO A OUTRA ALÉM DA LEI MAGNETES QUE CONTRA MORAES O",
+      "transcription_time": 0.6861481666564941,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:37.010604"
+    },
+    "rI8m_dbr1gA_21": {
+      "text": "OVERNO DOS ESTADOS UNIDOS TAMBÉM REVOGOU O VISTO DE OUTRAS",
+      "transcription_time": 0.6823315620422363,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:37.693012"
+    },
+    "rI8m_dbr1gA_22": {
+      "text": "AUTORIDADES DO JUDICIÁRIO DO EXECUTIVO E DE SEUS FAMILIARS",
+      "transcription_time": 0.6823177337646484,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:38.375405"
+    },
+    "rI8m_dbr1gA_23": {
+      "text": "RS O MINISTRO DA SAÚDE ALEXANDRE PADILHA ESTAVA COMOVISTO",
+      "transcription_time": 0.6988828182220459,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:39.074369"
+    },
+    "rI8m_dbr1gA_24": {
+      "text": "NA TERÇA-FEIRA O ITAMARATY ENVIOU A EMBAIXADA AMERICANA UM PEDIDO DE UM NOVO VISTO PARA A PADILHA",
+      "transcription_time": 1.018289566040039,
+      "duration": 6.044,
+      "timestamp": "2025-09-02T00:42:40.092740"
+    },
+    "rI8m_dbr1gA_25": {
+      "text": "UMA VEZ QUE O MINISTRO PRETENDE PARTICIPAR DE DOIS EVENTOS NOS",
+      "transcription_time": 0.6846923828125,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:40.777516"
+    },
+    "rI8m_dbr1gA_26": {
+      "text": "OS UNIDOS UMA REUNIÃO DA ORGANIZAÇÃO PLANA AMERICANA DE SAÚDE",
+      "transcription_time": 0.6838510036468506,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:41.461454"
+    },
+    "rI8m_dbr1gA_27": {
+      "text": "E A ASSEMBLÉIA GERAL DA ONO A DIPLOMACIA SEBA",
+      "transcription_time": 0.6861135959625244,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:42.147647"
+    },
+    "rI8m_dbr1gA_28": {
+      "text": "OU NUM ACORDO INTERNACIONAL QUE IMPEDE QUE O PAÍS CERDE DE",
+      "transcription_time": 0.6843454837799072,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:42.832076"
+    },
+    "rI8m_dbr1gA_29": {
+      "text": "GANISMOS DA ONO PROÍBA O ACESSO DE AUTORIDADES A ENCONTROS",
+      "transcription_time": 0.682802677154541,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:43.514959"
+    },
+    "rI8m_dbr1gA_3": {
+      "text": "SE OS BANCOS RESOLVEREM APLICAR A LEI INTERNAMENTE ELES NÃO PODEM",
+      "transcription_time": 0.7468357086181641,
+      "duration": 4.348,
+      "timestamp": "2025-09-02T00:42:44.261873"
+    },
+    "rI8m_dbr1gA_30": {
+      "text": "NENHUM PAÍS O MUNO PODE IMPEDIR O ACESSO NA AUTOLIDADE A PARTICIPAR GOM EVENTO COM MUES",
+      "transcription_time": 0.7505199909210205,
+      "duration": 4.476,
+      "timestamp": "2025-09-02T00:42:45.012475"
+    },
+    "rI8m_dbr1gA_31": {
+      "text": "ERSI BETENIOS O MAIOR CANAL DE NOTÍCIAS DO IOTO",
+      "transcription_time": 0.9062435626983643,
+      "duration": 5.404,
+      "timestamp": "2025-09-02T00:42:45.918795"
+    },
+    "rI8m_dbr1gA_4": {
+      "text": "CONVOQUEI O DE CONTAS EM INSTITUIÇÕES QUE OPERAM NOS ESTADOS UNIDOS",
+      "transcription_time": 0.7451212406158447,
+      "duration": 4.412,
+      "timestamp": "2025-09-02T00:42:46.663996"
+    },
+    "rI8m_dbr1gA_5": {
+      "text": "O MINISTRO FOI INCLUÍDO NO ROL DE SANCIONADOS PELO GOVERNO DE DONAL DE TRAMPE E NO FINAL DE JULHO",
+      "transcription_time": 0.952401876449585,
+      "duration": 5.372,
+      "timestamp": "2025-09-02T00:42:47.616477"
+    },
+    "rI8m_dbr1gA_6": {
+      "text": "O COLEGA DE CORTE MINISTRO FLÁVIO DINO DETERMINOU QUE LEIS ESTRANGEIRAS NÃO PODEM SER APLICADAS NO BRASIL",
+      "transcription_time": 1.174034833908081,
+      "duration": 7.068,
+      "timestamp": "2025-09-02T00:42:48.790598"
+    },
+    "rI8m_dbr1gA_7": {
+      "text": "SÃO EMPRESAS NORTE-AMERICANAS QUE ATUAM NO BRASIL E TAMBÉM TEM CONTAS INVESTIMENTOS FINANCIAMENTOS DE BANCOS BRASILEIROS",
+      "transcription_time": 1.2533624172210693,
+      "duration": 7.548,
+      "timestamp": "2025-09-02T00:42:50.044046"
+    },
+    "rI8m_dbr1gA_8": {
+      "text": "ELE AFIRMOU QUE ACREDITA NAVIA DIPLOMÁTICA PARA REVERTER A SANÇÃO",
+      "transcription_time": 0.7931411266326904,
+      "duration": 4.508,
+      "timestamp": "2025-09-02T00:42:50.837267"
+    },
+    "rI8m_dbr1gA_9": {
+      "text": "PARA NÃO DESVIRTUAR A APLICAÇÃO DE UMA LEI QUE É IMPORTANTE CONTRA O TERRORISMO",
+      "transcription_time": 0.7681965827941895,
+      "duration": 4.604,
+      "timestamp": "2025-09-02T00:42:51.605563"
+    }
+  },
+  "stats": {
+    "successful": 32,
+    "failed": 0,
+    "total_duration": 153.81000000000003,
+    "total_processing_time": 26.258638858795166
+  }
+}

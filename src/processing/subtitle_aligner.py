@@ -1,652 +1,680 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Módulo de Alinhamento de Legendas com Segmentos de Áudio
-Implementa alinhamento matemático baseado em timestamps do arquivo .srt
-Preparado para futura integração com Streamlit
+Modulo de Alinhamento de Legendas para Segmentos de Audio
+Mapeia legendas WebVTT/SRT completas para segmentos de audio individuais
+Preparado para integracao com Streamlit e pipeline modular
 """
 
 import os
 import re
 import json
-import time
+import csv
 from pathlib import Path
-from typing import List, Dict, Tuple, Optional
+from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
-import librosa
+import unicodedata
 
 
 @dataclass
 class AlignmentConfig:
     """
-    Configurações para alinhamento temporal
-    Parâmetros ajustáveis baseados no projeto original
+    Configuracoes para alinhamento de legendas
+    Parametros baseados em benchmarks da industria TTS/STT
     """
-    # Tolerância temporal para busca de correspondência
-    time_tolerance_sec: float = 0.5     # Aceita diferença de até 500ms
+    # Qualidade minima do texto
+    min_text_length: int = 10          # Caracteres minimos por segmento
+    max_text_length: int = 200         # Caracteres maximos por segmento
     
-    # Tratamento de segmentos sem correspondência
-    allow_orphan_segments: bool = True  # Mantém segmentos sem texto correspondente
-    min_text_length: int = 3           # Descarta textos muito curtos (ex: "ah", "hmm")
+    # Configuracao de confianca (ajustado para dados reais)
+    min_confidence_score: float = 0.6  # Score minimo para incluir no dataset
     
-    # Configurações de output
-    output_format: str = "json"        # Formato: json ou csv
-    preserve_original_text: bool = True # Mantém texto original antes da normalização
-
-
-class SubtitleParser:
-    """
-    Parser especializado para arquivos .srt
-    Extrai timestamps e textos de forma robusta
-    """
-    
-    @staticmethod
-    def parse_srt_file(srt_path: str) -> List[Dict]:
-        """
-        Faz parse de arquivo .srt/.vtt extraindo todos os segmentos
-        Suporta tanto formato SRT tradicional quanto WEBVTT do YouTube
-        
-        Args:
-            srt_path: Caminho para arquivo .srt ou .vtt
-            
-        Returns:
-            List[Dict]: Lista de segmentos com start_time, end_time, text
-        """
-        try:
-            with open(srt_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-        except Exception as e:
-            print(f"Erro ao ler arquivo de legenda: {e}")
-            return []
-        
-        # Detecta se é formato WEBVTT ou SRT tradicional
-        is_webvtt = content.startswith('WEBVTT')
-        
-        if is_webvtt:
-            return SubtitleParser._parse_webvtt_content(content)
-        else:
-            return SubtitleParser._parse_srt_content(content)
-    
-    @staticmethod
-    def _parse_webvtt_content(content: str) -> List[Dict]:
-        """
-        Parse específico para formato WEBVTT do YouTube
-        
-        Args:
-            content: Conteúdo completo do arquivo WEBVTT
-            
-        Returns:
-            List[Dict]: Segmentos extraídos
-        """
-        segments = []
-        
-        # Regex para capturar blocos WEBVTT
-        # Formato: timestamp --> timestamp propriedades\ntexto (pode ter tags <c>)
-        webvtt_pattern = r'(\d{2}:\d{2}:\d{2}\.\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2}\.\d{3})[^\n]*\n(.*?)(?=\n\s*\d{2}:\d{2}:\d{2}\.\d{3}|\Z)'
-        
-        matches = re.findall(webvtt_pattern, content, re.DOTALL)
-        
-        for i, match in enumerate(matches):
-            start_str, end_str, text_block = match
-            
-            try:
-                # Converte timestamps WEBVTT para segundos
-                start_seconds = SubtitleParser._webvtt_timestamp_to_seconds(start_str)
-                end_seconds = SubtitleParser._webvtt_timestamp_to_seconds(end_str)
-                
-                # Limpa texto removendo tags HTML e formatação extra
-                clean_text = SubtitleParser._clean_webvtt_text(text_block)
-                
-                if clean_text and len(clean_text.strip()) > 0:
-                    segments.append({
-                        'index': i + 1,
-                        'start_time': start_seconds,
-                        'end_time': end_seconds,
-                        'text': clean_text,
-                        'duration': end_seconds - start_seconds
-                    })
-                    
-            except Exception as e:
-                print(f"Erro ao processar segmento WEBVTT {i}: {e}")
-                continue
-        
-        print(f"Parsed {len(segments)} segmentos do arquivo WEBVTT")
-        return segments
-    
-    @staticmethod
-    def _parse_srt_content(content: str) -> List[Dict]:
-        """
-        Parse para formato SRT tradicional (fallback)
-        
-        Args:
-            content: Conteúdo do arquivo SRT
-            
-        Returns:
-            List[Dict]: Segmentos extraídos
-        """
-        segments = []
-        
-        # Regex para SRT tradicional
-        srt_pattern = r'(\d+)\s*\n(\d{2}:\d{2}:\d{2},\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2},\d{3})\s*\n(.*?)(?=\n\s*\n|\n\s*\d+\s*\n|\Z)'
-        
-        matches = re.findall(srt_pattern, content, re.DOTALL)
-        
-        for match in matches:
-            index, start_str, end_str, text = match
-            
-            try:
-                start_seconds = SubtitleParser._timestamp_to_seconds(start_str)
-                end_seconds = SubtitleParser._timestamp_to_seconds(end_str)
-                
-                clean_text = re.sub(r'\s+', ' ', text.strip())
-                
-                if clean_text:
-                    segments.append({
-                        'index': int(index),
-                        'start_time': start_seconds,
-                        'end_time': end_seconds,
-                        'text': clean_text,
-                        'duration': end_seconds - start_seconds
-                    })
-                    
-            except Exception as e:
-                print(f"Erro ao processar segmento SRT {index}: {e}")
-                continue
-        
-        print(f"Parsed {len(segments)} segmentos do arquivo SRT")
-        return segments
-    
-    @staticmethod
-    def _clean_webvtt_text(text_block: str) -> str:
-        """
-        Limpa texto WEBVTT removendo tags e formatação
-        
-        Args:
-            text_block: Bloco de texto bruto do WEBVTT
-            
-        Returns:
-            str: Texto limpo
-        """
-        # Remove tags de formatação <c>, </c>, <00:00:01.234>, etc
-        clean_text = re.sub(r'<[^>]*>', '', text_block)
-        
-        # Remove timestamps inline
-        clean_text = re.sub(r'\d{2}:\d{2}:\d{2}\.\d{3}', '', clean_text)
-        
-        # Remove quebras de linha e espaços extras
-        clean_text = re.sub(r'\s+', ' ', clean_text.strip())
-        
-        return clean_text
-    
-    @staticmethod
-    def _webvtt_timestamp_to_seconds(timestamp_str: str) -> float:
-        """
-        Converte timestamp WEBVTT (HH:MM:SS.mmm) para segundos
-        
-        Args:
-            timestamp_str: String no formato "00:01:23.456"
-            
-        Returns:
-            float: Tempo em segundos (83.456)
-        """
-        # Formato WEBVTT: "00:01:23.456"
-        time_part, ms_part = timestamp_str.split('.')
-        hours, minutes, seconds = map(int, time_part.split(':'))
-        
-        total_seconds = hours * 3600 + minutes * 60 + seconds
-        total_seconds += int(ms_part) / 1000.0
-        
-        return total_seconds
-    
-    @staticmethod
-    def _timestamp_to_seconds(timestamp_str: str) -> float:
-        """
-        Converte timestamp SRT (HH:MM:SS,mmm) para segundos
-        
-        Args:
-            timestamp_str: String no formato "00:01:23,456"
-            
-        Returns:
-            float: Tempo em segundos (83.456)
-        """
-        # Formato: "00:01:23,456"
-        time_part, ms_part = timestamp_str.split(',')
-        hours, minutes, seconds = map(int, time_part.split(':'))
-        
-        total_seconds = hours * 3600 + minutes * 60 + seconds
-        total_seconds += int(ms_part) / 1000.0
-        
-        return total_seconds
+    # Normalizacao de texto
+    normalize_text: bool = True        # Aplicar normalizacao automatica
+    remove_timestamps_text: bool = True # Remover marcadores temporais do texto
 
 
 class SubtitleAligner:
     """
-    Alinhador de legendas com segmentos de áudio
-    Implementa alinhamento matemático baseado em duração temporal
+    Alinhador de legendas para segmentos de audio
+    Implementa mapeamento proporcional entre legenda completa e segmentos VAD
     """
     
-    def __init__(self):
-        """Inicializa o alinhador"""
-        self.parser = SubtitleParser()
+    def __init__(self, config: Optional[AlignmentConfig] = None):
+        """Inicializa o alinhador com configuracao padrao"""
+        self.config = config or AlignmentConfig()
+        self.alignment_stats = {
+            'total_segments_processed': 0,
+            'successful_alignments': 0,
+            'low_confidence_segments': 0,
+            'empty_text_segments': 0
+        }
     
-    def _get_segment_original_time(self, segment_path: str, segments_dir: Path) -> Tuple[float, float]:
+    def parse_webvtt_file(self, srt_file_path: str) -> List[Dict]:
         """
-        Calcula o tempo original do segmento no áudio completo
-        Baseado na ordem sequencial dos segmentos e duração de cada um
+        Processa arquivo WebVTT/SRT extraindo timestamps e texto
+        Trata formato hibrido comum no yt-dlp (WebVTT com extensao .srt)
         
         Args:
-            segment_path: Caminho do arquivo de segmento
-            segments_dir: Diretório contendo todos os segmentos
+            srt_file_path: Caminho para arquivo de legenda
             
         Returns:
-            Tuple[float, float]: (start_time, end_time) em segundos
+            List[Dict]: Lista com dados das legendas
         """
-        segment_file = Path(segment_path)
-        segment_name = segment_file.stem
-        
-        # Extrai índice do segmento (ex: "video_ID_5" -> 5)
-        try:
-            segment_index = int(segment_name.split('_')[-1])
-        except:
-            return (0.0, 0.0)
-        
-        # Calcula tempo acumulado dos segmentos anteriores
-        accumulated_time = 0.0
-        
-        # Lista todos os segmentos em ordem
-        all_segments = sorted(segments_dir.glob("*.wav"), 
-                            key=lambda x: int(x.stem.split('_')[-1]))
-        
-        # Soma duração de todos os segmentos anteriores
-        for seg_file in all_segments:
-            seg_index = int(seg_file.stem.split('_')[-1])
-            
-            if seg_index >= segment_index:
-                break
-                
-            # Calcula duração do segmento usando librosa
-            try:
-                duration = librosa.get_duration(path=str(seg_file))
-                accumulated_time += duration
-            except:
-                # Fallback: estima 8 segundos por segmento (média)
-                accumulated_time += 8.0
-        
-        # Calcula duração do segmento atual
-        try:
-            current_duration = librosa.get_duration(path=segment_path)
-        except:
-            current_duration = 8.0  # Fallback
-        
-        start_time = accumulated_time
-        end_time = accumulated_time + current_duration
-        
-        return (start_time, end_time)
-    
-    def _find_matching_subtitle_text(self, start_time: float, end_time: float, 
-                                   srt_segments: List[Dict], 
-                                   config: AlignmentConfig) -> Optional[str]:
-        """
-        Encontra texto da legenda que corresponde ao período temporal
-        
-        Args:
-            start_time: Início do segmento de áudio (segundos)
-            end_time: Fim do segmento de áudio (segundos)
-            srt_segments: Lista de segmentos da legenda
-            config: Configurações de alinhamento
-            
-        Returns:
-            str: Texto correspondente ou None se não encontrar
-        """
-        matching_texts = []
-        
-        # Busca todos os segmentos de legenda que se sobrepõem temporalmente
-        for srt_seg in srt_segments:
-            srt_start = srt_seg['start_time']
-            srt_end = srt_seg['end_time']
-            
-            # Verifica sobreposição temporal com tolerância
-            overlap_start = max(start_time, srt_start - config.time_tolerance_sec)
-            overlap_end = min(end_time, srt_end + config.time_tolerance_sec)
-            
-            # Se há sobreposição significativa
-            if overlap_end > overlap_start:
-                overlap_duration = overlap_end - overlap_start
-                segment_duration = end_time - start_time
-                
-                # Se sobreposição é significativa (pelo menos 30% do segmento)
-                if overlap_duration >= (segment_duration * 0.3):
-                    text = srt_seg['text']
-                    
-                    # Filtra textos muito curtos
-                    if len(text.strip()) >= config.min_text_length:
-                        matching_texts.append(text)
-        
-        # Combina textos encontrados
-        if matching_texts:
-            combined_text = ' '.join(matching_texts).strip()
-            return combined_text if combined_text else None
-        
-        return None
-    
-    def _already_aligned(self, video_dir: Path) -> bool:
-        """
-        Verifica se alinhamento já foi executado para este vídeo
-        Atualizado para verificar arquivo com nome específico do vídeo
-        
-        Args:
-            video_dir: Diretório do vídeo
-            
-        Returns:
-            bool: True se já foi alinhado
-        """
-        video_id = video_dir.name
-        alignment_file = video_dir / f"{video_id}_alignment.json"
-        return alignment_file.exists() and alignment_file.stat().st_size > 100
-    
-    def align_single_video(self, video_dir: str, 
-                         config: AlignmentConfig = None,
-                         overwrite: bool = False) -> Dict:
-        """
-        Alinha legendas com segmentos de um único vídeo
-        
-        Args:
-            video_dir: Diretório contendo segmentos e arquivo .srt
-            config: Configurações de alinhamento
-            overwrite: Se True, realinha mesmo se já existir
-            
-        Returns:
-            Dict: Resultado do alinhamento
-        """
-        if config is None:
-            config = AlignmentConfig()
-        
-        video_path = Path(video_dir)
-        
-        # Verifica se já foi alinhado
-        if not overwrite and self._already_aligned(video_path):
-            return {
-                "success": True,
-                "skipped": True,
-                "reason": "Já foi alinhado (use overwrite=True para forçar)",
-                "video_dir": str(video_path)
-            }
-        
-        # Busca arquivo .srt
-        srt_files = list(video_path.glob("*.srt"))
-        if not srt_files:
-            return {
-                "success": False,
-                "error": "Arquivo .srt não encontrado",
-                "video_dir": str(video_path)
-            }
-        
-        srt_file = srt_files[0]  # Usa primeiro .srt encontrado
-        
-        # Busca pasta segments
-        segments_dir = video_path / "segments"
-        if not segments_dir.exists():
-            return {
-                "success": False,
-                "error": "Pasta segments não encontrada",
-                "video_dir": str(video_path)
-            }
+        if not os.path.exists(srt_file_path):
+            print(f"Arquivo de legenda nao encontrado: {srt_file_path}")
+            return []
         
         try:
-            print(f"Alinhando: {video_path.name}")
+            with open(srt_file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
             
-            # Parse do arquivo .srt
-            srt_segments = self.parser.parse_srt_file(str(srt_file))
+            print(f"Processando arquivo de legenda: {os.path.basename(srt_file_path)}")
             
-            if not srt_segments:
-                return {
-                    "success": False,
-                    "error": "Falha ao fazer parse do arquivo .srt",
-                    "video_dir": str(video_path)
-                }
-            
-            # Lista todos os segmentos de áudio
-            wav_files = sorted(segments_dir.glob("*.wav"), 
-                             key=lambda x: int(x.stem.split('_')[-1]))
-            
-            if not wav_files:
-                return {
-                    "success": False,
-                    "error": "Nenhum arquivo .wav encontrado em segments/",
-                    "video_dir": str(video_path)
-                }
-            
-            # Alinha cada segmento
-            alignment_data = {}
-            successful_alignments = 0
-            orphan_segments = 0
-            
-            for wav_file in wav_files:
-                # Calcula tempo original do segmento
-                start_time, end_time = self._get_segment_original_time(
-                    str(wav_file), segments_dir
-                )
+            # Detecta formato (WebVTT ou SRT tradicional)
+            if 'WEBVTT' in content:
+                return self._parse_webvtt_content(content)
+            else:
+                return self._parse_srt_content(content)
                 
-                # Busca texto correspondente na legenda
-                matching_text = self._find_matching_subtitle_text(
-                    start_time, end_time, srt_segments, config
-                )
-                
-                segment_data = {
-                    "start_time": start_time,
-                    "end_time": end_time,
-                    "duration": end_time - start_time
-                }
-                
-                if matching_text:
-                    segment_data["subtitle_text"] = matching_text
-                    successful_alignments += 1
+        except Exception as e:
+            print(f"Erro ao processar arquivo de legenda: {e}")
+            return []
+    
+    def _parse_webvtt_content(self, content: str) -> List[Dict]:
+        """
+        Parser especifico para formato WebVTT do YouTube
+        Baseado na estrutura vista na imagem fornecida
+        """
+        subtitle_entries = []
+        
+        # Remove cabecalho WebVTT e metadados
+        lines = content.split('\n')
+        text_lines = []
+        
+        # Filtra apenas linhas com timestamps e texto
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith(('WEBVTT', 'Kind:', 'Language:')):
+                continue
+            if 'align:start position:' in line and '-->' in line:
+                # Linha de timestamp WebVTT: "00:00:00.320 --> 00:00:02.070 align:start position:0%"
+                timestamp_match = re.match(r'(\d{2}:\d{2}:\d{2}\.\d{3})\s+-->\s+(\d{2}:\d{2}:\d{2}\.\d{3})', line)
+                if timestamp_match:
+                    start_time = self._parse_timestamp(timestamp_match.group(1))
+                    end_time = self._parse_timestamp(timestamp_match.group(2))
+                    text_lines.append({
+                        'start_time': start_time,
+                        'end_time': end_time,
+                        'text': ''  # Texto vira na proxima linha
+                    })
+            elif text_lines and not re.match(r'\d{2}:\d{2}:\d{2}', line):
+                # Linha de texto que segue timestamp
+                if text_lines[-1]['text']:
+                    text_lines[-1]['text'] += ' ' + line
                 else:
-                    segment_data["subtitle_text"] = None
-                    orphan_segments += 1
-                    
-                    if not config.allow_orphan_segments:
-                        continue  # Pula segmentos sem texto
+                    text_lines[-1]['text'] = line
+        
+        # Converte para formato padrao
+        for entry in text_lines:
+            if entry['text'].strip():
+                subtitle_entries.append({
+                    'start': entry['start_time'],
+                    'end': entry['end_time'],
+                    'duration': entry['end_time'] - entry['start_time'],
+                    'text': self._normalize_subtitle_text(entry['text'])
+                })
+        
+        print(f"WebVTT: {len(subtitle_entries)} entradas de legenda extraidas")
+        return subtitle_entries
+    
+    def _parse_srt_content(self, content: str) -> List[Dict]:
+        """
+        Parser para formato SRT tradicional (fallback)
+        """
+        subtitle_entries = []
+        
+        # Regex para blocos SRT tradicionais
+        srt_pattern = re.compile(
+            r'(\d+)\s*\n'                           # Numero da legenda
+            r'(\d{2}:\d{2}:\d{2},\d{3})\s*-->\s*'   # Timestamp inicio  
+            r'(\d{2}:\d{2}:\d{2},\d{3})\s*\n'       # Timestamp fim
+            r'(.*?)\n\n',                           # Texto (pode ser multilinha)
+            re.DOTALL
+        )
+        
+        matches = srt_pattern.findall(content)
+        
+        for match in matches:
+            start_time = self._parse_timestamp(match[1].replace(',', '.'))
+            end_time = self._parse_timestamp(match[2].replace(',', '.'))
+            text = match[3].strip()
+            
+            if text:
+                subtitle_entries.append({
+                    'start': start_time,
+                    'end': end_time,
+                    'duration': end_time - start_time,
+                    'text': self._normalize_subtitle_text(text)
+                })
+        
+        print(f"SRT: {len(subtitle_entries)} entradas de legenda extraidas")
+        return subtitle_entries
+    
+    def _parse_timestamp(self, timestamp_str: str) -> float:
+        """
+        Converte timestamp string para segundos (float)
+        Suporta formatos: HH:MM:SS.mmm e HH:MM:SS,mmm
+        """
+        # Normaliza separador decimal
+        timestamp_str = timestamp_str.replace(',', '.')
+        
+        # Parse HH:MM:SS.mmm
+        time_parts = timestamp_str.split(':')
+        if len(time_parts) == 3:
+            hours = int(time_parts[0])
+            minutes = int(time_parts[1])
+            seconds_parts = time_parts[2].split('.')
+            seconds = int(seconds_parts[0])
+            milliseconds = int(seconds_parts[1]) if len(seconds_parts) > 1 else 0
+            
+            return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
+        
+        return 0.0
+    
+    def _normalize_subtitle_text(self, text: str) -> str:
+        """
+        Normaliza texto da legenda aplicando limpeza padrao
+        Remove tags HTML, normaliza espacos, caracteres especiais
+        """
+        if not self.config.normalize_text:
+            return text.strip()
+        
+        # Remove tags HTML comuns em legendas
+        text = re.sub(r'<[^>]+>', '', text)
+        
+        # Remove quebras de linha e espacos excessivos  
+        text = re.sub(r'\s+', ' ', text)
+        
+        # Remove marcadores temporais que podem aparecer no texto
+        if self.config.remove_timestamps_text:
+            text = re.sub(r'\d{1,2}:\d{2}:\d{2}', '', text)
+            text = re.sub(r'\[\d+:\d+\]', '', text)
+        
+        # Normaliza acentos e caracteres especiais
+        text = unicodedata.normalize('NFKC', text)
+        
+        return text.strip()
+    
+    def get_audio_segments_info(self, segments_dir: str) -> List[Dict]:
+        """
+        Extrai informacoes dos segmentos de audio existentes
+        Baseado na estrutura padrao criada pelo AudioSegmenter
+        
+        Args:
+            segments_dir: Diretorio com arquivos .wav segmentados
+            
+        Returns:
+            List[Dict]: Info de cada segmento (nome, duracao estimada, indice)
+        """
+        segments_path = Path(segments_dir)
+        
+        if not segments_path.exists():
+            print(f"Diretorio de segmentos nao encontrado: {segments_dir}")
+            return []
+        
+        # Busca arquivos .wav seguindo padrao video_id_N.wav
+        wav_files = sorted(segments_path.glob("*.wav"))
+        
+        segments_info = []
+        for wav_file in wav_files:
+            # Extrai indice do nome do arquivo (ex: VmEu1gB3lXc_0.wav -> 0)
+            filename = wav_file.stem
+            parts = filename.split('_')
+            
+            if len(parts) >= 2 and parts[-1].isdigit():
+                segment_index = int(parts[-1])
+                segments_info.append({
+                    'filename': wav_file.name,
+                    'filepath': str(wav_file),
+                    'index': segment_index,
+                    'estimated_duration': 4.0  # Duracao media estimada (4-15s conforme config VAD)
+                })
+        
+        print(f"Encontrados {len(segments_info)} segmentos de audio")
+        return segments_info
+    
+    def align_subtitles_to_segments(self, subtitle_entries: List[Dict], 
+                                  segments_info: List[Dict]) -> Dict:
+        """
+        Alinha legendas aos segmentos usando distribuicao proporcional inteligente
+        Estrategia: mapear texto total proporcionalmente aos segmentos existentes
+        
+        Args:
+            subtitle_entries: Dados das legendas extraidas
+            segments_info: Informacoes dos segmentos de audio
+            
+        Returns:
+            Dict: Dados de alinhamento estruturados
+        """
+        if not subtitle_entries or not segments_info:
+            print("Dados insuficientes para alinhamento")
+            return {'segments': {}, 'stats': self.alignment_stats}
+        
+        # Combina todo o texto das legendas
+        full_text = ' '.join([entry['text'] for entry in subtitle_entries if entry['text']])
+        total_duration = max([entry['end'] for entry in subtitle_entries]) if subtitle_entries else 0
+        
+        print(f"Texto total: {len(full_text)} caracteres")
+        print(f"Duracao total estimada: {total_duration:.2f} segundos")
+        print(f"Segmentos para mapear: {len(segments_info)}")
+        
+        # Divide texto proporcionalmente entre segmentos
+        alignment_data = {'segments': {}}
+        words = full_text.split()
+        words_per_segment = max(1, len(words) // len(segments_info))
+        
+        current_word_pos = 0
+        
+        for i, segment in enumerate(segments_info):
+            self.alignment_stats['total_segments_processed'] += 1
+            
+            # Calcula porcao de palavras para este segmento
+            if i == len(segments_info) - 1:  # Ultimo segmento pega o resto
+                segment_words = words[current_word_pos:]
+            else:
+                segment_words = words[current_word_pos:current_word_pos + words_per_segment]
+            
+            # Calcula score de confianca baseado em heuristicas
+            confidence_score = self._calculate_confidence_score(segment_text, segment)
+            
+            print(f"DEBUG Segmento {segment['filename']}: texto={len(segment_text)} chars, palavras={len(segment_words)}, confianca={confidence_score:.3f}")
+            
+            # Valida qualidade do texto
+            if (len(segment_text) >= self.config.min_text_length and 
+                len(segment_text) <= self.config.max_text_length and
+                confidence_score >= self.config.min_confidence_score):
                 
-                alignment_data[wav_file.name] = segment_data
+                alignment_data['segments'][segment['filename']] = {
+                    'start_time': i * (total_duration / len(segments_info)),
+                    'end_time': (i + 1) * (total_duration / len(segments_info)),
+                    'duration': segment['estimated_duration'],
+                    'subtitle_text': segment_text,
+                    'alignment_confidence': confidence_score,
+                    'segment_index': segment['index']
+                }
+                
+                self.alignment_stats['successful_alignments'] += 1
+                
+            else:
+                # Registra segmento com baixa qualidade
+                if len(segment_text) < self.config.min_text_length:
+                    self.alignment_stats['empty_text_segments'] += 1
+                else:
+                    self.alignment_stats['low_confidence_segments'] += 1
+                
+                print(f"Segmento {segment['filename']}: REJEITADO - tamanho={len(segment_text)}, confianca={confidence_score:.3f}, threshold={self.config.min_confidence_score}")
+        
+        # Adiciona estatisticas ao resultado
+        alignment_data['video_id'] = self._extract_video_id_from_segments(segments_info)
+        alignment_data['total_segments'] = len(segments_info)
+        alignment_data['successful_alignments'] = self.alignment_stats['successful_alignments']
+        alignment_data['alignment_method'] = 'proportional_distribution'
+        alignment_data['stats'] = self.alignment_stats
+        
+        print(f"Alinhamento concluido: {self.alignment_stats['successful_alignments']}/{len(segments_info)} segmentos")
+        
+        return alignment_data
+    
+    def _find_natural_text_break(self, full_text: str, start_pos: int, target_end: int) -> str:
+        """
+        Encontra quebra natural no texto (espaco, ponto, virgula)
+        para evitar cortar palavras no meio
+        """
+        if target_end >= len(full_text):
+            return full_text[start_pos:].strip()
+        
+        # Busca quebra natural em janela de +/- 50 caracteres
+        search_window = 50
+        best_break = target_end
+        
+        # Procura por pontos, virgulas, espacos (ordem de preferencia)
+        for char in ['.', '!', '?', ',', ' ']:
+            # Busca para tras
+            for i in range(min(search_window, target_end - start_pos)):
+                pos = target_end - i
+                if pos > start_pos and full_text[pos] == char:
+                    best_break = pos + 1
+                    break
+            if best_break != target_end:
+                break
+        
+        return full_text[start_pos:best_break].strip()
+    
+    def _calculate_confidence_score(self, text: str, segment_info: Dict) -> float:
+        """
+        Calcula score de confianca baseado em heuristicas de qualidade
+        Score varia de 0.0 a 1.0
+        """
+        score = 1.0
+        
+        # Penaliza textos muito curtos ou muito longos
+        text_len = len(text)
+        if text_len < self.config.min_text_length:
+            score *= 0.3
+        elif text_len > self.config.max_text_length:
+            score *= 0.7
+        
+        # Penaliza textos com muitos caracteres especiais (possiveis artefatos)
+        special_chars = len(re.findall(r'[^\w\s\.,!?;:]', text))
+        if special_chars > text_len * 0.1:  # Mais de 10% caracteres especiais
+            score *= 0.6
+        
+        # Bonus para textos com pontuacao adequada
+        if any(punct in text for punct in ['.', '!', '?', ',']):
+            score *= 1.1
+        
+        # Bonus para textos com palavras completas (nao cortados)
+        words = text.split()
+        if len(words) >= 2:  # Pelo menos 2 palavras
+            score *= 1.05
+        
+        return min(score, 1.0)  # Limita a 1.0
+    
+    def _extract_video_id_from_segments(self, segments_info: List[Dict]) -> str:
+        """
+        Extrai video_id a partir dos nomes dos arquivos de segmento
+        Baseado no padrao video_id_N.wav
+        """
+        if not segments_info:
+            return 'unknown'
+        
+        first_segment = segments_info[0]['filename']
+        # Remove extensao e numero do segmento
+        video_id = '_'.join(first_segment.split('_')[:-1])
+        return video_id.replace('.wav', '')
+    
+    def create_dataset_files(self, alignment_data: Dict, output_dir: str) -> Dict:
+        """
+        Gera arquivos finais do dataset no formato padrao da industria
+        Cria: arquivos .txt individuais + metadata.csv + alignment_data.json
+        
+        Args:
+            alignment_data: Dados de alinhamento estruturados
+            output_dir: Diretorio onde salvar os arquivos
             
-            # Salva resultado do alinhamento com nome específico do vídeo
-            video_id = video_path.name
-            output_file = video_path / f"{video_id}_alignment.json"
-            with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(alignment_data, f, indent=2, ensure_ascii=False)
+        Returns:
+            Dict: Relatorio dos arquivos criados
+        """
+        output_path = Path(output_dir)
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        created_files = {
+            'txt_files': [],
+            'metadata_csv': '',
+            'alignment_json': '',
+            'stats': {}
+        }
+        
+        segments_data = alignment_data.get('segments', {})
+        
+        if not segments_data:
+            print("Nenhum segmento alinhado para gerar dataset")
+            return created_files
+        
+        print(f"Gerando dataset com {len(segments_data)} segmentos...")
+        
+        # 1. Cria arquivos .txt individuais para cada segmento
+        for wav_filename, segment_data in segments_data.items():
+            txt_filename = wav_filename.replace('.wav', '.txt')
+            txt_filepath = output_path / txt_filename
             
-            print(f"Alinhamento concluído: {successful_alignments} sucessos, {orphan_segments} órfãos")
+            try:
+                with open(txt_filepath, 'w', encoding='utf-8') as f:
+                    f.write(segment_data['subtitle_text'])
+                
+                created_files['txt_files'].append(str(txt_filepath))
+                
+            except Exception as e:
+                print(f"Erro ao criar {txt_filename}: {e}")
+        
+        # 2. Cria metadata.csv no formato LJSpeech
+        metadata_file = output_path / 'metadata.csv'
+        try:
+            with open(metadata_file, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f, delimiter='|')
+                
+                # Header opcional (descomente se necessario)
+                # writer.writerow(['filename', 'text', 'duration', 'confidence'])
+                
+                for wav_filename, segment_data in segments_data.items():
+                    writer.writerow([
+                        wav_filename.replace('.wav', ''),  # Nome sem extensao
+                        segment_data['subtitle_text'],
+                        f"{segment_data['duration']:.2f}",
+                        f"{segment_data['alignment_confidence']:.3f}"
+                    ])
             
-            return {
-                "success": True,
-                "skipped": False,
-                "video_dir": str(video_path),
-                "total_segments": len(wav_files),
-                "successful_alignments": successful_alignments,
-                "orphan_segments": orphan_segments,
-                "alignment_file": str(output_file),
-                "srt_segments_parsed": len(srt_segments)
-            }
+            created_files['metadata_csv'] = str(metadata_file)
+            print(f"Metadata CSV criado: {metadata_file}")
             
         except Exception as e:
-            return {
-                "success": False,
-                "error": f"Erro no alinhamento: {e}",
-                "video_dir": str(video_path)
-            }
+            print(f"Erro ao criar metadata.csv: {e}")
+        
+        # 3. Salva dados completos de alinhamento em JSON
+        alignment_file = output_path / 'alignment_data.json'
+        try:
+            with open(alignment_file, 'w', encoding='utf-8') as f:
+                json.dump(alignment_data, f, indent=2, ensure_ascii=False)
+            
+            created_files['alignment_json'] = str(alignment_file)
+            print(f"Dados de alinhamento salvos: {alignment_file}")
+            
+        except Exception as e:
+            print(f"Erro ao criar alignment_data.json: {e}")
+        
+        # 4. Gera estatisticas do dataset criado
+        created_files['stats'] = {
+            'total_txt_files': len(created_files['txt_files']),
+            'metadata_entries': len(segments_data),
+            'average_confidence': sum(s['alignment_confidence'] for s in segments_data.values()) / len(segments_data),
+            'total_text_characters': sum(len(s['subtitle_text']) for s in segments_data.values()),
+            'output_directory': str(output_path)
+        }
+        
+        print(f"Dataset criado com sucesso:")
+        print(f"  - {created_files['stats']['total_txt_files']} arquivos .txt")
+        print(f"  - 1 arquivo metadata.csv")  
+        print(f"  - 1 arquivo alignment_data.json")
+        print(f"  - Confianca media: {created_files['stats']['average_confidence']:.3f}")
+        
+        return created_files
     
-    def align_batch_from_downloads(self, downloads_path: str = "downloads",
-                                 config: AlignmentConfig = None,
-                                 overwrite: bool = False) -> Dict:
+    def align_srt_to_segments(self, srt_file: str, segments_dir: str) -> Dict:
         """
-        Alinha todos os vídeos encontrados na pasta downloads
-        Busca recursivamente por estruturas video_id/segments/
+        Metodo principal: alinha arquivo SRT/WebVTT aos segmentos de audio
+        Interface simplificada para uso externo
         
         Args:
-            downloads_path: Caminho da pasta downloads
-            config: Configurações de alinhamento
-            overwrite: Se True, realinha mesmo se já existir
+            srt_file: Caminho para arquivo de legenda (.srt)
+            segments_dir: Diretorio com segmentos de audio (.wav)
             
         Returns:
-            Dict: Relatório consolidado do alinhamento em lote
+            Dict: Dados de alinhamento completos
         """
-        if config is None:
-            config = AlignmentConfig()
+        print("Iniciando alinhamento de legendas aos segmentos de audio")
+        print(f"Arquivo de legenda: {os.path.basename(srt_file)}")
+        print(f"Diretorio de segmentos: {segments_dir}")
         
-        downloads_dir = Path(downloads_path)
+        # 1. Parse das legendas
+        subtitle_entries = self.parse_webvtt_file(srt_file)
         
-        if not downloads_dir.exists():
-            return {
-                "batch_completed": False,
-                "error": f"Pasta downloads não encontrada: {downloads_path}"
-            }
+        if not subtitle_entries:
+            return {'error': 'Nao foi possivel extrair legendas do arquivo'}
         
-        # Busca todos os diretórios que contêm pasta segments
-        video_dirs = []
-        for segments_dir in downloads_dir.rglob("segments"):
-            if segments_dir.is_dir():
-                video_dir = segments_dir.parent
-                video_dirs.append(video_dir)
+        # 2. Informacoes dos segmentos de audio
+        segments_info = self.get_audio_segments_info(segments_dir)
         
-        if not video_dirs:
-            return {
-                "batch_completed": False,
-                "error": "Nenhum diretório com pasta segments encontrado"
-            }
+        if not segments_info:
+            return {'error': 'Nenhum segmento de audio encontrado no diretorio'}
         
-        print(f"Encontrados {len(video_dirs)} vídeos com segmentos para alinhar")
-        print(f"Configuração overwrite: {overwrite}")
+        # 3. Alinhamento proporcional
+        alignment_result = self.align_subtitles_to_segments(subtitle_entries, segments_info)
         
-        results = []
-        successful = 0
-        failed = 0
-        skipped = 0
-        total_alignments = 0
-        
-        for i, video_dir in enumerate(video_dirs, 1):
-            print(f"\n[{i}/{len(video_dirs)}] Processando: {video_dir.name}")
-            
-            result = self.align_single_video(str(video_dir), config, overwrite)
-            results.append(result)
-            
-            if result['success']:
-                if result.get('skipped', False):
-                    skipped += 1
-                    print(f"Pulado: {result['reason']}")
-                else:
-                    successful += 1
-                    total_alignments += result['successful_alignments']
-                    print(f"Sucesso: {result['successful_alignments']} alinhamentos")
-            else:
-                failed += 1
-                print(f"Falha: {result['error']}")
-        
-        return {
-            "batch_completed": True,
-            "total_videos": len(video_dirs),
-            "successful": successful,
-            "failed": failed,
-            "skipped": skipped,
-            "total_alignments_created": total_alignments,
-            "individual_results": results,
-            "config_used": config
-        }
+        return alignment_result
 
 
-def _find_project_root() -> Optional[Path]:
+# ========================================
+# FUNCOES DE CONVENIENCIA PARA USO EXTERNO  
+# ========================================
+
+def quick_align(srt_file: str, segments_dir: str, 
+                output_dir: Optional[str] = None) -> Dict:
     """
-    Encontra a raiz do projeto procurando pela pasta downloads
-    Busca nos diretórios pai até encontrar
+    Alinhamento rapido para testes e uso simples
     
+    Args:
+        srt_file: Caminho para arquivo de legenda
+        segments_dir: Diretorio com segmentos de audio
+        output_dir: Diretorio de saida (usa segments_dir se None)
+        
     Returns:
-        Path: Caminho da raiz do projeto ou None se não encontrar
+        Dict: Relatorio completo do alinhamento
     """
-    current = Path.cwd()
+    if output_dir is None:
+        output_dir = segments_dir
     
-    # Busca até 4 níveis acima
-    for _ in range(4):
-        downloads_path = current / "downloads"
-        if downloads_path.exists() and downloads_path.is_dir():
-            return current
-        current = current.parent
+    aligner = SubtitleAligner()
+    
+    # Executa alinhamento
+    alignment_result = aligner.align_srt_to_segments(srt_file, segments_dir)
+    
+    if 'error' in alignment_result:
+        return alignment_result
+    
+    # Gera arquivos do dataset
+    dataset_result = aligner.create_dataset_files(alignment_result, output_dir)
+    
+    # Combina resultados
+    return {
+        'alignment_successful': True,
+        'alignment_data': alignment_result,
+        'dataset_files': dataset_result,
+        'summary': {
+            'segments_aligned': alignment_result.get('successful_alignments', 0),
+            'total_segments': alignment_result.get('total_segments', 0),
+            'output_directory': output_dir
+        }
+    }
+
+
+def align_from_video_directory(video_dir: str) -> Dict:
+    """
+    Alinha legendas aos segmentos dentro de um diretorio de video
+    Funciona com estrutura padrao: video_dir/segments/ + video_dir/video_id.srt
+    
+    Args:
+        video_dir: Diretorio do video (contem .srt e pasta segments/)
         
-        if current == current.parent:
-            break
+    Returns:
+        Dict: Relatorio do alinhamento
+    """
+    video_path = Path(video_dir)
+    
+    if not video_path.exists():
+        return {'error': f'Diretorio nao encontrado: {video_dir}'}
+    
+    # Busca arquivo SRT no diretorio
+    srt_files = list(video_path.glob("*.srt"))
+    if not srt_files:
+        return {'error': 'Nenhum arquivo .srt encontrado no diretorio'}
+    
+    srt_file = str(srt_files[0])  # Usa primeiro arquivo .srt encontrado
+    
+    # Busca diretorio de segmentos
+    segments_dir = video_path / 'segments'
+    if not segments_dir.exists():
+        return {'error': 'Diretorio segments/ nao encontrado'}
+    
+    print(f"Processando video: {video_path.name}")
+    
+    # Executa alinhamento rapido
+    return quick_align(srt_file, str(segments_dir), str(segments_dir))
+
+
+# ========================================
+# EXECUCAO STANDALONE PARA TESTES
+# ========================================
+
+def _find_test_data() -> Optional[Tuple[str, str]]:
+    """
+    Procura dados de teste disponiveis na estrutura do projeto
+    Baseado nos caminhos vistos nas imagens
+    """
+    # Possiveis localizacoes dos dados de teste
+    test_paths = [
+        "downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/VmEu1gB3lXc",
+        "../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/VmEu1gB3lXc", 
+        "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/VmEu1gB3lXc"
+    ]
+    
+    for test_path in test_paths:
+        video_dir = Path(test_path)
+        if video_dir.exists():
+            srt_file = video_dir / "VmEu1gB3lXc.srt"
+            segments_dir = video_dir / "segments"
+            
+            if srt_file.exists() and segments_dir.exists():
+                print(f"Dados de teste encontrados: {video_dir}")
+                return str(srt_file), str(segments_dir)
     
     return None
 
 
-# ========================================
-# FUNÇÕES DE CONVENIÊNCIA PARA USO EXTERNO
-# ========================================
-
-def quick_align(video_dir: str, overwrite: bool = False) -> Dict:
-    """
-    Função de conveniência para alinhamento rápido de um vídeo
-    
-    Args:
-        video_dir: Diretório do vídeo com segments/ e .srt
-        overwrite: Se True, realinha mesmo se já existir
-        
-    Returns:
-        Dict: Resultado do alinhamento
-    """
-    aligner = SubtitleAligner()
-    return aligner.align_single_video(video_dir, overwrite=overwrite)
-
-
-def align_all_downloads(overwrite: bool = False) -> Dict:
-    """
-    Alinha todos os vídeos na pasta downloads
-    
-    Args:
-        overwrite: Se True, realinha arquivos já processados
-        
-    Returns:
-        Dict: Relatório do processamento em lote
-    """
-    # Encontra raiz do projeto
-    project_root = _find_project_root()
-    
-    if not project_root:
-        return {
-            "batch_completed": False,
-            "error": "Pasta downloads não encontrada no projeto"
-        }
-    
-    downloads_path = project_root / "downloads"
-    aligner = SubtitleAligner()
-    return aligner.align_batch_from_downloads(str(downloads_path), overwrite=overwrite)
-
-
-# ========================================
-# EXECUÇÃO STANDALONE PARA TESTES
-# ========================================
-
 def main():
     """
-    Função principal para execução standalone
-    Alinha todos os vídeos encontrados na pasta downloads
+    Funcao principal para execucao standalone
+    Testa alinhamento com dados disponiveis no projeto
     """
-    print("KATUBE SUBTITLE ALIGNER - Alinhamento Matemático")
-    print("=" * 55)
+    print("KATUBE SUBTITLE ALIGNER - Teste de Alinhamento")
+    print("=" * 60)
     
-    # Encontra e processa pasta downloads
-    result = align_all_downloads(overwrite=False)
+    # Procura dados de teste
+    test_data = _find_test_data()
     
-    if result.get('batch_completed'):
-        print(f"\nAlinhamento concluído!")
-        print(f"Vídeos processados: {result['successful']}")
-        print(f"Vídeos pulados: {result['skipped']}")
-        print(f"Falhas: {result['failed']}")
-        print(f"Total de alinhamentos criados: {result['total_alignments_created']}")
+    if test_data:
+        srt_file, segments_dir = test_data
+        print(f"Testando alinhamento:")
+        print(f"  Legenda: {os.path.basename(srt_file)}")
+        print(f"  Segmentos: {segments_dir}")
         
-        # Mostra onde foram salvos os arquivos
-        if result['individual_results']:
-            print(f"\nArquivos de alinhamento salvos como 'alignment_data.json' em cada pasta de vídeo")
+        # Executa teste de alinhamento
+        result = quick_align(srt_file, segments_dir)
+        
+        if result.get('alignment_successful'):
+            summary = result['summary']
+            print(f"\nAlinhamento concluido com sucesso!")
+            print(f"  Segmentos alinhados: {summary['segments_aligned']}/{summary['total_segments']}")
+            print(f"  Arquivos criados em: {summary['output_directory']}")
+            
+            # Lista arquivos criados
+            dataset_files = result.get('dataset_files', {})
+            if dataset_files.get('txt_files'):
+                print(f"  Arquivos .txt: {len(dataset_files['txt_files'])}")
+            if dataset_files.get('metadata_csv'):
+                print(f"  Metadata CSV: {os.path.basename(dataset_files['metadata_csv'])}")
+                
+        else:
+            print(f"\nErro no alinhamento: {result.get('error', 'Erro desconhecido')}")
+            
     else:
-        print(f"\nErro: {result.get('error', 'Erro desconhecido')}")
+        print("Nenhum dado de teste encontrado")
+        print("Execute primeiro o modulo de download ou verifique a estrutura do projeto")
+        print("\nEstrutura esperada:")
+        print("  downloads/playlist_*/video_id/video_id.srt")
+        print("  downloads/playlist_*/video_id/segments/*.wav")
 
 
 if __name__ == "__main__":

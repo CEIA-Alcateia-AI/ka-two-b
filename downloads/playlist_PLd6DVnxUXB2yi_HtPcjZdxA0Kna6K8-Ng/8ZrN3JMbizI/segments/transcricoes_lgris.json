@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "model": "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese",
+    "directory": "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/8ZrN3JMbizI/segments",
+    "total_segments": 69,
+    "processing_date": "2025-09-02T00:40:28.213760",
+    "config": {
+      "sample_rate": 16000,
+      "chunk_length": 30
+    }
+  },
+  "transcriptions": {
+    "8ZrN3JMbizI_0": {
+      "text": "E ASSIM COMO ATAISSE TODO NÓS TEMOS O SEGUNDO MINICERO DA PREVIDÊNCIA DO TRABALHOLHO MEIO MILHÃO DE BRASILEIROS AFASTADOS EM DOISMIVINTE E QU POR CAUSA DE DOENÇA DE SAÚDE MENTAL",
+      "transcription_time": 1.569359540939331,
+      "duration": 8.924,
+      "timestamp": "2025-09-02T00:40:32.907983"
+    },
+    "8ZrN3JMbizI_1": {
+      "text": "E NÃO PRECISAMOS DE UM DIAGNÃO DE UM DIAGNÓSTICO PARA APREENDER ATÉ PRAZER É FALTA ENSINAR A GENTE NÃO APREENDEU A A VALORIZAR ATÉ PRAZER ISSO",
+      "transcription_time": 1.6693387031555176,
+      "duration": 9.564,
+      "timestamp": "2025-09-02T00:40:34.577388"
+    },
+    "8ZrN3JMbizI_10": {
+      "text": "MAIS DADA POR UM PADRE PADRE DUTRA EXTRAORDINÁRIO",
+      "transcription_time": 0.5773637294769287,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:35.154827"
+    },
+    "8ZrN3JMbizI_11": {
+      "text": "PADRE DE NOVENTA E QUATRO ANOS VOCÊ PODE IMAGINAR QUE EU APRENDI",
+      "transcription_time": 0.5678398609161377,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:35.722739"
+    },
+    "8ZrN3JMbizI_12": {
+      "text": "MUITA COISA MAS O PRAZER NÃO FOI O FOCO DA",
+      "transcription_time": 0.5827741622924805,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:36.305591"
+    },
+    "8ZrN3JMbizI_13": {
+      "text": "QUESTÃO ENTÃO É NÃO HÁ PROPRIAMENTE UM",
+      "transcription_time": 0.5699708461761475,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:36.875630"
+    },
+    "8ZrN3JMbizI_14": {
+      "text": "O PRIMEIRO PROBLEMA É QUE QUANDO A PALAVRA PRAZER É MENCIONADA",
+      "transcription_time": 0.5696790218353271,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:37.445380"
+    },
+    "8ZrN3JMbizI_15": {
+      "text": "ELA É IMEDIATAMENTE VINCULADA A SOCIADA",
+      "transcription_time": 0.573707103729248,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:38.019160"
+    },
+    "8ZrN3JMbizI_16": {
+      "text": "AOS PRAZERES DO CORPO COMO DIZIAM ANTIGAMENTE NA",
+      "transcription_time": 0.5783581733703613,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:38.597593"
+    },
+    "8ZrN3JMbizI_17": {
+      "text": "DDEE ATRITO  MATAR A FOME MATAR A SEDE",
+      "transcription_time": 0.5933091640472412,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:39.190975"
+    },
+    "8ZrN3JMbizI_18": {
+      "text": "E E E AS INTIMIDADES ENTÃO ESTES",
+      "transcription_time": 0.5782637596130371,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:39.769313"
+    },
+    "8ZrN3JMbizI_19": {
+      "text": "PRAZERES QUE DES DO BANQUETE ATÉ",
+      "transcription_time": 0.583193302154541,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:40.352578"
+    },
+    "8ZrN3JMbizI_2": {
+      "text": "ISSO TALVEZ TIVERSSE QUE SER ENSINADO DESDE CEDO PARA GENTE NÃO NECESSITAR TANTO DE UM LAIQUE PARA SER FELIZ",
+      "transcription_time": 0.83274245262146,
+      "duration": 5.532,
+      "timestamp": "2025-09-02T00:40:41.185392"
+    },
+    "8ZrN3JMbizI_20": {
+      "text": "P A FILOSOFIA CONTEMPORÂNEA SÃO CHAMADOS DE",
+      "transcription_time": 0.5799057483673096,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:41.765376"
+    },
+    "8ZrN3JMbizI_21": {
+      "text": "INFERIORES NÃO POR SEREI RUINS MAS POR CONTRIBUIREM POUCO",
+      "transcription_time": 0.5846996307373047,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:42.350153"
+    },
+    "8ZrN3JMbizI_22": {
+      "text": "PARA A VIDA BOA DADO O FATO DE SEREM EFÊMEROS",
+      "transcription_time": 0.5856015682220459,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:42.935829"
+    },
+    "8ZrN3JMbizI_23": {
+      "text": "POUCOS SUSTENTÁVEIS E ASSIM POR DIANTE NA QERRO",
+      "transcription_time": 0.5852665901184082,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:43.521172"
+    },
+    "8ZrN3JMbizI_24": {
+      "text": "OPRAZER DE UM ORGASMO DURARÁ SEGUNDOS",
+      "transcription_time": 0.6460292339324951,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:44.167277"
+    },
+    "8ZrN3JMbizI_25": {
+      "text": "ENTÃO É LANÇAMOS A LUZ",
+      "transcription_time": 0.769730806350708,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:44.937088"
+    },
+    "8ZrN3JMbizI_26": {
+      "text": "PRAZERES DO ESPÍRITO QUE SÃO AQUELES QUE EXIGEM",
+      "transcription_time": 0.7396259307861328,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:45.676782"
+    },
+    "8ZrN3JMbizI_27": {
+      "text": "A PARTICIPAÇÃO DA VIDA DO ESPÍRITO",
+      "transcription_time": 0.6143112182617188,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:46.291175"
+    },
+    "8ZrN3JMbizI_28": {
+      "text": "DA ARTICULAÇÃO DE IDÉIAS DA INTELIGÊNCIA DA RAZÃO DA SENSIBI",
+      "transcription_time": 0.6316208839416504,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:46.922881"
+    },
+    "8ZrN3JMbizI_29": {
+      "text": "IDADE E E ARTÍSTICA POR EXEMPLO LITERÁRIA E",
+      "transcription_time": 0.6072547435760498,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:47.530322"
+    },
+    "8ZrN3JMbizI_3": {
+      "text": "E PUDESSE PRODUZIR A NOSSA PRÓPRIA FELICIDADE AVOU ATEMOS ODARCONSCIÊNCIA",
+      "transcription_time": 0.5928504467010498,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:48.123254"
+    },
+    "8ZrN3JMbizI_30": {
+      "text": "C O O PRAZER DE ACOMPANHAR UMA ENTREVISTA DE ASSISTIR UMA",
+      "transcription_time": 0.6180386543273926,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:48.741364"
+    },
+    "8ZrN3JMbizI_31": {
+      "text": "AULA DE LE UMA OBRA LITERÁRIA DICETA",
+      "transcription_time": 0.5985367298126221,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:49.339974"
+    },
+    "8ZrN3JMbizI_32": {
+      "text": "BEM COMO VOCÊ HAVERÁ DE ENTENDER PARA",
+      "transcription_time": 0.5944786071777344,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:49.934527"
+    },
+    "8ZrN3JMbizI_33": {
+      "text": "MENOS EFÊMERO E MAIS SUSTENTÁVEL É PRECISO UM POUCO DE FORMAÇÃO",
+      "transcription_time": 0.8793590068817139,
+      "duration": 4.828,
+      "timestamp": "2025-09-02T00:40:50.813957"
+    },
+    "8ZrN3JMbizI_34": {
+      "text": "VCÊ TDIGAMOS TANTO",
+      "transcription_time": 0.7542412281036377,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:51.568265"
+    },
+    "8ZrN3JMbizI_35": {
+      "text": "DEPRAZER QUE UM RAMBRÃ PODE TE PROPORCIONAR",
+      "transcription_time": 0.6088874340057373,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:52.177227"
+    },
+    "8ZrN3JMbizI_36": {
+      "text": "IA LEGAL SE VOCÊ TIVESSE TIDO ALGUM",
+      "transcription_time": 0.5916974544525146,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:52.769009"
+    },
+    "8ZrN3JMbizI_37": {
+      "text": "PREPARO PARA ACOMPANHAR AS NOANCES DA PINTURA OLANDE",
+      "transcription_time": 0.5977809429168701,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:53.366864"
+    },
+    "8ZrN3JMbizI_38": {
+      "text": "E SERIA FUNDAMENTAL QUE É",
+      "transcription_time": 0.591585636138916,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:53.958520"
+    },
+    "8ZrN3JMbizI_39": {
+      "text": "O APRENDIZADO O ESTUDO E OONE",
+      "transcription_time": 0.5945422649383545,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:54.553139"
+    },
+    "8ZrN3JMbizI_4": {
+      "text": "EU VATE AMPLIARPOR QU HAS QUE A GENTE DESAPRENDE NÉ PORQUE A CRIANÇA ÀS VEZES ALANEANDAE",
+      "transcription_time": 0.6015117168426514,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:55.154725"
+    },
+    "8ZrN3JMbizI_40": {
+      "text": "MENTO FOSSEM PERMANENTEMENTE VINCULO",
+      "transcription_time": 0.6908726692199707,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:55.845678"
+    },
+    "8ZrN3JMbizI_41": {
+      "text": "ARDOS AO PRAZER DO ESPÍRITO O QUE NÃO ACONTECE",
+      "transcription_time": 0.671952486038208,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:56.517724"
+    },
+    "8ZrN3JMbizI_42": {
+      "text": "QUANDO EU PEDI AO PROFESSOR DE LITERATURA QUE ME INDICASSE",
+      "transcription_time": 0.70074462890625,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:57.218554"
+    },
+    "8ZrN3JMbizI_43": {
+      "text": "LEITURA DE UM LIVRO É PORQUE EU JÁ TINHA LIDO",
+      "transcription_time": 0.7126076221466064,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:57.931274"
+    },
+    "8ZrN3JMbizI_44": {
+      "text": "OS DO ANO PORQUE TAMBÉM NÃO TINHA MANADO QUE FAZER DA VIDA",
+      "transcription_time": 0.696730375289917,
+      "duration": 4.2,
+      "timestamp": "2025-09-02T00:40:58.628083"
+    },
+    "8ZrN3JMbizI_45": {
+      "text": "LEMINICO DOM CASMOR VEJA SÓ E EU PERGUNTEI OR",
+      "transcription_time": 0.6794071197509766,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:40:59.307572"
+    },
+    "8ZrN3JMbizI_46": {
+      "text": "ELE PODERIA TER ME DITO POR QUE DOM CASMU",
+      "transcription_time": 0.7452621459960938,
+      "duration": 4.476,
+      "timestamp": "2025-09-02T00:41:00.052915"
+    },
+    "8ZrN3JMbizI_47": {
+      "text": "INCRÍVEL É MARAVILHOSO É ALUCINANTE É  ALEI",
+      "transcription_time": 0.6960439682006836,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:00.749065"
+    },
+    "8ZrN3JMbizI_48": {
+      "text": "TU É PRAZEROSA É MAMAOR NADA DISSO FOI DITO O QUE O",
+      "transcription_time": 0.6793923377990723,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:01.428542"
+    },
+    "8ZrN3JMbizI_49": {
+      "text": "DITO FOI VAI CAIR CERTAMENTE EM ALGUMA PROVA",
+      "transcription_time": 0.6781046390533447,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:02.106728"
+    },
+    "8ZrN3JMbizI_5": {
+      "text": "IGE TEMHA FELICIDADE O PRAZER EM PEQUENAS COISAS QUE A GENTE VAI PARA",
+      "transcription_time": 0.7062811851501465,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:02.813093"
+    },
+    "8ZrN3JMbizI_50": {
+      "text": "VA CAIR NO VESTIBULAR VEGEI OU SEJA MAS CHA DE ASSIS FOI",
+      "transcription_time": 0.6766738891601562,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:03.489846"
+    },
+    "8ZrN3JMbizI_51": {
+      "text": "FOI REBAIXADO A UMA ESPÉCIE DE OBSTÁCULO INSTITUCIO",
+      "transcription_time": 0.7050855159759521,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:04.195012"
+    },
+    "8ZrN3JMbizI_52": {
+      "text": "NÃOMATES DE PROTOCOLO UMA ESPÉCIE DE ENTÃO É EU DIS",
+      "transcription_time": 0.6738455295562744,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:04.868954"
+    },
+    "8ZrN3JMbizI_53": {
+      "text": "VINCULEI A LEITURA DE UMA DIMENSÃO PRAZEROSA",
+      "transcription_time": 0.6857461929321289,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:05.554780"
+    },
+    "8ZrN3JMbizI_54": {
+      "text": "INSTANTÂNEA IMEDIATA QUE PODERIA TER SIDO E",
+      "transcription_time": 0.6767714023590088,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:06.231631"
+    },
+    "8ZrN3JMbizI_55": {
+      "text": "É COSTURADA COM COM FORÇA E",
+      "transcription_time": 0.6765012741088867,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:06.908214"
+    },
+    "8ZrN3JMbizI_56": {
+      "text": "SE O DE LITERATURA FEZ ISSO VOCÊ IMAGINA O",
+      "transcription_time": 0.696058988571167,
+      "duration": 4.2,
+      "timestamp": "2025-09-02T00:41:07.604358"
+    },
+    "8ZrN3JMbizI_57": {
+      "text": "DELOGARÍTIMO O QUE NÃO RESPONDEU É NADA",
+      "transcription_time": 0.6808018684387207,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:08.285238"
+    },
+    "8ZrN3JMbizI_58": {
+      "text": "ÉQUAL A IMPORTÂNCIA DE SABER SOMA LOA",
+      "transcription_time": 0.6968307495117188,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:08.982156"
+    },
+    "8ZrN3JMbizI_59": {
+      "text": "VINCA QUE EOU VOUTO EXPLICAR CARA  A IMPORTÂNCIA DA",
+      "transcription_time": 0.7094104290008545,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:09.691648"
+    },
+    "8ZrN3JMbizI_6": {
+      "text": "SE VAI PERDENDO NA É NUGDVER PARA NÃO PRECISAR DE UM DIAGNÓSTICO PARA APREENDER QUE A GENTE",
+      "transcription_time": 0.6845946311950684,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:10.376325"
+    },
+    "8ZrN3JMbizI_60": {
+      "text": "ÁTICA NA VIDA AH PABA EU VOU EU VOU COMEÇAR LÁ",
+      "transcription_time": 0.6774299144744873,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:11.053837"
+    },
+    "8ZrN3JMbizI_61": {
+      "text": "PTRÁS EU VOU FALAR DO PITÁGORAS VOCÊ SABIA QUE QUANO",
+      "transcription_time": 0.6801779270172119,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:11.734097"
+    },
+    "8ZrN3JMbizI_62": {
+      "text": "UPITÁGORAS MONTOU O TEOREMA DELE NÃO HAVIA",
+      "transcription_time": 0.6784374713897705,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:12.412614"
+    },
+    "8ZrN3JMbizI_63": {
+      "text": "ISSO É A COISA DE LUCO ELE ELE PROPUS",
+      "transcription_time": 0.677992582321167,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:13.090688"
+    },
+    "8ZrN3JMbizI_64": {
+      "text": "QUE O QUADRADO DA HIPOTENUSA IGUAL À SOMA DOS QUADRADOS CRADETOS",
+      "transcription_time": 0.6760921478271484,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:13.766858"
+    },
+    "8ZrN3JMbizI_65": {
+      "text": "NÃO TINHA DOIS TRÊS QUATRO CINCO",
+      "transcription_time": 0.6778702735900879,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:14.444806"
+    },
+    "8ZrN3JMbizI_66": {
+      "text": "JEOMETRIA POR GEOMETRIA NA POIS",
+      "transcription_time": 0.6761376857757568,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:15.121021"
+    },
+    "8ZrN3JMbizI_67": {
+      "text": "CRÍVEL E TAL PODERIA NERVOLO MALANDRO É",
+      "transcription_time": 0.6967682838439941,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:15.817874"
+    },
+    "8ZrN3JMbizI_68": {
+      "text": "É UMA QUESTÃO DE LOGARITEMO CAI NA FULVESTE MAZA",
+      "transcription_time": 0.7347393035888672,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:16.552717"
+    },
+    "8ZrN3JMbizI_7": {
+      "text": "PODE APROVEITAR A A VIDA E DOZAR HORA TRABALHADA COM HORA",
+      "transcription_time": 0.7360577583312988,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:17.288853"
+    },
+    "8ZrN3JMbizI_8": {
+      "text": "UM VAI DENTRO DO QUE VOCÊ ESPERA QUE EU DIGA E OUTRO OU NÃO SEI ENTÃO",
+      "transcription_time": 1.3038420677185059,
+      "duration": 5.18,
+      "timestamp": "2025-09-02T00:41:18.592777"
+    },
+    "8ZrN3JMbizI_9": {
+      "text": "TTIPO MATEMÁTICA UM DOIS QUATRO OITO DEZESSEIS TRINTA E DOIS ETCETRA MAS SOBRE O PRAZER NÃO LEMBRO DE TETIDO NENHUMA AULA",
+      "transcription_time": 1.9659004211425781,
+      "duration": 8.252,
+      "timestamp": "2025-09-02T00:41:20.558761"
+    }
+  },
+  "stats": {
+    "successful": 69,
+    "failed": 0,
+    "total_duration": 298.15600000000035,
+    "total_processing_time": 49.214621782302856
+  }
+}

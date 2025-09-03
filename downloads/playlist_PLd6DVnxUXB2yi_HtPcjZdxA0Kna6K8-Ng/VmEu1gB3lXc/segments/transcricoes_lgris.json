@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "model": "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese",
+    "directory": "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/VmEu1gB3lXc/segments",
+    "total_segments": 26,
+    "processing_date": "2025-09-02T00:41:55.630683",
+    "config": {
+      "sample_rate": 16000,
+      "chunk_length": 30
+    }
+  },
+  "transcriptions": {
+    "VmEu1gB3lXc_0": {
+      "text": "AQUELE ABRAÇO VOCÊ QUESTÁ AQUI NO CANAL DO EUTOBE DA BANDE EM USGOIANIA C",
+      "transcription_time": 0.7210133075714111,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:56.351740"
+    },
+    "VmEu1gB3lXc_1": {
+      "text": "COMPANHANDO TODOS OS NOSSOS CONTENÚDOS E TAMBÉM ATÉ A NOSSA PROGRAMAÇO",
+      "transcription_time": 0.7156879901885986,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:41:57.067510"
+    },
+    "VmEu1gB3lXc_10": {
+      "text": "NAS ÚLTIMAS GESTÕES ISTAÍ GEROU INÚMEROS PROBLEMAS AO VILA NOVA",
+      "transcription_time": 0.8936920166015625,
+      "duration": 5.116,
+      "timestamp": "2025-09-02T00:41:57.961282"
+    },
+    "VmEu1gB3lXc_11": {
+      "text": "ESTÃO BATENDO NA PORTA HOJE DO VILA NOVA E QUERENDO NÃO ISTA E PREJUDICA",
+      "transcription_time": 1.0359289646148682,
+      "duration": 5.724,
+      "timestamp": "2025-09-02T00:41:58.997300"
+    },
+    "VmEu1gB3lXc_12": {
+      "text": "VILANOVA PAGA O SALÁRIO NORMALMENTE DO PAULO TURRA TA E É HONRANDO COM AS SUAS DÍVIDAS",
+      "transcription_time": 1.0662190914154053,
+      "duration": 5.948,
+      "timestamp": "2025-09-02T00:42:00.063599"
+    },
+    "VmEu1gB3lXc_13": {
+      "text": "DO EDUARDO BATISTA QUE HOJE TAMBÉM É UM TREINADOR DE PONTA NA CERIBÊ DO CAMPEONATO BRASILEIRO ESTÁ",
+      "transcription_time": 1.132678508758545,
+      "duration": 6.172,
+      "timestamp": "2025-09-02T00:42:01.196358"
+    },
+    "VmEu1gB3lXc_14": {
+      "text": "NO NOVO ORIZONTINO OU NO CRICIUMA SEU NOME ENGANDO VOCÊS ME PERDOEM AÍ É SEU NOME INGANDO ELE ESTÁ NO CRESCIUMA",
+      "transcription_time": 1.1377480030059814,
+      "duration": 6.332,
+      "timestamp": "2025-09-02T00:42:02.334188"
+    },
+    "VmEu1gB3lXc_15": {
+      "text": "S MEM PERDOEM AI A MINHA IG BREVE INO IGNORÂNCIA MAS POR CONTA DO AMARELO DOS DOIS TIMES",
+      "transcription_time": 1.278355360031128,
+      "duration": 7.132,
+      "timestamp": "2025-09-02T00:42:03.612635"
+    },
+    "VmEu1gB3lXc_16": {
+      "text": "E SEU NOME ENGANO ELE ESTÁ ASSIM NO CRICIÚMA E AÍ O VILA NOVA",
+      "transcription_time": 0.7682909965515137,
+      "duration": 4.604,
+      "timestamp": "2025-09-02T00:42:04.381005"
+    },
+    "VmEu1gB3lXc_17": {
+      "text": "ÉO SEGUINTE EM DOIS MIL DEZENOVE NA GESTÃO DO ESCIVAL MARTINS QUE HOJE É COMANDA O GOIANIANÉ O REBAIXADO BOIÂNIA É NO CAMPEONATO GOIANO",
+      "transcription_time": 1.9837377071380615,
+      "duration": 10.972,
+      "timestamp": "2025-09-02T00:42:06.364826"
+    },
+    "VmEu1gB3lXc_18": {
+      "text": "CONTRATOU O EDUARDO BATISTA NAQUELA ÉPOCUE O EDUARDO BATISTA COMANDOU VILA NOVA POR VINTE E TRÊS JOGOS E ACABOU É TENDO O SEU CONTRATO QUEBRADO",
+      "transcription_time": 1.7505362033843994,
+      "duration": 9.34,
+      "timestamp": "2025-09-02T00:42:08.115446"
+    },
+    "VmEu1gB3lXc_19": {
+      "text": "ARA DÍVIDA TRABALHISTA NE ALI COM UM CONTRATO QUEBRADO DO EDUARDO BATISTA E QUERENDO OU NÃO ESTA DÍVIDA ACABOU CHEGANDO AO VILA NOVA NOS TEMPOS ATUAIS",
+      "transcription_time": 1.9609580039978027,
+      "duration": 10.684,
+      "timestamp": "2025-09-02T00:42:10.076489"
+    },
+    "VmEu1gB3lXc_2": {
+      "text": "ÇÃO AL VIVO EU SOU IGOR SANTIAGO A SUA FONTE DE INFORMAÇÕES DO",
+      "transcription_time": 0.6945962905883789,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:10.771172"
+    },
+    "VmEu1gB3lXc_20": {
+      "text": "EDUARDO FEZ UM ACORDO COM O PRESIDENTE OGJORG BRAV PORISQUE O VILA NOVA PAGA ELE DE FORMA MENSAL ENTÃO OUVI-LA HOJE",
+      "transcription_time": 1.4360346794128418,
+      "duration": 8.06,
+      "timestamp": "2025-09-02T00:42:12.207296"
+    },
+    "VmEu1gB3lXc_21": {
+      "text": "E TAMBÉM O EDUARDO BATISTA FORA CLARO AS OUTRAS DÍVIDAS QUE O VILANOVA VEM PAGANDO TIGRÃO GASTA AÍ É PELO MENOS TREZENTOS MIL REAIS AO MÊS",
+      "transcription_time": 1.7071845531463623,
+      "duration": 9.596,
+      "timestamp": "2025-09-02T00:42:13.914566"
+    },
+    "VmEu1gB3lXc_22": {
+      "text": "COM DÍVIDAS PASSADAS ENTÃO PARA VOCÊ TORCEDOR VILANOVENS",
+      "transcription_time": 0.7585382461547852,
+      "duration": 4.572,
+      "timestamp": "2025-09-02T00:42:14.673186"
+    },
+    "VmEu1gB3lXc_23": {
+      "text": "É ESSAS ESSAS DÍVIDAS ESSAS RESPONSABILIDADES QUE NÃO SERIAM",
+      "transcription_time": 0.8803503513336182,
+      "duration": 5.34,
+      "timestamp": "2025-09-02T00:42:15.553632"
+    },
+    "VmEu1gB3lXc_24": {
+      "text": "PARA A DIREÇÃO DE FUTEBOL DO VILA NOVA TODO MUNDO É TODO O DEPARTAMENTO DE FUTEBOL DO VILA",
+      "transcription_time": 0.7526788711547852,
+      "duration": 4.508,
+      "timestamp": "2025-09-02T00:42:16.306392"
+    },
+    "VmEu1gB3lXc_25": {
+      "text": "E ISSE TORCEDOR NÃO É UMA MULETA PARA SE APOIAR MAS É UM FATO IMPORTANTE",
+      "transcription_time": 0.8273475170135498,
+      "duration": 4.636,
+      "timestamp": "2025-09-02T00:42:17.133827"
+    },
+    "VmEu1gB3lXc_3": {
+      "text": "VILA NOVA CHEGANDO AQUI PARA TRAZER UM CONTEÚDO UM POUCO DI FERE",
+      "transcription_time": 0.727177619934082,
+      "duration": 4.05,
+      "timestamp": "2025-09-02T00:42:17.861086"
+    },
+    "VmEu1gB3lXc_4": {
+      "text": "OMPARTILHANDO ESCE VÍDEO E SE INSCREVENDO NO NOSSO CANÁUTAMO QUASE BATENDO A MARCA DE SESSENTA E QUATRO MIL INSCRITOS E HOJE A BANDE NIUSGOIÂNIA COMPLETA SEIS ANOS DE EXISTÊNCIA",
+      "transcription_time": 2.4705584049224854,
+      "duration": 11.388,
+      "timestamp": "2025-09-02T00:42:20.331770"
+    },
+    "VmEu1gB3lXc_5": {
+      "text": "DELIDERANÇA MÁXIMA NO ESPORTE ENGOIAZ ENTÃO JÁ CHEGA AI FAZENDO",
+      "transcription_time": 0.9250321388244629,
+      "duration": 5.276,
+      "timestamp": "2025-09-02T00:42:21.256886"
+    },
+    "VmEu1gB3lXc_6": {
+      "text": "BOMBÁSTICO PARA GENTE FALAR SOBRE O VILA NOVA E AO SEGUINTE GALERA",
+      "transcription_time": 0.7903702259063721,
+      "duration": 4.476,
+      "timestamp": "2025-09-02T00:42:22.047347"
+    },
+    "VmEu1gB3lXc_7": {
+      "text": "ELE COBRA UM POUCO DEMAIS O TORCEDOR DO VILA ELE É UM TORCEDOR MUITO APAIXONADO",
+      "transcription_time": 0.9535131454467773,
+      "duration": 5.468,
+      "timestamp": "2025-09-02T00:42:23.000944"
+    },
+    "VmEu1gB3lXc_8": {
+      "text": "ESTÁ SEMPRE PRESENTE ALI É E CONSEQUENTEMENTE ELE COBRA BASTANTE",
+      "transcription_time": 0.7874481678009033,
+      "duration": 4.444,
+      "timestamp": "2025-09-02T00:42:23.788477"
+    },
+    "VmEu1gB3lXc_9": {
+      "text": "A SUA DIRETORIA E O ASSUNTO QUE EU VEIHO TRAZER AQUI HOJE É UM ASSUNTO PREINTE DE BATER SOBRE",
+      "transcription_time": 1.5545408725738525,
+      "duration": 5.372,
+      "timestamp": "2025-09-02T00:42:25.343119"
+    }
+  },
+  "stats": {
+    "successful": 26,
+    "failed": 0,
+    "total_duration": 161.35999999999996,
+    "total_processing_time": 29.710217237472534
+  }
+}

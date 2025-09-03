@@ -44,14 +44,14 @@ pelos Estados Unidos.
 
 00:00:15.160 --> 00:00:17.630 align:start position:0%
 pelos Estados Unidos.
-&gt;&gt; A<00:00:15.280><c> declaração</c><00:00:15.960><c> foi</c><00:00:16.199><c> feita</c><00:00:16.440><c> em</c><00:00:16.640><c> uma</c><00:00:16.880><c> entrevista</c>
+A<00:00:15.280><c> declaração</c><00:00:15.960><c> foi</c><00:00:16.199><c> feita</c><00:00:16.440><c> em</c><00:00:16.640><c> uma</c><00:00:16.880><c> entrevista</c>
 
 00:00:17.630 --> 00:00:17.640 align:start position:0%
-&gt;&gt; A declaração foi feita em uma entrevista
+A declaração foi feita em uma entrevista
  
 
 00:00:17.640 --> 00:00:20.189 align:start position:0%
-&gt;&gt; A declaração foi feita em uma entrevista
+A declaração foi feita em uma entrevista
 exclusiva<00:00:18.240><c> à</c><00:00:18.400><c> agência</c><00:00:18.880><c> Reuters</c><00:00:19.400><c> concedida</c><00:00:19.960><c> no</c>
 
 00:00:20.189 --> 00:00:20.199 align:start position:0%

@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "model": "freds0/distil-whisper-large-v3-ptbr",
+    "directory": "../../downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/VmEu1gB3lXc/segments",
+    "total_segments": 26,
+    "processing_date": "2025-09-02T09:24:40.102388",
+    "config": {
+      "chunk_length_s": 30,
+      "stride_length_s": 5,
+      "return_timestamps": true
+    }
+  },
+  "transcriptions": {
+    "VmEu1gB3lXc_0": {
+      "text": "Aquele abraço a você que está aqui no canal do YouTube da Band News Goiânia,",
+      "transcription_time": 26.684165716171265,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:25:06.786838",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Aquele abraço a você que está aqui no canal do YouTube da Band News Goiânia,"
+        }
+      ]
+    },
+    "VmEu1gB3lXc_1": {
+      "text": "acompanhando todos os nossos conteúdos e também até a nossa programação.",
+      "transcription_time": 26.460684299468994,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:25:33.247861",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "acompanhando todos os nossos conteúdos e também até a nossa programação."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_10": {
+      "text": "nas últimas gestões. Isto aí gerou inúmeros problemas ao Vila Nova.",
+      "transcription_time": 26.30182147026062,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:25:59.550023",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "nas últimas gestões. Isto aí gerou inúmeros problemas ao Vila Nova."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_11": {
+      "text": "que estão batendo na porta hoje do Vila Nova. E, querendo ou não, isso daí prejudica.",
+      "transcription_time": 26.02135443687439,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:26:25.571683",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "que estão batendo na porta hoje do Vila Nova. E, querendo ou não, isso daí prejudica."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_12": {
+      "text": "Vilão Nova paga o salário normalmente do Paulo Turra, está honrando com as suas dívidas.",
+      "transcription_time": 23.823976755142212,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:26:49.395948",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Vilão Nova paga o salário normalmente do Paulo Turra, está honrando com as suas dívidas."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_13": {
+      "text": "do Eduardo Batista, que hoje também é um treinador de ponta na Série B do Campeonato Brasileiro e está",
+      "transcription_time": 23.48192596435547,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:27:12.878227",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "do Eduardo Batista, que hoje também é um treinador de ponta na Série B do Campeonato Brasileiro e está"
+        }
+      ]
+    },
+    "VmEu1gB3lXc_14": {
+      "text": "No Novo Horizontino, ou no Criciúma, se eu não me engano. Vocês me perdoem aí, se eu não me engano, ele está no Criciúma.",
+      "transcription_time": 24.54060411453247,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:27:37.419126",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "No Novo Horizontino, ou no Criciúma, se eu não me engano. Vocês me perdoem aí, se eu não me engano, ele está no Criciúma."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_15": {
+      "text": "Vocês me perdoem aí a minha breve ignorância, mas por conta do amarelo dos dois times.",
+      "transcription_time": 25.824472188949585,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:28:03.243928",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Vocês me perdoem aí a minha breve ignorância, mas por conta do amarelo dos dois times."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_16": {
+      "text": "Se eu não me engano, ele está assim no Criciúma. E aí, o Vila Nova...",
+      "transcription_time": 27.33149290084839,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:28:30.575770",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Se eu não me engano, ele está assim no Criciúma. E aí, o Vila Nova..."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_17": {
+      "text": "É o seguinte, em 2019, na gestão do Ecival Martins, que hoje comanda o Goiânia, o rebaixado Goiânia no campeonato goiano,",
+      "transcription_time": 27.33969259262085,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:28:57.915783",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "É o seguinte, em 2019, na gestão do Ecival Martins, que hoje comanda o Goiânia, o rebaixado Goiânia no campeonato goiano,"
+        }
+      ]
+    },
+    "VmEu1gB3lXc_18": {
+      "text": "contratou o Eduardo Batista. Naquela época o Eduardo Batista comandou o Vila Nova por 23 jogos e acabou tendo o seu contrato quebrado.",
+      "transcription_time": 25.129369974136353,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:29:23.045556",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "contratou o Eduardo Batista. Naquela época o Eduardo Batista comandou o Vila Nova por 23 jogos e acabou tendo o seu contrato quebrado."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_19": {
+      "text": "com a dívida trabalhista, com o contrato quebrado do Eduardo Batista. E, querendo ou não, essa dívida acabou chegando ao Vila Nova nos tempos atuais.",
+      "transcription_time": 23.21708631515503,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:29:46.262958",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "com a dívida trabalhista, com o contrato quebrado do Eduardo Batista. E, querendo ou não, essa dívida acabou chegando ao Vila Nova nos tempos atuais."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_2": {
+      "text": "Eu sou o Igor Santiago, a sua fonte de informações do vídeo.",
+      "transcription_time": 20.178632259368896,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:30:06.441894",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Eu sou o Igor Santiago, a sua fonte de informações do vídeo."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_20": {
+      "text": "O Eduardo fez um acordo com o presidente Hugo Jorge Bravo, por isso que o Vila Nova paga ele de forma mensal. Então o Vila hoje...",
+      "transcription_time": 24.837017059326172,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:30:31.279336",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "O Eduardo fez um acordo com o presidente Hugo Jorge Bravo, por isso que o Vila Nova paga ele de forma mensal. Então o Vila hoje..."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_21": {
+      "text": "e também o Eduardo Batista. Fora, claro, as outras dívidas que o Vila Nova vem pagando, Tigrão gasta pelo menos 300 mil reais ao mês.",
+      "transcription_time": 22.765352964401245,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:30:54.045060",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "e também o Eduardo Batista. Fora, claro, as outras dívidas que o Vila Nova vem pagando, Tigrão gasta pelo menos 300 mil reais ao mês."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_22": {
+      "text": "com dívidas passadas. Então, para você, torcedor vilanovense.",
+      "transcription_time": 20.792583227157593,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:31:14.838017",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "com dívidas passadas. Então, para você, torcedor vilanovense."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_23": {
+      "text": "essas dívidas, essas responsabilidades que não seriam",
+      "transcription_time": 20.558029413223267,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:31:35.396378",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "essas dívidas, essas responsabilidades que não seriam"
+        }
+      ]
+    },
+    "VmEu1gB3lXc_24": {
+      "text": "para a direção de futebol do Vila Nova, todo mundo, é todo o departamento de futebol do Vila.",
+      "transcription_time": 20.27951216697693,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:31:55.676303",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "para a direção de futebol do Vila Nova, todo mundo, é todo o departamento de futebol do Vila."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_25": {
+      "text": "E isso, torcedor, não é uma muleta para se apoiar, mas é um fato importante.",
+      "transcription_time": 19.657435417175293,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:32:15.334022",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "E isso, torcedor, não é uma muleta para se apoiar, mas é um fato importante."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_3": {
+      "text": "Vila Nova, chegando aqui para trazer um conteúdo um pouco diferente.",
+      "transcription_time": 18.70271897315979,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:32:34.037158",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Vila Nova, chegando aqui para trazer um conteúdo um pouco diferente."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_4": {
+      "text": "compartilhando esse vídeo e se inscrevendo no nosso canal. Estamos quase batendo a marca de 64 mil inscritos e hoje a Band News Goiânia completa seis anos de existência.",
+      "transcription_time": 20.678849458694458,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:32:54.716103",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "compartilhando esse vídeo e se inscrevendo no nosso canal. Estamos quase batendo a marca de 64 mil inscritos e hoje a Band News Goiânia completa seis anos de existência."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_5": {
+      "text": "de liderança máxima no esporte em Goiás. Então, já chega aí fazendo...",
+      "transcription_time": 19.08805513381958,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:33:13.804481",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "de liderança máxima no esporte em Goiás. Então, já chega aí fazendo..."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_6": {
+      "text": "Bombástico pra gente falar sobre o Vila Nova. E é o seguinte, galera.",
+      "transcription_time": 19.26186513900757,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:33:33.066448",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "Bombástico pra gente falar sobre o Vila Nova. E é o seguinte, galera."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_7": {
+      "text": "ele cobra um pouco demais o torcedor do Vila ele é um torcedor muito apaixonado",
+      "transcription_time": 19.332108974456787,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:33:52.398664",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "ele cobra um pouco demais o torcedor do Vila ele é um torcedor muito apaixonado"
+        }
+      ]
+    },
+    "VmEu1gB3lXc_8": {
+      "text": "está sempre presente ali e, consequentemente, ele cobra bastante.",
+      "transcription_time": 18.606584548950195,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:34:11.005345",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "está sempre presente ali e, consequentemente, ele cobra bastante."
+        }
+      ]
+    },
+    "VmEu1gB3lXc_9": {
+      "text": "a sua diretoria. E o assunto que eu venho trazer aqui hoje é um assunto para a gente debater sobre...",
+      "transcription_time": 19.197153091430664,
+      "duration": 0,
+      "timestamp": "2025-09-02T09:34:30.202987",
+      "chunks": [
+        {
+          "timestamp": [
+            0.0,
+            null
+          ],
+          "text": "a sua diretoria. E o assunto que eu venho trazer aqui hoje é um assunto para a gente debater sobre..."
+        }
+      ]
+    }
+  },
+  "stats": {
+    "successful": 26,
+    "failed": 0,
+    "total_duration": 0,
+    "total_processing_time": 590.0925445556641
+  }
+}
