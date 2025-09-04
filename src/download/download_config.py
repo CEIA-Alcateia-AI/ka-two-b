@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Configurações centralizadas para download de áudio e legendas do YouTube
+Integrado com config.py master - Versão KISS
 Compatível com pipeline de dataset para TTS/STT via Streamlit
 """
 
@@ -10,55 +11,88 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 from typing import Dict, List, Optional
 
+# =============================================================================
+# CONFIGURAÇÃO VIA CONFIG.PY - Configuração centralizada
+# =============================================================================
+
+# Importa configurações do sistema centralizado
+try:
+    import sys
+    import os
+    # Adiciona o diretório src ao path de forma robusta
+    src_path = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+    if src_path not in sys.path:
+        sys.path.insert(0, src_path)
+    
+    from config import default_config
+    
+    # Configurações vindas do config.py centralizado
+    TARGET_URL = default_config.DOWNLOAD['target_url']
+    DOWNLOAD_LIMIT = default_config.DOWNLOAD['limit']
+    AUDIO_FORMAT = default_config.DOWNLOAD['audio_format']
+    AUDIO_QUALITY = default_config.DOWNLOAD['audio_quality']
+    DELAY_MIN_SECONDS = default_config.DOWNLOAD['delay_min_seconds']
+    DELAY_MAX_SECONDS = default_config.DOWNLOAD['delay_max_seconds']
+    SUBTITLE_LANGUAGES = default_config.DOWNLOAD['subtitle_languages']
+    DOWNLOAD_AUTO_SUBS = default_config.DOWNLOAD['download_auto_subs']
+    MIN_DURATION_SECONDS = default_config.DOWNLOAD['min_duration_seconds']
+    MAX_DURATION_SECONDS = default_config.DOWNLOAD['max_duration_seconds']
+    OVERWRITE_EXISTING = default_config.DOWNLOAD['overwrite_existing']
+    
+    # Caminho base sempre da raiz do projeto (CORRIGIDO)
+    def _get_project_root():
+        """Encontra raiz do projeto subindo na hierarquia"""
+        current = Path(__file__).parent
+        for _ in range(5):  # Máximo 5 níveis
+            if any((current / indicator).exists() for indicator in ['.git', 'README.md', 'src']):
+                return current
+            parent = current.parent
+            if parent == current:
+                break
+            current = parent
+        return Path.cwd()  # Fallback
+    
+    BASE_OUTPUT_DIR = str(_get_project_root() / "downloads")
+    
+    print(f"Configurações de download carregadas do config.py: URL={TARGET_URL[:50]}{'...' if len(TARGET_URL) > 50 else ''}")
+    print(f"Pasta downloads configurada: {BASE_OUTPUT_DIR}")
+    
+except ImportError as e:
+    print(f"Aviso: Não foi possível importar config.py, usando configurações padrão: {e}")
+    # Fallback para configurações padrão se config.py não estiver disponível
+    TARGET_URL = "https://www.youtube.com/watch?v=DXILvIKW_FY"
+    DOWNLOAD_LIMIT = 0
+    AUDIO_FORMAT = "mp3"
+    AUDIO_QUALITY = 0
+    DELAY_MIN_SECONDS = 15
+    DELAY_MAX_SECONDS = 30
+    SUBTITLE_LANGUAGES = ["pt-BR", "pt"]
+    DOWNLOAD_AUTO_SUBS = True
+    MIN_DURATION_SECONDS = 30
+    MAX_DURATION_SECONDS = 3600
+    OVERWRITE_EXISTING = False
+    
+    # Caminho seguro para fallback
+    def _get_project_root():
+        current = Path.cwd()
+        if 'src' in str(current):
+            # Se está em src/, sobe para raiz
+            while current.name != 'src' and current.parent != current:
+                current = current.parent
+            if current.name == 'src':
+                current = current.parent
+        return current
+    
+    BASE_OUTPUT_DIR = str(_get_project_root() / "downloads")
+
+# =============================================================================
+
 
 class DownloadConfig:
     """
     Configuração centralizada para download YouTube usando yt-dlp
-    Otimizada para simplicidade e compatibilidade com Streamlit
+    Agora integrada com config.py master - Filosofia KISS
     """
-    
-    # ========================================
-    # CONFIGURAÇÕES PRINCIPAIS DO USUÁRIO
-    # ========================================
-    
-    # URL alvo para download (vídeo, playlist ou canal)
-    TARGET_URL = "https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB"
-    
-    # Limite de downloads (0 = todos os vídeos)
-    DOWNLOAD_LIMIT = 0 # Máximo de vídeos para baixar
-    
-    # Configurações de áudio
-    AUDIO_FORMAT = "mp3"     # Opções: mp3, wav, m4a, flac
-    AUDIO_QUALITY = 0      # kbps: 128, 192, 256, 320 (0 = melhor disponível)
-    
-    # Delays anti-bloqueio (segundos)
-    DELAY_MIN_SECONDS = 15   # Mínimo entre downloads
-    DELAY_MAX_SECONDS = 30   # Máximo entre downloads
-    
-    # Configuração de legendas (ordem de prioridade)
-    SUBTITLE_LANGUAGES = ["pt-BR", "pt"]  # Manual pt-BR > Manual pt > Auto pt-BR > Auto pt
-    DOWNLOAD_AUTO_SUBS = True             # Baixa legendas automáticas se manual não existir
-    
-    # Estrutura de output
-    BASE_OUTPUT_DIR = "./downloads"       # Pasta base dos downloads
-    
-    # ========================================
-    # CONFIGURAÇÕES AVANÇADAS (OPCIONAL)
-    # ========================================
-    
-    # Filtros de duração de vídeo
-    MIN_DURATION_SECONDS = 30      # Mínimo: 30 segundos
-    MAX_DURATION_SECONDS = 3600    # Máximo: 1 hora
-    
-    # Comportamento de sobrescrita
-    OVERWRITE_EXISTING = False     # True = redownload, False = pula existentes
-    
-    # Manter arquivo de vídeo também
-    KEEP_VIDEO_FILE = False        # True = mantém .mp4, False = só áudio
-    
-    # ========================================
-    # CONFIGURAÇÕES INTERNAS (NÃO ALTERAR)
-    # ========================================
     
     def __init__(self, target_url: Optional[str] = None):
         """
@@ -67,7 +101,27 @@ class DownloadConfig:
         Args:
             target_url: URL para override da configuração padrão
         """
-        self.target_url = target_url or self.TARGET_URL
+        # Usa configurações do config.py master ou override
+        self.TARGET_URL = target_url or TARGET_URL
+        self.DOWNLOAD_LIMIT = DOWNLOAD_LIMIT
+        self.AUDIO_FORMAT = AUDIO_FORMAT
+        self.AUDIO_QUALITY = AUDIO_QUALITY
+        self.DELAY_MIN_SECONDS = DELAY_MIN_SECONDS
+        self.DELAY_MAX_SECONDS = DELAY_MAX_SECONDS
+        self.SUBTITLE_LANGUAGES = SUBTITLE_LANGUAGES
+        self.DOWNLOAD_AUTO_SUBS = DOWNLOAD_AUTO_SUBS
+        self.MIN_DURATION_SECONDS = MIN_DURATION_SECONDS
+        self.MAX_DURATION_SECONDS = MAX_DURATION_SECONDS
+        self.OVERWRITE_EXISTING = OVERWRITE_EXISTING
+        
+        # Caminho base sempre da raiz do projeto
+        self.BASE_OUTPUT_DIR = BASE_OUTPUT_DIR
+        
+        # Configurações comportamentais (mantidas do original)
+        self.KEEP_VIDEO_FILE = False  # True = mantém .mp4, False = só áudio
+        
+        # Detecta tipo de URL e configura estrutura
+        self.target_url = self.TARGET_URL
         self.url_type, self.content_id = self._detect_url_type(self.target_url)
         self.output_dir = self._create_output_path()
         
@@ -333,14 +387,14 @@ if __name__ == "__main__":
     validation = config.validate_config()
     
     if validation['valid']:
-        print("✅ Configurações válidas!")
+        print("Configurações válidas!")
         summary = config.create_summary()
         
         print("\nResumo das configurações:")
         for key, value in summary.items():
             print(f"  {key}: {value}")
     else:
-        print("❌ Erros encontrados:")
+        print("Erros encontrados:")
         for error in validation['errors']:
             print(f"  - {error}")
     

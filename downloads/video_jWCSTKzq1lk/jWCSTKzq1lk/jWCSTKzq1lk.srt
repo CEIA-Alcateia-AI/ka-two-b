@@ -1,0 +1,176 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.460 --> 00:00:05.650 align:start position:0%
+ 
+[Música]
+
+00:00:05.650 --> 00:00:05.660 align:start position:0%
+[Música]
+ 
+
+00:00:05.660 --> 00:00:08.860 align:start position:0%
+[Música]
+noventa<00:00:06.660><c> e</c><00:00:06.720><c> nove</c><00:00:06.810><c> em</c><00:00:07.350><c> cada</c><00:00:07.710><c> cem</c><00:00:07.890><c> jornalistas</c>
+
+00:00:08.860 --> 00:00:08.870 align:start position:0%
+noventa e nove em cada cem jornalistas
+ 
+
+00:00:08.870 --> 00:00:10.759 align:start position:0%
+noventa e nove em cada cem jornalistas
+previram<00:00:09.870><c> que</c><00:00:09.990><c> a</c><00:00:10.019><c> economia</c><00:00:10.110><c> brasileira</c>
+
+00:00:10.759 --> 00:00:10.769 align:start position:0%
+previram que a economia brasileira
+ 
+
+00:00:10.769 --> 00:00:14.720 align:start position:0%
+previram que a economia brasileira
+sofria<00:00:11.730><c> outra</c><00:00:12.420><c> queda</c><00:00:12.719><c> no</c><00:00:13.320><c> segundo</c><00:00:13.740><c> trimestre</c>
+
+00:00:14.720 --> 00:00:14.730 align:start position:0%
+sofria outra queda no segundo trimestre
+ 
+
+00:00:14.730 --> 00:00:16.369 align:start position:0%
+sofria outra queda no segundo trimestre
+de<00:00:14.910><c> 2009</c>
+
+00:00:16.369 --> 00:00:16.379 align:start position:0%
+de 2009
+ 
+
+00:00:16.379 --> 00:00:19.429 align:start position:0%
+de 2009
+em<00:00:16.590><c> consequência</c><00:00:17.430><c> disso</c><00:00:17.520><c> o</c><00:00:18.300><c> país</c><00:00:18.600><c> entraria</c><00:00:19.260><c> da</c>
+
+00:00:19.429 --> 00:00:19.439 align:start position:0%
+em consequência disso o país entraria da
+ 
+
+00:00:19.439 --> 00:00:22.300 align:start position:0%
+em consequência disso o país entraria da
+chamada<00:00:19.980><c> recessão</c><00:00:20.580><c> técnica</c>
+
+00:00:22.300 --> 00:00:22.310 align:start position:0%
+chamada recessão técnica
+ 
+
+00:00:22.310 --> 00:00:25.759 align:start position:0%
+chamada recessão técnica
+surpreendidos<00:00:23.310><c> pelo</c><00:00:23.519><c> crescimento</c><00:00:24.269><c> de</c><00:00:24.769><c> 0,4</c>
+
+00:00:25.759 --> 00:00:25.769 align:start position:0%
+surpreendidos pelo crescimento de 0,4
+ 
+
+00:00:25.769 --> 00:00:26.720 align:start position:0%
+surpreendidos pelo crescimento de 0,4
+por<00:00:25.920><c> cento</c>
+
+00:00:26.720 --> 00:00:26.730 align:start position:0%
+por cento
+ 
+
+00:00:26.730 --> 00:00:29.599 align:start position:0%
+por cento
+os<00:00:27.029><c> dois</c><00:00:27.420><c> maiores</c><00:00:27.750><c> jornais</c><00:00:28.109><c> de</c><00:00:28.470><c> são</c><00:00:28.710><c> paulo</c><00:00:28.800><c> se</c>
+
+00:00:29.599 --> 00:00:29.609 align:start position:0%
+os dois maiores jornais de são paulo se
+ 
+
+00:00:29.609 --> 00:00:32.840 align:start position:0%
+os dois maiores jornais de são paulo se
+refugiaram<00:00:30.359><c> na</c><00:00:30.539><c> vírgula</c><00:00:31.170><c> seguida</c><00:00:31.710><c> do</c><00:00:31.859><c> mas</c><00:00:32.369><c> a</c>
+
+00:00:32.840 --> 00:00:32.850 align:start position:0%
+refugiaram na vírgula seguida do mas a
+ 
+
+00:00:32.850 --> 00:00:36.260 align:start position:0%
+refugiaram na vírgula seguida do mas a
+manchete<00:00:33.480><c> da</c><00:00:33.719><c> folha</c><00:00:34.640><c> investimento</c><00:00:35.640><c> empurra</c>
+
+00:00:36.260 --> 00:00:36.270 align:start position:0%
+manchete da folha investimento empurra
+ 
+
+00:00:36.270 --> 00:00:40.790 align:start position:0%
+manchete da folha investimento empurra
+pib<00:00:36.719><c> mas</c><00:00:37.550><c> recuperação</c><00:00:38.550><c> segue</c><00:00:39.059><c> lenta</c><00:00:39.800><c> manchete</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+pib mas recuperação segue lenta manchete
+ 
+
+00:00:40.800 --> 00:00:45.080 align:start position:0%
+pib mas recuperação segue lenta manchete
+do<00:00:40.890><c> estadão</c><00:00:41.360><c> piri</c><00:00:42.360><c> cresce</c><00:00:43.460><c> 0,4</c><00:00:44.460><c> por</c><00:00:44.640><c> cento</c><00:00:44.730><c> e</c>
+
+00:00:45.080 --> 00:00:45.090 align:start position:0%
+do estadão piri cresce 0,4 por cento e
+ 
+
+00:00:45.090 --> 00:00:48.500 align:start position:0%
+do estadão piri cresce 0,4 por cento e
+surpreende<00:00:45.870><c> mas</c><00:00:46.469><c> retomada</c><00:00:47.250><c> é</c><00:00:47.550><c> lenta</c>
+
+00:00:48.500 --> 00:00:48.510 align:start position:0%
+surpreende mas retomada é lenta
+ 
+
+00:00:48.510 --> 00:00:51.410 align:start position:0%
+surpreende mas retomada é lenta
+se<00:00:48.870><c> alguma</c><00:00:49.379><c> celebridade</c><00:00:50.329><c> começar</c><00:00:51.329><c> a</c>
+
+00:00:51.410 --> 00:00:51.420 align:start position:0%
+se alguma celebridade começar a
+ 
+
+00:00:51.420 --> 00:00:53.650 align:start position:0%
+se alguma celebridade começar a
+recuperar-se<00:00:52.350><c> de</c><00:00:52.500><c> uma</c><00:00:52.590><c> depressão</c><00:00:53.219><c> profunda</c>
+
+00:00:53.650 --> 00:00:53.660 align:start position:0%
+recuperar-se de uma depressão profunda
+ 
+
+00:00:53.660 --> 00:00:57.590 align:start position:0%
+recuperar-se de uma depressão profunda
+os<00:00:54.660><c> autores</c><00:00:55.260><c> dessas</c><00:00:55.770><c> manchetes</c><00:00:56.539><c> resumiram</c><00:00:57.539><c> a</c>
+
+00:00:57.590 --> 00:00:57.600 align:start position:0%
+os autores dessas manchetes resumiram a
+ 
+
+00:00:57.600 --> 00:01:00.229 align:start position:0%
+os autores dessas manchetes resumiram a
+notícia<00:00:58.289><c> no</c><00:00:58.649><c> seguinte</c><00:00:59.160><c> título</c>
+
+00:01:00.229 --> 00:01:00.239 align:start position:0%
+notícia no seguinte título
+ 
+
+00:01:00.239 --> 00:01:03.319 align:start position:0%
+notícia no seguinte título
+fulano<00:01:00.750><c> di</c><00:01:00.960><c> tal</c><00:01:01.079><c> acorda</c><00:01:01.920><c> animado</c><00:01:02.149><c> mas</c><00:01:03.149><c> ainda</c>
+
+00:01:03.319 --> 00:01:03.329 align:start position:0%
+fulano di tal acorda animado mas ainda
+ 
+
+00:01:03.329 --> 00:01:06.380 align:start position:0%
+fulano di tal acorda animado mas ainda
+longe<00:01:03.719><c> do</c><00:01:04.500><c> estado</c><00:01:05.010><c> de</c><00:01:05.129><c> euforia</c>
+
+00:01:06.380 --> 00:01:06.390 align:start position:0%
+longe do estado de euforia
+ 
+
+00:01:06.390 --> 00:01:13.840 align:start position:0%
+longe do estado de euforia
+[Música]
+

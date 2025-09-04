@@ -4,6 +4,7 @@
 Modulo de Transcricao usando modelo freds0/distil-whisper-large-v3-ptbr
 Implementacao modular para processamento batch de segmentos de audio
 Preparado para integracao com validacao cruzada e interface Streamlit
+Integrado com sistema de configuracao centralizada
 """
 
 import os
@@ -16,28 +17,69 @@ from dataclasses import dataclass
 import torch
 from transformers import pipeline
 
+# =============================================================================
+# CONFIGURACAO VIA CONFIG.PY - Configuracao centralizada
+# =============================================================================
+
+# Importa configuracoes do sistema centralizado
+try:
+    import sys
+    import os
+    # Adiciona o diretorio src ao path de forma robusta
+    src_path = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+    if src_path not in sys.path:
+        sys.path.insert(0, src_path)
+    
+    from config import default_config
+    
+    # Configuracoes vindas do config.py centralizado
+    MODEL_NAME = default_config.TRANSCRIPTION_FREDS0['model_name']
+    CHUNK_LENGTH_S = default_config.TRANSCRIPTION_FREDS0['chunk_length_s']
+    STRIDE_LENGTH_S = default_config.TRANSCRIPTION_FREDS0['stride_length_s']
+    RETURN_TIMESTAMPS = default_config.TRANSCRIPTION_FREDS0['return_timestamps']
+    MIN_AUDIO_DURATION = default_config.TRANSCRIPTION_FREDS0['min_audio_duration']
+    MAX_AUDIO_DURATION = default_config.TRANSCRIPTION_FREDS0['max_audio_duration']
+    OUTPUT_FILENAME = default_config.TRANSCRIPTION_FREDS0['output_filename']
+    OVERWRITE_EXISTING = default_config.TRANSCRIPTION_FREDS0['overwrite_existing']
+    
+    print(f"Configuracoes freds0 carregadas do config.py: modelo={MODEL_NAME}")
+    
+except ImportError as e:
+    print(f"Aviso: Nao foi possivel importar config.py, usando configuracoes padrao: {e}")
+    # Fallback para configuracoes padrao se config.py nao estiver disponivel
+    MODEL_NAME = "freds0/distil-whisper-large-v3-ptbr"
+    CHUNK_LENGTH_S = 30
+    STRIDE_LENGTH_S = 5
+    RETURN_TIMESTAMPS = True
+    MIN_AUDIO_DURATION = 1.0
+    MAX_AUDIO_DURATION = 60.0
+    OUTPUT_FILENAME = "transcricoes_freds0.json"
+    OVERWRITE_EXISTING = False
+
+# =============================================================================
+
 
 @dataclass
 class Freds0TranscriptionConfig:
     """
     Configuracoes para transcricao com modelo freds0 Whisper
-    Parametros otimizados para qualidade e compatibilidade
+    Parametros obtidos do config master ou fallback para padroes
     """
     # Configuracoes do modelo
-    model_name: str = "freds0/distil-whisper-large-v3-ptbr"
+    model_name: str = MODEL_NAME
     
     # Configuracoes de processamento
-    chunk_length_s: int = 30         # Segundos por chunk (otimo para Whisper)
-    stride_length_s: int = 5         # Sobreposicao entre chunks
-    return_timestamps: bool = True   # Timestamps internos do modelo
+    chunk_length_s: int = CHUNK_LENGTH_S         # Segundos por chunk (otimo para Whisper)
+    stride_length_s: int = STRIDE_LENGTH_S       # Sobreposicao entre chunks
+    return_timestamps: bool = RETURN_TIMESTAMPS  # Timestamps internos do modelo
     
     # Configuracoes de qualidade
-    min_audio_duration: float = 1.0  # Minimo em segundos
-    max_audio_duration: float = 60.0 # Maximo em segundos
+    min_audio_duration: float = MIN_AUDIO_DURATION  # Minimo em segundos
+    max_audio_duration: float = MAX_AUDIO_DURATION  # Maximo em segundos
     
     # Configuracoes de output
-    output_filename: str = "transcricoes_freds0.json"
-    overwrite_existing: bool = False  # Nao sobrescreve por padrao
+    output_filename: str = OUTPUT_FILENAME
+    overwrite_existing: bool = OVERWRITE_EXISTING  # Nao sobrescreve por padrao
 
 
 class Freds0Transcriber:
@@ -543,6 +585,7 @@ def main():
     Processa todos os segmentos encontrados na estrutura do projeto
     """
     print("KATUBE FREDS0 TRANSCRIBER - Whisper Portugues Brasileiro")
+    print("Integrado com sistema de configuracao centralizada")
     print("=" * 65)
     
     # Procura dados de teste

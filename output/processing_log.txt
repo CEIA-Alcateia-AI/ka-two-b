@@ -1,0 +1,36 @@
+KATUBE PIPELINE - LOG DE PROCESSAMENTO
+==================================================
+Data de consolidação: 2025-09-03 23:19:16
+Total de playlists processadas: 3
+
+[1] PLAYLIST: PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng
+    URL: https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB
+    Data: 2025-08-31 23:18:56.519784
+    Vídeos baixados: 4/4
+    Arquivos de áudio: 4
+    Arquivos de legenda: 0
+    Tempo total: 0.0s
+    Fonte: /home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/execution_report.json
+
+[2] PLAYLIST: PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d
+    URL: https://www.youtube.com/watch?v=x81Ab1a84f0&list=PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d&pp=gAQB
+    Data: 2025-09-03 22:14:28.084694
+    Vídeos baixados: 2/2
+    Arquivos de áudio: 2
+    Arquivos de legenda: 0
+    Tempo total: 0.0s
+    Fonte: /home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/execution_report.json
+
+[3] PLAYLIST: DXILvIKW_FY
+    URL: https://www.youtube.com/watch?v=DXILvIKW_FY
+    Data: 2025-09-03 22:55:12.339681
+    Vídeos baixados: 1/1
+    Arquivos de áudio: 1
+    Arquivos de legenda: 0
+    Tempo total: 0.0s
+    Fonte: /home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_DXILvIKW_FY/execution_report.json
+
+RESULTADO FINAL:
+--------------------
+Total de segmentos aprovados: 12
+Arquivos de áudio no dataset final: 168

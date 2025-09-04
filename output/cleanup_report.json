@@ -1,0 +1,20 @@
+{
+  "removed_count": 3,
+  "preserved_count": 6,
+  "errors_count": 0,
+  "removed_items": [
+    "Playlist completa: playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng",
+    "Playlist completa: playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d",
+    "Playlist completa: video_DXILvIKW_FY"
+  ],
+  "preserved_items": [
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/execution_report.json",
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/execution_report.json",
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/execution_report.json",
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/execution_report.json",
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_DXILvIKW_FY/execution_report.json",
+    "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_DXILvIKW_FY/execution_report.json"
+  ],
+  "errors": [],
+  "cleanup_date": "2025-09-03T23:19:16.382469"
+}

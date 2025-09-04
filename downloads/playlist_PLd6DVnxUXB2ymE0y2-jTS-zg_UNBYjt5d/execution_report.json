@@ -1,0 +1,55 @@
+{
+  "status": "success",
+  "message": "Pipeline executado com sucesso",
+  "config_summary": {
+    "url_original": "https://www.youtube.com/watch?v=x81Ab1a84f0&list=PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d&pp=gAQB",
+    "tipo_detectado": "playlist",
+    "content_id": "PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d",
+    "limite_downloads": "Todos",
+    "qualidade_audio": "Melhor disponível",
+    "formato_audio": "MP3",
+    "delay_range": "15-30s",
+    "linguagens_legenda": "pt-BR > pt",
+    "pasta_saida": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d",
+    "arquivos_controle": {
+      "lista_videos": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/youtube_videos.txt",
+      "log_erros": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/download_errors.json",
+      "log_sucessos": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/download_success.json"
+    }
+  },
+  "stats": {
+    "started_at": "2025-09-03 22:14:28.084694",
+    "finished_at": null,
+    "total_execution_time": 0,
+    "videos_attempted": 2,
+    "videos_successful": 2,
+    "videos_failed": 0,
+    "videos_skipped": 0,
+    "audio_files_created": 2,
+    "subtitle_files_created": 0
+  },
+  "success_log": [
+    {
+      "video_id": "x81Ab1a84f0",
+      "timestamp": "2025-09-03T22:14:38.630750",
+      "audio_downloaded": true,
+      "subtitle_downloaded": false,
+      "audio_size_mb": 1.91,
+      "subtitle_size_kb": 0
+    },
+    {
+      "video_id": "1SI3RPG-0N8",
+      "timestamp": "2025-09-03T22:15:14.539326",
+      "audio_downloaded": true,
+      "subtitle_downloaded": false,
+      "audio_size_mb": 3.6,
+      "subtitle_size_kb": 0
+    }
+  ],
+  "error_log": [],
+  "files_created": {
+    "videos_list": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/youtube_videos.txt",
+    "success_log": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/download_success.json",
+    "error_log": "downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/download_errors.json"
+  }
+}

@@ -4,6 +4,7 @@
 Modulo de Transcricao usando modelo lgris/wav2vec2-large-xlsr-open-brazilian-portuguese
 Implementacao modular para processamento batch de segmentos de audio
 Preparado para integracao com validacao cruzada e interface Streamlit
+Integrado com sistema de configuracao centralizada
 """
 
 import os
@@ -17,28 +18,69 @@ import torch
 import torchaudio
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 
+# =============================================================================
+# CONFIGURACAO VIA CONFIG.PY - Configuracao centralizada
+# =============================================================================
+
+# Importa configuracoes do sistema centralizado
+try:
+    import sys
+    import os
+    # Adiciona o diretorio src ao path de forma robusta
+    src_path = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+    if src_path not in sys.path:
+        sys.path.insert(0, src_path)
+    
+    from config import default_config
+    
+    # Configuracoes vindas do config.py centralizado
+    MODEL_NAME = default_config.TRANSCRIPTION_LGRIS['model_name']
+    TARGET_SAMPLE_RATE = default_config.TRANSCRIPTION_LGRIS['target_sample_rate']
+    BATCH_SIZE = default_config.TRANSCRIPTION_LGRIS['batch_size']
+    CHUNK_LENGTH = default_config.TRANSCRIPTION_LGRIS['chunk_length']
+    MIN_AUDIO_DURATION = default_config.TRANSCRIPTION_LGRIS['min_audio_duration']
+    MAX_AUDIO_DURATION = default_config.TRANSCRIPTION_LGRIS['max_audio_duration']
+    OUTPUT_FILENAME = default_config.TRANSCRIPTION_LGRIS['output_filename']
+    OVERWRITE_EXISTING = default_config.TRANSCRIPTION_LGRIS['overwrite_existing']
+    
+    print(f"Configuracoes lgris carregadas do config.py: modelo={MODEL_NAME}")
+    
+except ImportError as e:
+    print(f"Aviso: Nao foi possivel importar config.py, usando configuracoes padrao: {e}")
+    # Fallback para configuracoes padrao se config.py nao estiver disponivel
+    MODEL_NAME = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
+    TARGET_SAMPLE_RATE = 16000
+    BATCH_SIZE = 1
+    CHUNK_LENGTH = 30
+    MIN_AUDIO_DURATION = 1.0
+    MAX_AUDIO_DURATION = 30.0
+    OUTPUT_FILENAME = "transcricoes_lgris.json"
+    OVERWRITE_EXISTING = False
+
+# =============================================================================
+
 
 @dataclass
 class LgrisTranscriptionConfig:
     """
     Configuracoes para transcricao com modelo lgris Wav2Vec2
-    Parametros otimizados para qualidade e compatibilidade
+    Parametros obtidos do config master ou fallback para padroes
     """
     # Configuracoes do modelo
-    model_name: str = "lgris/wav2vec2-large-xlsr-open-brazilian-portuguese"
-    target_sample_rate: int = 16000  # Taxa requerida pelo Wav2Vec2
+    model_name: str = MODEL_NAME
+    target_sample_rate: int = TARGET_SAMPLE_RATE  # Taxa requerida pelo Wav2Vec2
     
     # Configuracoes de processamento
-    batch_size: int = 1              # Processamento individual para estabilidade
-    chunk_length: int = 30           # Segundos por chunk (similar ao Whisper)
+    batch_size: int = BATCH_SIZE              # Processamento individual para estabilidade
+    chunk_length: int = CHUNK_LENGTH          # Segundos por chunk (similar ao Whisper)
     
     # Configuracoes de qualidade
-    min_audio_duration: float = 1.0  # Minimo em segundos
-    max_audio_duration: float = 30.0 # Maximo em segundos
+    min_audio_duration: float = MIN_AUDIO_DURATION  # Minimo em segundos
+    max_audio_duration: float = MAX_AUDIO_DURATION  # Maximo em segundos
     
     # Configuracoes de output
-    output_filename: str = "transcricoes_lgris.json"
-    overwrite_existing: bool = False  # Nao sobrescreve por padrao
+    output_filename: str = OUTPUT_FILENAME
+    overwrite_existing: bool = OVERWRITE_EXISTING  # Nao sobrescreve por padrao
 
 
 class LgrisTranscriber:
@@ -105,7 +147,7 @@ class LgrisTranscriber:
             # Carrega modelo usando safetensors por seguranca
             self.model = Wav2Vec2ForCTC.from_pretrained(
                 self.config.model_name,
-                use_safetensors=True,  # Força uso de safetensors
+                use_safetensors=True,  # Forca uso de safetensors
                 torch_dtype=torch.float32
             )
             self.model.to(self.device)
@@ -576,6 +618,7 @@ def main():
     Processa todos os segmentos encontrados na estrutura do projeto
     """
     print("KATUBE LGRIS TRANSCRIBER - Wav2Vec2 Portugues Brasileiro")
+    print("Integrado com sistema de configuracao centralizada")
     print("=" * 65)
     
     # Procura dados de teste

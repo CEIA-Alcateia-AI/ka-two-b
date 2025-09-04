@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "consolidation_date": "2025-09-03T23:19:16.378496",
+    "total_reports_processed": 3,
+    "katube_version": "pipeline_modular"
+  },
+  "processing_summary": {
+    "total_playlists": 3,
+    "total_videos_attempted": 7,
+    "total_videos_successful": 7,
+    "total_audio_files": 7,
+    "total_subtitle_files": 0
+  },
+  "playlists": [
+    {
+      "playlist_id": "PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng",
+      "url_original": "https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB",
+      "tipo_detectado": "playlist",
+      "processing_date": "2025-08-31 23:18:56.519784",
+      "execution_time": 0,
+      "videos_attempted": 4,
+      "videos_successful": 4,
+      "videos_failed": 0,
+      "videos_skipped": 0,
+      "audio_files_created": 4,
+      "subtitle_files_created": 0,
+      "execution_report_source": "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng/execution_report.json"
+    },
+    {
+      "playlist_id": "PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d",
+      "url_original": "https://www.youtube.com/watch?v=x81Ab1a84f0&list=PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d&pp=gAQB",
+      "tipo_detectado": "playlist",
+      "processing_date": "2025-09-03 22:14:28.084694",
+      "execution_time": 0,
+      "videos_attempted": 2,
+      "videos_successful": 2,
+      "videos_failed": 0,
+      "videos_skipped": 0,
+      "audio_files_created": 2,
+      "subtitle_files_created": 0,
+      "execution_report_source": "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/playlist_PLd6DVnxUXB2ymE0y2-jTS-zg_UNBYjt5d/execution_report.json"
+    },
+    {
+      "playlist_id": "DXILvIKW_FY",
+      "url_original": "https://www.youtube.com/watch?v=DXILvIKW_FY",
+      "tipo_detectado": "video",
+      "processing_date": "2025-09-03 22:55:12.339681",
+      "execution_time": 0,
+      "videos_attempted": 1,
+      "videos_successful": 1,
+      "videos_failed": 0,
+      "videos_skipped": 0,
+      "audio_files_created": 1,
+      "subtitle_files_created": 0,
+      "execution_report_source": "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_DXILvIKW_FY/execution_report.json"
+    }
+  ]
+}
