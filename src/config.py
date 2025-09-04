@@ -35,7 +35,7 @@ class KatubeConfig:
     
     DOWNLOAD = {
         # URL para processamento (vídeo, playlist ou canal)
-        'target_url': "https://www.youtube.com/watch?v=rnQUKvjucxg",  # Exemplo: "https://www.youtube.com/playlist?list=PLxxx"
+        'target_url': "https://www.youtube.com/watch?v=-N5i9Fbc38I",  # Exemplo: "https://www.youtube.com/playlist?list=PLxxx"
         
         # Controle de quantidade
         'limit': 0,  # 0 = todos os vídeos, N = máximo N vídeos

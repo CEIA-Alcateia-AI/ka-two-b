@@ -1,17 +1,45 @@
 {
   "metadata": {
-    "consolidation_date": "2025-09-03T23:19:16.378496",
-    "total_reports_processed": 3,
+    "consolidation_date": "2025-09-04T02:28:51.319431",
+    "total_reports_processed": 5,
     "katube_version": "pipeline_modular"
   },
   "processing_summary": {
-    "total_playlists": 3,
-    "total_videos_attempted": 7,
-    "total_videos_successful": 7,
-    "total_audio_files": 7,
+    "total_playlists": 5,
+    "total_videos_attempted": 9,
+    "total_videos_successful": 9,
+    "total_audio_files": 9,
     "total_subtitle_files": 0
   },
   "playlists": [
+    {
+      "playlist_id": "-N5i9Fbc38I",
+      "url_original": "https://www.youtube.com/watch?v=-N5i9Fbc38I",
+      "tipo_detectado": "video",
+      "processing_date": "2025-09-04 02:02:54.505248",
+      "execution_time": 0,
+      "videos_attempted": 1,
+      "videos_successful": 1,
+      "videos_failed": 0,
+      "videos_skipped": 0,
+      "audio_files_created": 1,
+      "subtitle_files_created": 0,
+      "execution_report_source": "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_-N5i9Fbc38I/execution_report.json"
+    },
+    {
+      "playlist_id": "jWCSTKzq1lk",
+      "url_original": "https://www.youtube.com/watch?v=jWCSTKzq1lk",
+      "tipo_detectado": "video",
+      "processing_date": "2025-09-03 23:57:47.642929",
+      "execution_time": 0,
+      "videos_attempted": 1,
+      "videos_successful": 1,
+      "videos_failed": 0,
+      "videos_skipped": 0,
+      "audio_files_created": 1,
+      "subtitle_files_created": 0,
+      "execution_report_source": "/home/anjos/Dropbox/PROJETO CEIA/Alcateia/Katube_Marcos/downloads/video_jWCSTKzq1lk/execution_report.json"
+    },
     {
       "playlist_id": "PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng",
       "url_original": "https://www.youtube.com/watch?v=rI8m_dbr1gA&list=PLd6DVnxUXB2yi_HtPcjZdxA0Kna6K8-Ng&pp=gAQB",

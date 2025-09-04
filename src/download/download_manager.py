@@ -15,7 +15,7 @@ from random import randint
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 
-from download_config import DownloadConfig, create_config_instance
+from .download_config import DownloadConfig, create_config_instance
 
 
 class DownloadManager:
