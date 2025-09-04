@@ -26,7 +26,7 @@ class KatubeConfig:
         'transcribe': True,      # Transcrever segmentos com 2 modelos
         'normalize': True,       # Normalizar transcrições para comparação
         'validate': True,        # Validar usando similaridade cruzada
-        'cleanup': False         # Limpar arquivos intermediários
+        'cleanup': True         # Limpar arquivos intermediários
     }
     
     # ========================================================================
@@ -35,7 +35,7 @@ class KatubeConfig:
     
     DOWNLOAD = {
         # URL para processamento (vídeo, playlist ou canal)
-        'target_url': "https://www.youtube.com/watch?v=-N5i9Fbc38I",  # Exemplo: "https://www.youtube.com/playlist?list=PLxxx"
+        'target_url': "https://www.youtube.com/watch?v=5vZ63hkjYdc&list=PLd6DVnxUXB2zZbo0YPt9L0Ncz0FWPk958&pp=gAQB",  # Exemplo: "https://www.youtube.com/playlist?list=PLxxx"
         
         # Controle de quantidade
         'limit': 0,  # 0 = todos os vídeos, N = máximo N vídeos
@@ -142,7 +142,7 @@ class KatubeConfig:
     
     VALIDATION = {
         # Threshold de aprovação (parâmetro crítico)
-        'similarity_threshold': 0.9,     # Valores sugeridos:
+        'similarity_threshold': 0.95,     # Valores sugeridos:
                                          # 0.6 = 60% (mais permissivo, mais dados)
                                          # 0.7 = 70% (balanceado) - RECOMENDADO
                                          # 0.8 = 80% (mais rigoroso, menos dados)

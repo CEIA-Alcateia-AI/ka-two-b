@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ka-two-b"
+version = "0.1.0"
+description = "Sistema modular para geração de datasets TTS/STT a partir do YouTube"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Seu Nome", email = "seu.email@exemplo.com"}
+]
+maintainers = [
+    {name = "Seu Nome", email = "seu.email@exemplo.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["tts", "stt", "dataset", "youtube", "speech", "audio", "transcription"]
+requires-python = ">=3.8"
+dependencies = [
+    # Leia do seu requirements.txt e cole aqui as dependências principais
+    # Exemplo:
+    # "torch>=1.9.0",
+    # "torchaudio>=0.9.0", 
+    # "transformers>=4.20.0",
+    # "yt-dlp>=2023.1.6",
+    # "librosa>=0.9.0",
+    # "textdistance>=4.2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    # Leia do seu requirements-dev.txt para dependências de desenvolvimento
+    # "pytest>=6.0",
+    # "black>=22.0",
+    # "flake8>=4.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/DosAnjos-AI/ka-two-b"
+Repository = "https://github.com/DosAnjos-AI/ka-two-b"
+Documentation = "https://github.com/DosAnjos-AI/ka-two-b#readme"
+"Bug Tracker" = "https://github.com/DosAnjos-AI/ka-two-b/issues"
+
+[project.scripts]
+ka-two-b = "main:main"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "."
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.yaml", "*.yml"]
+
+# Configurações para ferramentas de desenvolvimento (opcionais)
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
