@@ -14,19 +14,31 @@ from datetime import datetime
 from textdistance import levenshtein
 
 # =============================================================================
-# CONFIGURAÇÃO DO USUÁRIO - EDITE AQUI
+# CONFIGURAÇÃO VIA CONFIG.PY - Configuração centralizada
 # =============================================================================
 
-# Threshold mínimo para aprovar transcrição (0.0 a 1.0)
-SIMILARITY_THRESHOLD = 0.7  # Exemplo: 0.7 = 70% de similaridade
-                           # Valores sugeridos:
-                           # 0.6 = 60% (mais permissivo, mais dados)  
-                           # 0.7 = 70% (balanceado)
-                           # 0.8 = 80% (mais rigoroso, menos dados)
-                           # 0.9 = 90% (muito rigoroso)
+# Importa configurações do sistema centralizado
+try:
+    import sys
+    import os
+    # Adiciona o diretório src ao path de forma robusta
+    src_path = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+    if src_path not in sys.path:
+        sys.path.insert(0, src_path)
+    
+    from config import default_config
+    
+    # Threshold de similaridade vindo do config.py centralizado
+    SIMILARITY_THRESHOLD = default_config.VALIDATION['similarity_threshold']
+    
+    print(f"Threshold de validação carregado do config.py: {SIMILARITY_THRESHOLD:.1%}")
+    
+except ImportError as e:
+    print(f"Aviso: Não foi possível importar config.py, usando threshold padrão: {e}")
+    # Fallback para valor padrão se config.py não estiver disponível
+    SIMILARITY_THRESHOLD = 0.7  # Valor conservador por segurança
 
 # =============================================================================
-
 def find_project_root():
     """
     Encontra a pasta raiz do projeto procurando pela pasta downloads

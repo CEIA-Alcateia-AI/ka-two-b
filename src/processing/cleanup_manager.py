@@ -13,22 +13,42 @@ from datetime import datetime
 from pathlib import Path
 
 # =============================================================================
-# CONFIGURAÇÃO DO USUÁRIO - EDITE AQUI
+# CONFIGURAÇÃO VIA CONFIG.PY - Configuração centralizada
+# =============================================================================
+
+# Importa configurações do sistema centralizado
+try:
+    import sys
+    import os
+    # Adiciona o diretório src ao path de forma robusta
+    src_path = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+    if src_path not in sys.path:
+        sys.path.insert(0, src_path)
+    
+    from config import default_config
+    
+    # Configurações vindas do config.py centralizado
+    CLEANUP_ENABLED = default_config.CLEANUP['enabled']
+    KEEP_EXECUTION_REPORTS = default_config.CLEANUP['keep_execution_reports']
+    
+    print(f"Configurações carregadas do config.py: CLEANUP_ENABLED={CLEANUP_ENABLED}, KEEP_REPORTS={KEEP_EXECUTION_REPORTS}")
+    
+except ImportError as e:
+    print(f"Aviso: Não foi possível importar config.py, usando configurações padrão: {e}")
+    # Fallback para configurações padrão se config.py não estiver disponível
+    CLEANUP_ENABLED = False  # Segurança máxima por padrão
+    KEEP_EXECUTION_REPORTS = True
+
+# AUTO_CLEANUP_AFTER_VALIDATION sempre True se CLEANUP_ENABLED for True
+AUTO_CLEANUP_AFTER_VALIDATION = CLEANUP_ENABLED
+
+# =============================================================================
 # =============================================================================
 
 # ATENÇÃO: Esta funcionalidade REMOVE PERMANENTEMENTE arquivos intermediários
 # Só execute após ter certeza de que o pipeline foi concluído com sucesso
 # Os dados importantes ficam salvos na pasta 'output/', mas arquivos intermediários
-# como .mp3, .wav, JSONs de transcrição, etc. serão DELETADOS
-
-CLEANUP_ENABLED = False  # True = executa limpeza, False = só simula
-                        # CUIDADO: True remove arquivos permanentemente!
-                        
-AUTO_CLEANUP_AFTER_VALIDATION = False  # True = limpa automaticamente após validação
-                                      # False = executa apenas quando chamado manualmente
-
-KEEP_EXECUTION_REPORTS = True  # True = mantém execution_report.json de cada playlist
-                              # False = remove tudo, mantém só consolidado
+# como .mp3, .wav, JSONs de transcrição, etc. serão DELETADOS só consolidado
 
 # =============================================================================
 
